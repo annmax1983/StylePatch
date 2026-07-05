@@ -1,4 +1,7 @@
 # StylePatch
+
+[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
+
 軽量ブラウザ拡張機能。任意のウェブページの背景色・文字色・フォントサイズを瞬時に変更できます。
 > Chromium系対応 · Manifest V3 · 追跡なし · サイトごとに設定保存可能
 
@@ -53,3 +56,11 @@
 Copyright © 2026 StylePatch 全著作権所有
 
 > 注意：このリポジトリはプロジェクト紹介用のみです。完全なソースコード、マニフェスト、アイコン、ビルドスクリプトは含まれておらず、完全コードはここに公開しません。
+
+---
+
+## ❤️ 開発者を支援する
+
+StylePatchが役に立ったら、コーヒーをおごっていただけると嬉しいです！
+
+**[👉 こちらをクリックして支援](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**

@@ -1,4 +1,7 @@
 # StylePatch
+
+[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
+
 Extensión ligera para navegador. Modifica instantáneamente el color de fondo, el color del texto y el tamaño de fuente de cualquier página web.
 > Compatible con navegadores Chromium · Manifest V3 · Sin seguimiento · Configuración independiente por sitio
 
@@ -53,3 +56,11 @@ Los ajustes se guardan automáticamente al cerrar la ventana y se recuperan al v
 Copyright © 2026 StylePatch. Todos los derechos reservados.
 
 > Nota: Este repositorio es solo para mostrar el proyecto. No incluye código completo, manifesto, iconos ni scripts de compilación. El código fuente completo no se publicará aquí.
+
+---
+
+## ❤️ Apoya al desarrollador
+
+Si StylePatch te resulta útil, ¡invítame a un café!
+
+**[👉 Haz clic aquí para apoyar](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**

@@ -1,4 +1,7 @@
 # StylePatch
+
+[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
+
 轻量浏览器插件，一键自定义任意网页背景色、文字颜色与字体大小
 > 基于Chromium内核 · Manifest V3规范 · 无数据追踪 · 分网站独立配置
 
@@ -53,3 +56,11 @@
 Copyright © 2026 StylePatch 保留所有权利
 
 > 提示：本仓库仅用于项目展示，不含完整源码、配置清单、图标与编译脚本。完整源代码不会对外公开。
+
+---
+
+## ❤️ 支持作者
+
+如果 StylePatch 对你有帮助，请作者喝杯咖啡吧！
+
+**[👉 点击这里支持](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**

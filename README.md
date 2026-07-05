@@ -1,5 +1,7 @@
 # StylePatch
 
+[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
+
 A lightweight browser extension that lets you customize any webpage's background color, text color, and font size instantly.
 
 > Chromium-based · Manifest V3 · Zero tracking · Per-site settings
@@ -78,3 +80,11 @@ Copyright © 2026 StylePatch. All rights reserved.
 ---
 
 > **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
+
+---
+
+## ❤️ Support the Developer
+
+If you find StylePatch helpful, consider buying me a coffee!
+
+**[👉 Click here to support](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**
