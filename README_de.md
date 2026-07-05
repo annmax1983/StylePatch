@@ -1,7 +1,4 @@
 # StylePatch
-
-[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
-
 Leichte Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe und Schriftgröße jeder Webseite sofort anpassen kannst.
 > Chromium-basiert · Manifest V3 · Kein Tracking · Einstellungen pro Webseite speicherbar
 
@@ -56,11 +53,3 @@ Einstellungen werden automatisch gespeichert, wenn das Popup geschlossen wird un
 Copyright © 2026 StylePatch. Alle Rechte vorbehalten.
 
 > Hinweis: Dieses Repository dient nur zur Projektvorstellung. Es enthält keinen vollständigen Quellcode, Manifest, Icons oder Build-Skripte. Der vollständige Quellcode wird hier nicht veröffentlicht.
-
----
-
-## ❤️ Unterstütze den Entwickler
-
-Wenn dir StylePatch gefällt, spendier mir einen Kaffee!
-
-**[👉 Hier klicken zum Unterstützen](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**
