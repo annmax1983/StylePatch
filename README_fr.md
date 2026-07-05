@@ -1,7 +1,4 @@
 # StylePatch
-
-[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
-
 Extension de navigateur légère qui permet de modifier instantanément la couleur de fond, la couleur du texte et la taille de police de n’importe quelle page web.
 > Basé sur Chromium · Manifest V3 · Aucun suivi · Paramètres séparés par site
 
@@ -19,7 +16,7 @@ Extension de navigateur légère qui permet de modifier instantanément la coule
 
 ## Aperçu
 <p align="center">
-  <img src="screenshot/preview.png" alt="Aperçu StylePatch" width="640">
+  <img src="screenshot/fr.png" alt="Aperçu StylePatch" width="640">
 </p>
 
 ## Navigateurs compatibles
@@ -56,11 +53,3 @@ Les paramètres s’enregistrent automatiquement à la fermeture de la fenêtre 
 Copyright © 2026 StylePatch. Tous droits réservés.
 
 > Note : Ce dépôt est uniquement destiné à la présentation du projet. Il ne contient pas le code source complet, le manifeste, les icônes ni les scripts de compilation. Le code source complet ne sera pas publié ici.
-
----
-
-## ❤️ Soutenir le développeur
-
-Si StylePatch vous est utile, offrez-moi un café !
-
-**[👉 Cliquez ici pour soutenir](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**
