@@ -19,7 +19,7 @@ Extension de navigateur légère qui permet de modifier instantanément la coule
 
 ## Aperçu
 <p align="center">
-  <img src="screenshot/preview.png" alt="Aperçu StylePatch" width="640">
+  <img src="screenshot/fr.png" alt="Aperçu StylePatch" width="640">
 </p>
 
 ## Navigateurs compatibles

@@ -19,7 +19,7 @@ Extensión ligera para navegador. Modifica instantáneamente el color de fondo, 
 
 ## Vista previa
 <p align="center">
-  <img src="screenshot/preview.png" alt="Vista previa StylePatch" width="640">
+  <img src="screenshot/es.png" alt="Vista previa StylePatch" width="640">
 </p>
 
 ## Navegadores compatibles

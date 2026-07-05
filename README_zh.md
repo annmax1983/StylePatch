@@ -19,7 +19,7 @@
 
 ## 效果预览
 <p align="center">
-  <img src="screenshot/preview.png" alt="StylePatch预览图" width="640">
+  <img src="screenshot/zh.png" alt="StylePatch预览图" width="640">
 </p>
 
 ## 支持浏览器

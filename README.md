@@ -26,7 +26,7 @@ A lightweight browser extension that lets you customize any webpage's background
 ## Preview
 
 <p align="center">
-  <img src="screenshot/preview.png" alt="StylePatch Preview" width="640">
+  <img src="screenshot/en.png" alt="StylePatch Preview" width="640">
 </p>
 
 ---

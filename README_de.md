@@ -19,7 +19,7 @@ Leichte Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe und Schriftg
 
 ## Vorschau
 <p align="center">
-  <img src="screenshot/preview.png" alt="StylePatch Vorschau" width="640">
+  <img src="screenshot/de.png" alt="StylePatch Vorschau" width="640">
 </p>
 
 ## Unterstützte Browser

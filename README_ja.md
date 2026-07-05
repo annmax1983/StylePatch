@@ -19,7 +19,7 @@
 
 ## プレビュー
 <p align="center">
-  <img src="screenshot/preview.png" alt="StylePatch プレビュー画像" width="640">
+  <img src="screenshot/ja.png" alt="StylePatch プレビュー画像" width="640">
 </p>
 
 ## 対応ブラウザ
