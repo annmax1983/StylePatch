@@ -13,13 +13,15 @@ A lightweight browser extension that lets you customize any webpage's background
 | Feature | Description |
 |---------|-------------|
 | 🎨 **Background & Text Color** | Pick any color via native color picker or type hex code directly |
-| 🔠 **Font Size Scaling** | Adjust from 60% to 150%, works on sites using fixed px values |
-| 👁️ **Eye Care Mode** | One-click warm tone preset for comfortable reading |
+| 🔠 **Font Size Scaling** | Adjust from 80% to 150% using CSS zoom |
+| 👁️ **Preset Themes** | Light, Eye Care, Green, Dark — one click to apply |
+| 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
+| 🚫 **Site Blacklist** | Exclude specific websites from styling |
 | 💾 **Per-Site Settings** | Save different styles for different websites, auto-restore on revisit |
 | ⚡ **Real-Time Preview** | All changes apply instantly as you drag, no page reload needed |
-| 🔄 **Dynamic Content** | Automatically styles dynamically loaded content (SPA, lazy load) |
 | 🌍 **Multi-Language** | Supports English, Spanish, German, Japanese, French, Chinese |
-| 🔒 **Minimal Permissions** | Only `activeTab` + `storage` — no unnecessary access |
+| 🔒 **Minimal Permissions** | Only `storage` + `host_permissions` — no unnecessary access |
+| 🏗️ **Manifest V3** | Uses `chrome.scripting.insertCSS` — zero content script overhead |
 
 ---
 
@@ -56,20 +58,23 @@ A lightweight browser extension that lets you customize any webpage's background
 
 1. **Click the StylePatch icon** in your browser toolbar
 2. **Pick colors** — Use the native color picker or type a hex code
-3. **Adjust font size** — Drag the slider from 60% to 150%
-4. **Eye Care mode** — Click 👁 for a warm, comfortable reading theme
+3. **Choose a preset** — Light, Eye Care, Green, or Dark
+4. **Adjust font size** — Drag the slider from 80% to 150%
 5. **Save** — Click **Apply & Save** to persist settings for this site
 6. **Reset** — Click ↺ to restore the site's default appearance
+7. **Exclude** — Click "Exclude this site" to blacklist a domain
+8. **Toggle** — Use the ON/OFF switch to disable without losing settings
 
-Settings are automatically saved when the popup closes, and restored when you revisit the same site.
+Settings are automatically saved when you click Apply, and restored when you revisit the same site.
 
 ---
 
 ## Privacy
 
-- Only `activeTab` + `storage` permissions — nothing more
+- Only `storage` + `host_permissions` permissions — nothing more
 - No browsing history access, no user tracking, no external data transmission
 - All data stays local in your browser
+- [Privacy Policy](https://annmax1983.github.io/StylePatch/privacy-policy.html)
 
 ---
 
@@ -79,12 +84,8 @@ Copyright © 2026 StylePatch. All rights reserved.
 
 ---
 
-> **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
-
----
-
 ## ❤️ Support the Developer
 
 If you find StylePatch helpful, consider buying me a coffee!
 
-**[👉 Click here to support](https://www.creem.io/payment/prod_4LTHdgvsMSURUjevX47qHE)**
+**[👉 Click here to support](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
