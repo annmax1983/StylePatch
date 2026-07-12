@@ -14,7 +14,7 @@ A lightweight browser extension that lets you customize any webpage's background
 |---------|-------------|
 | 🎨 **Background & Text Color** | Pick any color via native color picker or type hex code directly |
 | 🔠 **Font Size Scaling** | Adjust from 80% to 150% using CSS zoom |
-| 👁️ **Preset Themes** | Light, Eye Care, Green, Dark — one click to apply |
+| 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark — one click to apply |
 | 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
 | 🚫 **Site Blacklist** | Exclude specific websites from styling |
 | 💾 **Per-Site Settings** | Save different styles for different websites, auto-restore on revisit |
@@ -58,7 +58,7 @@ A lightweight browser extension that lets you customize any webpage's background
 
 1. **Click the StylePatch icon** in your browser toolbar
 2. **Pick colors** — Use the native color picker or type a hex code
-3. **Choose a preset** — Light, Eye Care, Green, or Dark
+3. **Choose a preset** — Light, Warm Tone, Green, or Dark
 4. **Adjust font size** — Drag the slider from 80% to 150%
 5. **Save** — Click **Apply & Save** to persist settings for this site
 6. **Reset** — Click ↺ to restore the site's default appearance
@@ -84,7 +84,7 @@ Copyright © 2026 StylePatch. All rights reserved.
 
 ---
 
-## ❤️ Support the Developer
+## ❤️ Support My Work
 
 If you find StylePatch helpful, consider buying me a coffee!
 

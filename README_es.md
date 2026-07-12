@@ -12,7 +12,7 @@ Extensión ligera para navegador que te permite personalizar al instante el colo
 |---------|-------------|
 | 🎨 Color de fondo y texto | Elige colores con el selector nativo o escribe códigos hexadecimales |
 | 🔠 Ajuste de tamaño de fuente | Escala entre 80% y 150%, usa CSS zoom |
-| 👁️ Temas preestablecidos | Claro, Protección ocular, Verde, Oscuro — un clic para aplicar |
+| 👁️ Temas preestablecidos | Claro, Tono Cálido, Verde, Oscuro — un clic para aplicar |
 | 🔄 Interruptor global | Activa/desactiva la extensión sin perder la configuración guardada |
 | 🚫 Lista negra de sitios | Excluye sitios web específicos del estilizado |
 | 💾 Configuración por sitio | Guarda estilos distintos para cada web, se restauran al volver |
@@ -48,7 +48,7 @@ Extensión ligera para navegador que te permite personalizar al instante el colo
 
 1. Haz clic en el icono de StylePatch de la barra de herramientas
 2. Selecciona colores: usa el selector o escribe el código hexadecimal
-3. Elige un preestablecido: Claro, Protección ocular, Verde u Oscuro
+3. Elige un preestablecido: Claro, Tono Cálido, Verde u Oscuro
 4. Ajusta el tamaño de fuente: mueve el control deslizante entre 80% y 150%
 5. Guardar: pulsa **Aplicar y guardar** para conservar los estilos de este sitio
 6. Restablecer: pulsa ↺ para volver al aspecto original de la web

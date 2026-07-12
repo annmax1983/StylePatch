@@ -12,7 +12,7 @@ Leichte Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe und Schriftg
 |----------|--------------|
 | 🎨 Hintergrund- und Textfarbe | Farben über den integrierten Farbwähler wählen oder Hex-Code eingeben |
 | 🔠 Schriftgrößen-Skalierung | Skalierung von 80% bis 150%, nutzt CSS Zoom |
-| 👁️ Voreingestellte Themes | Hell, Augenschutz, Grün, Dunkel — ein Klick zum Anwenden |
+| 👁️ Voreingestellte Themes | Hell, Warmton, Grün, Dunkel — ein Klick zum Anwenden |
 | 🔄 Globaler Schalter | Erweiterung global aktivieren/deaktivieren, ohne Einstellungen zu verlieren |
 | 🚫 Webseiten-Blacklist | Bestimmte Webseiten vom Styling ausschließen |
 | 💾 Webseiten-spezifische Einstellungen | Speichere individuelle Designs für jede Seite, automatisch wiederhergestellt |
@@ -48,7 +48,7 @@ Leichte Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe und Schriftg
 
 1. Klicke auf das StylePatch-Symbol in der Browser-Werkzeugleiste
 2. Farben auswählen: Nutze den Farbwähler oder gib einen Hex-Code ein
-3. Wähle ein Voreinstellung: Hell, Augenschutz, Grün oder Dunkel
+3. Wähle ein Voreinstellung: Hell, Warmton, Grün oder Dunkel
 4. Schriftgröße anpassen: Ziehe den Regler zwischen 80% und 150%
 5. Speichern: Klicke auf **Übernehmen & Speichern**, um Einstellungen für die Seite zu sichern
 6. Zurücksetzen: Klicke auf ↺, um das Originaldesign der Webseite wiederherzustellen

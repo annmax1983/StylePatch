@@ -12,7 +12,7 @@ Extension de navigateur légère qui permet de modifier instantanément la coule
 |----------|-------------|
 | 🎨 Couleur fond et texte | Choisissez une couleur via le sélecteur natif ou entrez un code hexadécimal |
 | 🔠 Redimensionnement de police | Réglable de 80 % à 150 %, utilise CSS zoom |
-| 👁️ Thèmes prédéfinis | Clair, Confort visuel, Vert, Sombre — un clic pour appliquer |
+| 👁️ Thèmes prédéfinis | Clair, Ton Chaud, Vert, Sombre — un clic pour appliquer |
 | 🔄 Interrupteur global | Activez/désactivez l'extension sans perdre les paramètres sauvegardés |
 | 🚫 Liste noire de sites | Excluez des sites web spécifiques du stylage |
 | 💾 Paramètres par site | Enregistrez des styles différents pour chaque site, restaurés automatiquement |
@@ -48,7 +48,7 @@ Extension de navigateur légère qui permet de modifier instantanément la coule
 
 1. Cliquez sur l'icône StylePatch dans la barre d'outils du navigateur
 2. Choisissez vos couleurs : utilisez le sélecteur ou saisissez un code hex
-3. Choisissez un préréglage : Clair, Confort visuel, Vert ou Sombre
+3. Choisissez un préréglage : Clair, Ton Chaud, Vert ou Sombre
 4. Ajustez la taille de police : faites glisser le curseur entre 80 % et 150 %
 5. Enregistrer : cliquez sur **Appliquer et enregistrer** pour conserver le style du site
 6. Réinitialiser : cliquez sur ↺ pour retrouver l'apparence originale du site
