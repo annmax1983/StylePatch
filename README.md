@@ -1,10 +1,24 @@
-# StylePatch
+# FontFixer
 
-[English](README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
+English | [中文](languages/README_zh.md) | [Español](languages/README_es.md) | [Deutsch](languages/README_de.md) | [日本語](languages/README_ja.md) | [Français](languages/README_fr.md)
 
-A lightweight browser extension that lets you customize any webpage's background color, text color, and font size instantly.
+A lightweight browser extension that optimizes webpage fonts for comfortable reading. Change font family, size, and text colors with one click.
 
-> Chromium-based · Manifest V3 · Zero tracking · Per-site settings
+> Chromium-based · Manifest V3 · Minimal Permissions · Fully Local
+
+---
+
+## Why FontFixer?
+
+Many websites use small, blurry, or hard-to-read fonts. FontFixer lets you adjust webpage fonts with your preferred typeface, adjust font size, and customize text/link colors — all in real-time, with zero page reload.
+
+| Advantage | Detail |
+|-----------|--------|
+| 🔤 **Local Font Support** | Reads fonts installed on your device via `queryLocalFonts` API |
+| ⚡ **Real-Time Preview** | All changes apply instantly as you adjust — no page refresh |
+| 💾 **Per-Site Memory** | Saves different font settings for different websites |
+| 🌐 **Global Mode** | Apply one font configuration across all websites |
+| 🔒 **Minimal Permissions** | Only `storage` + `scripting` + `activeTab` — no `<all_urls>` |
 
 ---
 
@@ -12,23 +26,21 @@ A lightweight browser extension that lets you customize any webpage's background
 
 | Feature | Description |
 |---------|-------------|
-| 🎨 **Background & Text Color** | Pick any color via native color picker or type hex code directly |
-| 🔠 **Font Size Scaling** | Adjust from 80% to 150% using CSS zoom |
-| 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark — one click to apply |
-| 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
-| 🚫 **Site Blacklist** | Exclude specific websites from styling |
-| 💾 **Per-Site Settings** | Save different styles for different websites, auto-restore on revisit |
-| ⚡ **Real-Time Preview** | All changes apply instantly as you drag, no page reload needed |
-| 🌍 **Multi-Language** | Supports English, Spanish, German, Japanese, French, Chinese |
-| 🔒 **Minimal Permissions** | Only `storage` + `host_permissions` — no unnecessary access |
-| 🏗️ **Manifest V3** | Uses `chrome.scripting.insertCSS` — zero content script overhead |
+| 🔤 **Font Selection** | Choose from 3 built-in fonts (Noto Sans, Source Han Sans, Arial) or any font installed on your device |
+| 📏 **Font Size Scaling** | Adjust from 80% to 160% with a slider |
+| 🎨 **Text Color** | Custom text color with color picker |
+| 🔗 **Link Color** | Separate link color for better readability |
+| 🔄 **Scope Control** | Apply to current site only or all websites |
+| 💾 **Auto-Save** | Settings persist automatically per site |
+| ↺ **One-Click Reset** | Restore original page fonts instantly |
+| 🌍 **6 Languages** | English, Chinese, Japanese, Spanish, German, French |
 
 ---
 
 ## Preview
 
 <p align="center">
-  <img src="screenshot/en.png" alt="StylePatch Preview" width="640">
+  <img src="icons/icon128.png" alt="FontFixer Icon" width="80">
 </p>
 
 ---
@@ -49,43 +61,91 @@ A lightweight browser extension that lets you customize any webpage's background
    - **Chrome**: `chrome://extensions/`
    - **Edge**: `edge://extensions/`
 2. Enable **Developer mode** (top-right toggle)
-3. Click **Load unpacked** and select the project folder
-4. Click the StylePatch icon in your toolbar to start
+3. Click **Load unpacked** and select the `font-fixer` folder
+4. Click the 🔤 FontFixer icon in your toolbar to start
 
 ---
 
 ## Usage
 
-1. **Click the StylePatch icon** in your browser toolbar
-2. **Pick colors** — Use the native color picker or type a hex code
-3. **Choose a preset** — Light, Warm Tone, Green, or Dark
-4. **Adjust font size** — Drag the slider from 80% to 150%
-5. **Save** — Click **Apply & Save** to persist settings for this site
-6. **Reset** — Click ↺ to restore the site's default appearance
-7. **Exclude** — Click "Exclude this site" to blacklist a domain
-8. **Toggle** — Use the ON/OFF switch to disable without losing settings
+### Change Fonts
 
-Settings are automatically saved when you click Apply, and restored when you revisit the same site.
+1. Click the FontFixer icon in your toolbar
+2. Select a font from the dropdown (or click a built-in font chip)
+3. Adjust font size with the slider
+4. Optionally change text and link colors
+5. Click **Apply** — changes take effect instantly
+
+### Per-Site vs Global
+
+- **This Site** (default): Settings only apply to the current website
+- **All Sites**: Settings apply to every website you visit
+- Switch between modes using the scope buttons
+
+
+### Reset
+
+- Click **Reset** to restore the current site's original fonts
+
+---
+
+## How It Works
+
+```
+Select font & adjust settings
+       ↓
+Click Apply
+       ↓
+CSS injected via chrome.scripting.insertCSS
+       ↓
+Page fonts change instantly
+       ↓
+Settings saved to chrome.storage.local
+```
+
+All processing happens locally in your browser. No network requests, no data upload.
+
+**Note for Local Font Access:** The browser will pop up a permission request window when reading your installed font list for the first time. Only font display names are read — font source files are not extracted, copied or uploaded. You may revoke this permission in browser settings at any time.
+
+**Global Mode Rule:** When enabling "All Sites", style injection only triggers after you click the extension icon. Style injection only triggers after you click the extension icon.
+
+---
+
+## Font Copyright Notice
+
+Three built-in typefaces (Noto Sans, Source Han Sans, Arial) are distributed under SIL Open Font License, which allows personal and commercial use without extra authorization.
+
+The extension only reads the name list of fonts installed on your local device via browser standard API, and will not extract, copy or upload any local font files. All rights of system fonts belong to their respective copyright holders.
 
 ---
 
 ## Privacy
 
-- Only `storage` + `host_permissions` permissions — nothing more
-- No browsing history access, no user tracking, no external data transmission
-- All data stays local in your browser
-- [Privacy Policy](https://annmax1983.github.io/StylePatch/privacy-policy.html)
+- `storage` — Saves your font preferences locally. No webpage content is stored.
+- `scripting` — Injects CSS to change page fonts. Does not read page text or data.
+- `activeTab` — Only accesses the current tab when you click Apply.
+- No tracking, no analytics, no external connections.
+
+---
+
+## Copyright Disclaimer
+
+This extension only locally adjusts the visual rendering style of web pages for users' comfortable reading experience. All text, images and content copyright of the website belong to the original publisher. Modifying page display styles does not grant users any copyright authorization for the website content. Users shall abide by local intellectual property laws when browsing web pages.
 
 ---
 
 ## License
 
-Copyright © 2026 StylePatch. All rights reserved.
+Copyright © 2026 FontFixer. All rights reserved.
 
 ---
 
-## ❤️ Support My Work
+## ❤️ Support
 
-If you find StylePatch helpful, consider buying me a coffee!
+If you find FontFixer helpful, consider supporting the project!
 
-**[👉 Click here to support](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+**[👉 Click here to support](https://annmax1983.github.io/FontFixer/)**
+
+---
+
+> **Note:** This repository is for **project showcase purposes only**. It does not contain the full source code, manifest, icons, or build scripts. Full source code will **not** be published here.
