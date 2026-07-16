@@ -1,181 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FontFixer — Privacy Policy</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #1e293b;
-    background: #f8fafc;
-    line-height: 1.7;
-  }
-  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
-  h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #667eea; }
-  .updated { font-size: 13px; color: #94a3b8; margin-bottom: 32px; }
-  .highlight {
-    background: #ecfdf5;
-    border: 1px solid #a7f3d0;
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin: 20px 0;
-  }
-  .highlight strong { color: #065f46; }
-  h2 { font-size: 18px; font-weight: 600; margin: 28px 0 12px; color: #334155; }
-  p { margin-bottom: 12px; font-size: 15px; color: #475569; }
-  ul { margin: 0 0 12px 20px; }
-  li { margin-bottom: 6px; font-size: 15px; color: #475569; }
-  code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-  .footer-link {
-    display: inline-block; margin-bottom: 24px;
-    color: #667eea; text-decoration: none; font-size: 14px;
-  }
-  .footer-link:hover { text-decoration: underline; }
-  footer {
-    margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0;
-    text-align: center; font-size: 13px; color: #94a3b8;
-  }
-  footer a { color: #667eea; text-decoration: none; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StylePatch - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      padding: 40px 32px;
+    }
+    h1 {
+      font-size: 24px;
+      color: #1a73e8;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: #80868b;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #202124;
+      margin: 24px 0 8px;
+    }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    .highlight {
+      background: #e8f0fe;
+      border-left: 4px solid #1a73e8;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    .footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid #e8eaed;
+      font-size: 13px;
+      color: #80868b;
+      text-align: center;
+    }
+    .footer a { color: #1a73e8; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 <div class="container">
-  <a class="footer-link" href="https://annmax1983.github.io/FontFixer/">← FontFixer</a>
-  <h1 id="title"></h1>
-  <p class="updated" id="updated"></p>
+  <h1 id="pageTitle"></h1>
+  <div class="updated" id="updated"></div>
 
   <div class="highlight" id="highlight"></div>
 
-  <h2 id="h1"></h2>
-  <p id="p1"></p>
-  <ul id="l1"></ul>
+  <h2 id="hCollection"></h2>
+  <p id="pCollection"></p>
+  <ul id="listCollection"></ul>
 
-  <h2 id="h2"></h2>
-  <p id="p2"></p>
-  <ul id="l2"></ul>
-  <p id="p2note"></p>
+  <h2 id="hStorage"></h2>
+  <p id="pStorage"></p>
+  <ul id="listStorage"></ul>
+  <p id="pStorageNote"></p>
 
-  <h2 id="h3"></h2>
-  <p id="p3"></p>
+  <h2 id="hPermissions"></h2>
+  <ul id="listPermissions"></ul>
+  <p id="pPermissions"></p>
 
-  <h2 id="h4"></h2>
-  <p id="p4"></p>
+  <h2 id="hThirdParty"></h2>
+  <p id="pThirdParty"></p>
 
-  <h2 id="h5"></h2>
-  <p id="p5"></p>
+  <h2 id="hChanges"></h2>
+  <p id="pChanges"></p>
 
-  <h2 id="h6"></h2>
-  <p id="p6"></p>
+  <h2 id="hContact"></h2>
+  <p id="pContact"></p>
 
-  <footer>
-    <p>&copy; 2026 FontFixer. <span id="rights"></span></p>
-    <p><a href="https://github.com/annmax1983/FontFixer" id="gh"></a></p>
-  </footer>
+  <div class="footer" id="footer"></div>
 </div>
 
 <script>
 const I18N = {
   en: {
-    title: '🔒 Privacy Policy', updated: 'Last updated: July 2026',
-    highlight: '<strong>Short version:</strong> FontFixer does not collect, transmit, or store any of your personal data. All font configuration stays in your browser. Nothing leaves your device.',
-    h1: 'Data Collection', p1: 'FontFixer does <strong>not</strong> collect any personal data:', l1: ['Browsing history or URLs visited', 'Page text, images, or content', 'Cookies or tracking identifiers', 'Usage analytics or telemetry'],
-    h2: 'Permissions', p2: 'FontFixer requests minimal permissions:', l2: ['<strong>storage</strong> — Saves your font preferences locally. No webpage content is stored.', '<strong>scripting</strong> — Injects CSS to change page fonts. Does not read page text or data.', '<strong>activeTab</strong> — Only accesses the current tab when you click Apply.'], p2note: 'No <code>&lt;all_urls&gt;</code> host permission. FontFixer only acts when you explicitly trigger it.',
-    h3: 'Data Storage', p3: 'All settings are stored locally in your browser using <code>chrome.storage.local</code>. Data is deleted when you uninstall the extension.',
-    h4: 'Third-Party Services', p4: 'FontFixer does not connect to any third-party servers, APIs, or analytics services.',
-    h5: 'Open Source Fonts', p5: 'Built-in fonts (Noto Sans, Source Han Sans, Arial) are open-source or system fonts with commercial-use licenses.',
-    h6: 'Contact', p6: 'If you have questions, please open an issue on <a href="https://github.com/annmax1983/FontFixer">GitHub</a>.',
-    rights: 'All rights reserved.', gh: 'GitHub Repository'
+    title: '🔒 Privacy Policy — StylePatch',
+    updated: 'Last updated: July 2026',
+    highlight: '<strong>StylePatch does not collect, store, transmit, or share any personal data.</strong><br>All operations are performed locally in your browser. No data leaves your device.',
+    hCollection: 'Data Collection',
+    pCollection: 'StylePatch does <strong>not</strong> collect any of the following:',
+    listCollection: ['Personal identification information', 'Browsing history or URLs visited', 'Usage analytics or telemetry', 'Cookies or tracking identifiers', 'Form data, passwords, or credentials'],
+    hStorage: 'Data Storage',
+    pStorage: 'StylePatch stores the following data <strong>locally in your browser</strong> using the Chrome Storage API:',
+    listStorage: ['<strong>Per-site style settings</strong> — background color, text color, font size you choose for each website', '<strong>Global preferences</strong> — extension on/off state, excluded sites list'],
+    pStorageNote: 'This data never leaves your browser and is automatically deleted when you uninstall the extension.',
+    hPermissions: 'Permissions',
+    listPermissions: ['<strong>storage</strong> — Required to save your style settings locally', '<strong>scripting</strong> — Required to inject custom CSS styles into web pages', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Required to apply custom CSS styles to any website you visit. StylePatch only injects CSS when you explicitly enable it for a site.'],
+    pPermissions: 'StylePatch does <strong>not</strong> use these permissions to read page content, track activity, or transmit data.',
+    hThirdParty: 'Third-Party Services',
+    pThirdParty: 'StylePatch does <strong>not</strong> connect to any third-party servers, APIs, or analytics services.',
+    hChanges: 'Changes to This Policy',
+    pChanges: 'Any changes to this privacy policy will be reflected on this page with an updated date.',
+    hContact: 'Contact',
+    pContact: 'If you have questions about this privacy policy, please open an issue on <a href="https://github.com/annmax1983/StylePatch">GitHub</a>.',
+    footer: 'StylePatch &copy; 2026. Your privacy is respected by design.'
   },
-  'zh-CN': {
-    title: '🔒 隐私条款', updated: '最后更新：2026 年 7 月',
-    highlight: '<strong>简要说明：</strong>FontFixer 不收集、传输或存储您的任何个人数据。所有字体配置保存在您的浏览器中，永远不会离开您的设备。',
-    h1: '数据收集', p1: 'FontFixer <strong>不会</strong>收集任何个人数据：', l1: ['浏览历史或访问的网址', '页面文字、图片或内容', 'Cookie 或跟踪标识符', '使用分析或遥测数据'],
-    h2: '权限说明', p2: 'FontFixer 仅请求最低权限：', l2: ['<strong>storage</strong> — 在本地保存字体偏好，不存储网页内容', '<strong>scripting</strong> — 注入 CSS 修改页面字体，不读取页面文字或数据', '<strong>activeTab</strong> — 仅在点击应用时访问当前标签页'], p2note: '不申请 <code>&lt;all_urls&gt;</code> host 权限。FontFixer 仅在您主动触发时才生效。',
-    h3: '数据存储', p3: '所有设置通过 <code>chrome.storage.local</code> 存储在浏览器本地。卸载扩展时数据会自动删除。',
-    h4: '第三方服务', p4: 'FontFixer 不连接任何第三方服务器、API 或分析服务。',
-    h5: '开源字体', p5: '内置字体（Noto Sans、思源黑体、Arial）均为开源或系统字体，具有商用授权。',
-    h6: '联系方式', p6: '如有疑问，请在 <a href="https://github.com/annmax1983/FontFixer">GitHub</a> 上提交 Issue。',
-    rights: '保留所有权利。', gh: 'GitHub 仓库'
+  zh: {
+    title: '🔒 隐私条款 — StylePatch',
+    updated: '最后更新：2026 年 7 月',
+    highlight: '<strong>StylePatch 不收集、存储、传输或共享任何个人数据。</strong><br>所有操作均在您的浏览器本地完成，数据不会离开您的设备。',
+    hCollection: '数据收集',
+    pCollection: 'StylePatch <strong>不会</strong>收集以下任何信息：',
+    listCollection: ['个人身份信息', '浏览历史或访问的网址', '使用分析或遥测数据', 'Cookie 或跟踪标识符', '表单数据、密码或凭据'],
+    hStorage: '数据存储',
+    pStorage: 'StylePatch 使用 Chrome Storage API 将以下数据<strong>存储在您的浏览器本地</strong>：',
+    listStorage: ['<strong>站点样式设置</strong> — 您为每个网站选择的背景色、文字色、字体大小', '<strong>全局偏好</strong> — 扩展开/关状态、排除的网站列表'],
+    pStorageNote: '这些数据不会离开您的浏览器，卸载扩展时会自动删除。',
+    hPermissions: '权限说明',
+    listPermissions: ['<strong>storage</strong> — 用于在本地保存您的样式设置', '<strong>scripting</strong> — 用于向网页注入自定义 CSS 样式', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — 用于向您访问的任意网站应用 CSS 样式。StylePatch 仅在您主动启用时才注入 CSS。'],
+    pPermissions: 'StylePatch <strong>不会</strong>使用这些权限读取页面内容、追踪活动或传输数据。',
+    hThirdParty: '第三方服务',
+    pThirdParty: 'StylePatch <strong>不会</strong>连接任何第三方服务器、API 或分析服务。',
+    hChanges: '条款变更',
+    pChanges: '本隐私条款的任何变更将在本页面上更新并注明日期。',
+    hContact: '联系方式',
+    pContact: '如果您对本隐私条款有任何疑问，请在 <a href="https://github.com/annmax1983/StylePatch">GitHub</a> 上提交 Issue。',
+    footer: 'StylePatch &copy; 2026。您的隐私是我们的设计原则。'
   },
   ja: {
-    title: '🔒 プライバシーポリシー', updated: '最終更新：2026年7月',
-    highlight: '<strong>要約：</strong>FontFixer は個人データを収集、送信、保存しません。すべてのフォント設定はブラウザ内に保存されます。',
-    h1: 'データ収集', p1: 'FontFixer は個人データを<strong>収集しません</strong>：', l1: ['閲覧履歴またはアクセスしたURL', 'ページテキスト、画像、コンテンツ', 'Cookie または追跡識別子', '使用分析またはテレメトリ'],
-    h2: '権限', p2: 'FontFixer は最小限の権限のみ要求します：', l2: ['<strong>storage</strong> — フォント設定をローカル保存。ページコンテンツは保存しません。', '<strong>scripting</strong> — CSSを注入してフォントを変更。ページテキストやデータは読み取りません。', '<strong>activeTab</strong> — 適用ボタンをクリックした時のみ現在のタブにアクセス。'], p2note: '<code>&lt;all_urls&gt;</code> ホスト権限は使用しません。',
-    h3: 'データ保存', p3: 'すべての設定は <code>chrome.storage.local</code> でローカル保存されます。',
-    h4: 'サードパーティサービス', p4: 'FontFixer はサードパーティサーバー、API、分析サービスに接続しません。',
-    h5: 'オープンソースフォント', p5: '内蔵フォント（Noto Sans、Source Han Sans、Arial）は商用ライセンスのオープンソースまたはシステムフォントです。',
-    h6: 'お問い合わせ', p6: 'ご質問は <a href="https://github.com/annmax1983/FontFixer">GitHub</a> で Issue を作成してください。',
-    rights: '全著作権所有。', gh: 'GitHub リポジトリ'
+    title: '🔒 プライバシーポリシー — StylePatch',
+    updated: '最終更新：2026年7月',
+    highlight: '<strong>StylePatch は個人データを収集、保存、送信、共有しません。</strong><br>すべての操作はブラウザ内でローカルに実行されます。データがデバイスから外に出ることはありません。',
+    hCollection: 'データの収集',
+    pCollection: 'StylePatch は以下のデータを<strong>収集しません</strong>：',
+    listCollection: ['個人識別情報', '閲覧履歴またはアクセスしたURL', '使用分析またはテレメトリ', 'Cookieまたは追跡識別子', 'フォームデータ、パスワード、認証情報'],
+    hStorage: 'データの保存',
+    pStorage: 'StylePatch は Chrome Storage API を使用して、以下のデータを<strong>ブラウザ内にローカル保存</strong>します：',
+    listStorage: ['<strong>サイトごとのスタイル設定</strong> — 各ウェブサイトで選択した背景色、文字色、フォントサイズ', '<strong>全体設定</strong> — 拡張機能のオン/オフ状態、除外サイトリスト'],
+    pStorageNote: 'このデータはブラウザから外に出ず、拡張機能をアンインストールすると自動的に削除されます。',
+    hPermissions: '権限の説明',
+    listPermissions: ['<strong>storage</strong> — スタイル設定をローカルに保存するために必要', '<strong>scripting</strong> — ウェブページにカスタムCSSスタイルを注入するために必要', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — ユーザーが訪問する任意のウェブサイトにCSSスタイルを適用するために必要。StylePatch はユーザーが明示的に有効にしたサイトにのみCSSを注入します。'],
+    pPermissions: 'StylePatch はこれらの権限を使用してページコンテンツの読み取り、活動の追跡、データの送信は<strong>行いません</strong>。',
+    hThirdParty: 'サードパーティサービス',
+    pThirdParty: 'StylePatch はサードパーティのサーバー、API、分析サービスに<strong>接続しません</strong>。',
+    hChanges: 'ポリシーの変更',
+    pChanges: '本プライバシーポリシーの変更は、このページに更新日付とともに反映されます。',
+    hContact: 'お問い合わせ',
+    pContact: '本プライバシーポリシーに関するご質問は、<a href="https://github.com/annmax1983/StylePatch">GitHub</a> で Issue を作成してください。',
+    footer: 'StylePatch &copy; 2026。あなたのプライバシーは設計の原則です。'
   },
   de: {
-    title: '🔒 Datenschutzrichtlinie', updated: 'Letzte Aktualisierung: Juli 2026',
-    highlight: '<strong>Kurzfassung:</strong> FontFixer erfasst, übermittelt oder speichert keine Ihrer Daten. Alle Schrifteinstellungen bleiben in Ihrem Browser.',
-    h1: 'Datenerfassung', p1: 'FontFixer erfasst <strong>keine</strong> personenbezogenen Daten:', l1: ['Browserverlauf oder besuchte URLs', 'Seitentexte, Bilder oder Inhalte', 'Cookies oder Tracking-Kennungen', 'Nutzungsanalysen oder Telemetrie'],
-    h2: 'Berechtigungen', p2: 'FontFixer beantragt nur minimale Berechtigungen:', l2: ['<strong>storage</strong> — Speichert Schrifteinstellungen lokal. Keine Webseiteninhalte werden gespeichert.', '<strong>scripting</strong> — Injiziert CSS zur Schriftänderung. Liest keine Seitentexte oder Daten.', '<strong>activeTab</strong> — Greift nur auf den aktuellen Tab zu, wenn Sie auf Anwenden klicken.'], p2note: 'Keine <code>&lt;all_urls&gt;</code> Host-Berechtigung.',
-    h3: 'Datenspeicherung', p3: 'Alle Einstellungen werden lokal im Browser über <code>chrome.storage.local</code> gespeichert.',
-    h4: 'Drittanbieterdienste', p4: 'FontFixer verbindet sich nicht mit Drittanbietern, APIs oder Analysediensten.',
-    h5: 'Open-Source-Schriften', p5: 'Integrierte Schriften (Noto Sans, Source Han Sans, Arial) sind Open-Source- oder Systemschriften mit kommerzieller Lizenz.',
-    h6: 'Kontakt', p6: 'Bei Fragen erstellen Sie bitte ein Issue auf <a href="https://github.com/annmax1983/FontFixer">GitHub</a>.',
-    rights: 'Alle Rechte vorbehalten.', gh: 'GitHub-Repository'
+    title: '🔒 Datenschutzrichtlinie — StylePatch',
+    updated: 'Letzte Aktualisierung: Juli 2026',
+    highlight: '<strong>StylePatch erfasst, speichert, übermittelt oder teilt keine personenbezogenen Daten.</strong><br>Alle Vorgänge werden lokal in Ihrem Browser durchgeführt. Keine Daten verlassen Ihr Gerät.',
+    hCollection: 'Datenerfassung',
+    pCollection: 'StylePatch erfasst <strong>keine</strong> der folgenden Daten:',
+    listCollection: ['Persönliche Identifikationsinformationen', 'Browserverlauf oder besuchte URLs', 'Nutzungsanalysen oder Telemetrie', 'Cookies oder Tracking-Kennungen', 'Formulardaten, Passwörter oder Anmeldedaten'],
+    hStorage: 'Datenspeicherung',
+    pStorage: 'StylePatch speichert die folgenden Daten <strong>lokal in Ihrem Browser</strong> über die Chrome Storage API:',
+    listStorage: ['<strong>Website-Stileinstellungen</strong> — Hintergrundfarbe, Textfarbe, Schriftgröße, die Sie für jede Website wählen', '<strong>Globale Einstellungen</strong> — Erweiterung ein/aus, ausgeschlossene Websites'],
+    pStorageNote: 'Diese Daten verlassen Ihren Browser nie und werden beim Deinstallieren der Erweiterung automatisch gelöscht.',
+    hPermissions: 'Berechtigungen',
+    listPermissions: ['<strong>storage</strong> — Erforderlich, um Ihre Stileinstellungen lokal zu speichern', '<strong>scripting</strong> — Erforderlich, um benutzerdefinierte CSS-Styles in Webseiten einzufügen', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Erforderlich, um CSS-Styles auf jeder besuchten Website anzuwenden. StylePatch fügt nur CSS ein, wenn Sie es für eine Seite explizit aktivieren.'],
+    pPermissions: 'StylePatch verwendet diese Berechtigungen <strong>nicht</strong>, um Seiteninhalte zu lesen, Aktivitäten zu verfolgen oder Daten zu übermitteln.',
+    hThirdParty: 'Dienste von Drittanbietern',
+    pThirdParty: 'StylePatch verbindet sich <strong>nicht</strong> mit Servern, APIs oder Analysediensten Dritter.',
+    hChanges: 'Änderungen dieser Richtlinie',
+    pChanges: 'Änderungen dieser Datenschutzrichtlinie werden auf dieser Seite mit aktualisiertem Datum angezeigt.',
+    hContact: 'Kontakt',
+    pContact: 'Bei Fragen zu dieser Datenschutzrichtlinie erstellen Sie bitte ein Issue auf <a href="https://github.com/annmax1983/StylePatch">GitHub</a>.',
+    footer: 'StylePatch &copy; 2026. Ihre Privatsphäre ist unser Designprinzip.'
   },
   es: {
-    title: '🔒 Política de Privacidad', updated: 'Última actualización: julio de 2026',
-    highlight: '<strong>Resumen:</strong> FontFixer no recopila, transmite ni almacena ningún dato personal. Toda la configuración de fuentes permanece en su navegador.',
-    h1: 'Recopilación de Datos', p1: 'FontFixer <strong>no</strong> recopila ningún dato personal:', l1: ['Historial de navegación o URLs visitadas', 'Texto, imágenes o contenido de páginas', 'Cookies o identificadores de seguimiento', 'Analíticas de uso o telemetría'],
-    h2: 'Permisos', p2: 'FontFixer solicita permisos mínimos:', l2: ['<strong>storage</strong> — Guarda preferencias de fuente localmente. No almacena contenido web.', '<strong>scripting</strong> — Inyecta CSS para cambiar fuentes. No lee texto ni datos de páginas.', '<strong>activeTab</strong> — Solo accede a la pestaña actual al hacer clic en Aplicar.'], p2note: 'Sin permiso de host <code>&lt;all_urls&gt;</code>.',
-    h3: 'Almacenamiento', p3: 'Todos los ajustes se almacenan localmente con <code>chrome.storage.local</code>.',
-    h4: 'Servicios de Terceros', p4: 'FontFixer no se conecta a servidores de terceros, APIs ni servicios de análisis.',
-    h5: 'Fuentes de Código Abierto', p5: 'Las fuentes integradas (Noto Sans, Source Han Sans, Arial) son de código abierto o del sistema con licencia comercial.',
-    h6: 'Contacto', p6: 'Si tiene preguntas, abra un issue en <a href="https://github.com/annmax1983/FontFixer">GitHub</a>.',
-    rights: 'Todos los derechos reservados.', gh: 'Repositorio GitHub'
+    title: '🔒 Política de Privacidad — StylePatch',
+    updated: 'Última actualización: julio de 2026',
+    highlight: '<strong>StylePatch no recopila, almacena, transmite ni comparte datos personales.</strong><br>Todas las operaciones se realizan localmente en su navegador. Ningún dato sale de su dispositivo.',
+    hCollection: 'Recopilación de Datos',
+    pCollection: 'StylePatch <strong>no</strong> recopila ninguna de las siguientes informaciones:',
+    listCollection: ['Información de identificación personal', 'Historial de navegación o URLs visitadas', 'Analíticas de uso o telemetría', 'Cookies o identificadores de seguimiento', 'Datos de formularios, contraseñas o credenciales'],
+    hStorage: 'Almacenamiento de Datos',
+    pStorage: 'StylePatch almacena los siguientes datos <strong>localmente en su navegador</strong> usando la API de Chrome Storage:',
+    listStorage: ['<strong>Configuración de estilo por sitio</strong> — color de fondo, color de texto, tamaño de fuente que elige para cada sitio web', '<strong>Preferencias globales</strong> — estado activado/desactivado de la extensión, lista de sitios excluidos'],
+    pStorageNote: 'Estos datos nunca salen de su navegador y se eliminan automáticamente cuando desinstala la extensión.',
+    hPermissions: 'Permisos',
+    listPermissions: ['<strong>storage</strong> — Requerido para guardar su configuración de estilo localmente', '<strong>scripting</strong> — Requerido para inyectar estilos CSS personalizados en páginas web', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Requerido para aplicar estilos CSS en cualquier sitio web que visite. StylePatch solo inyecta CSS cuando lo habilita explícitamente para un sitio.'],
+    pPermissions: 'StylePatch <strong>no</strong> usa estos permisos para leer contenido de páginas, rastrear actividad ni transmitir datos.',
+    hThirdParty: 'Servicios de Terceros',
+    pThirdParty: 'StylePatch <strong>no</strong> se conecta a servidores de terceros, APIs ni servicios de análisis.',
+    hChanges: 'Cambios en Esta Política',
+    pChanges: 'Cualquier cambio en esta política de privacidad se reflejará en esta página con la fecha actualizada.',
+    hContact: 'Contacto',
+    pContact: 'Si tiene preguntas sobre esta política de privacidad, por favor abra un issue en <a href="https://github.com/annmax1983/StylePatch">GitHub</a>.',
+    footer: 'StylePatch &copy; 2026. Su privacidad es nuestro principio de diseño.'
   },
   fr: {
-    title: '🔒 Politique de Confidentialité', updated: 'Dernière mise à jour : juillet 2026',
-    highlight: '<strong>Résumé :</strong> FontFixer ne collecte, ne transmet ni ne stocke aucune donnée personnelle. Toute la configuration reste dans votre navigateur.',
-    h1: 'Collecte de Données', p1: 'FontFixer ne collecte <strong>aucune</strong> donnée personnelle :', l1: ['Historique de navigation ou URLs visitées', 'Texte, images ou contenu des pages', 'Cookies ou identifiants de suivi', 'Analyses d\'utilisation ou télémétrie'],
-    h2: 'Permissions', p2: 'FontFixer ne demande que des permissions minimales :', l2: ['<strong>storage</strong> — Enregistre vos préférences de police localement.', '<strong>scripting</strong> — Injecte du CSS pour changer les polices. Ne lit pas le contenu des pages.', '<strong>activeTab</strong> — N\'accède à l\'onglet actuel que lorsque vous cliquez sur Appliquer.'], p2note: 'Aucune permission hôte <code>&lt;all_urls&gt;</code>.',
-    h3: 'Stockage', p3: 'Tous les paramètres sont stockés localement via <code>chrome.storage.local</code>.',
-    h4: 'Services Tiers', p4: 'FontFixer ne se connecte à aucun serveur tiers, API ou service d\'analyse.',
-    h5: 'Polices Open Source', p5: 'Les polices intégrées (Noto Sans, Source Han Sans, Arial) sont open source ou des polices système avec licence commerciale.',
-    h6: 'Contact', p6: 'Pour toute question, ouvrez un issue sur <a href="https://github.com/annmax1983/FontFixer">GitHub</a>.',
-    rights: 'Tous droits réservés.', gh: 'Dépôt GitHub'
+    title: '🔒 Politique de Confidentialité — StylePatch',
+    updated: 'Dernière mise à jour : juillet 2026',
+    highlight: '<strong>StylePatch ne collecte, ne stocke, ne transmet ni ne partage de données personnelles.</strong><br>Toutes les opérations sont effectuées localement dans votre navigateur. Aucune donnée ne quitte votre appareil.',
+    hCollection: 'Collecte de Données',
+    pCollection: 'StylePatch ne collecte <strong>aucune</strong> des données suivantes :',
+    listCollection: ['Informations d\'identification personnelle', 'Historique de navigation ou URLs visitées', 'Analyses d\'utilisation ou télémétrie', 'Cookies ou identifiants de suivi', 'Données de formulaire, mots de passe ou identifiants'],
+    hStorage: 'Stockage des Données',
+    pStorage: 'StylePatch stocke les données suivantes <strong>localement dans votre navigateur</strong> via l\'API Chrome Storage :',
+    listStorage: ['<strong>Paramètres de style par site</strong> — couleur d\'arrière-plan, couleur du texte, taille de police que vous choisissez pour chaque site web', '<strong>Préférences globales</strong> — état activé/désactivé de l\'extension, liste des sites exclus'],
+    pStorageNote: 'Ces données ne quittent jamais votre navigateur et sont automatiquement supprimées lorsque vous désinstallez l\'extension.',
+    hPermissions: 'Permissions',
+    listPermissions: ['<strong>storage</strong> — Requis pour enregistrer vos paramètres de style localement', '<strong>scripting</strong> — Requis pour injecter des styles CSS personnalisés dans les pages web', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Requis pour appliquer des styles CSS sur tout site web que vous visitez. StylePatch n\'injecte du CSS que lorsque vous l\'activez explicitement pour un site.'],
+    pPermissions: 'StylePatch n\'utilise <strong>pas</strong> ces permissions pour lire le contenu des pages, suivre les activités ou transmettre des données.',
+    hThirdParty: 'Services Tiers',
+    pThirdParty: 'StylePatch ne se connecte <strong>pas</strong> à des serveurs tiers, des API ou des services d\'analyse.',
+    hChanges: 'Modifications de Cette Politique',
+    pChanges: 'Toute modification de cette politique de confidentialité sera reflétée sur cette page avec une date mise à jour.',
+    hContact: 'Contact',
+    pContact: 'Si vous avez des questions concernant cette politique de confidentialité, veuillez ouvrir une issue sur <a href="https://github.com/annmax1983/StylePatch">GitHub</a>.',
+    footer: 'StylePatch &copy; 2026. Votre vie privée est notre principe de conception.'
   }
 };
 
 function detectLang() {
-  const raw = (navigator.language || 'en');
-  const map = { 'zh-TW': 'zh-CN', 'zh-Hans': 'zh-CN' };
-  const mapped = map[raw] || raw;
-  const base = mapped.split('-')[0].toLowerCase();
-  if (I18N[mapped]) return mapped;
-  return I18N[base] ? base : 'en';
+  const code = (navigator.language || 'en').split('-')[0].toLowerCase();
+  return I18N[code] ? code : 'en';
 }
 
 function apply(t) {
-  document.title = t.title.replace(/🔒\s*/, '') + ' - FontFixer';
-  document.getElementById('title').textContent = t.title;
+  document.title = t.title.replace(/🔒\s*/, '');
+  document.getElementById('pageTitle').textContent = t.title;
   document.getElementById('updated').textContent = t.updated;
   document.getElementById('highlight').innerHTML = t.highlight;
-  document.getElementById('h1').textContent = t.h1;
-  document.getElementById('p1').innerHTML = t.p1;
-  document.getElementById('l1').innerHTML = t.l1.map(i => '<li>' + i + '</li>').join('');
-  document.getElementById('h2').textContent = t.h2;
-  document.getElementById('p2').innerHTML = t.p2;
-  document.getElementById('l2').innerHTML = t.l2.map(i => '<li>' + i + '</li>').join('');
-  document.getElementById('p2note').innerHTML = t.p2note;
-  document.getElementById('h3').textContent = t.h3;
-  document.getElementById('p3').innerHTML = t.p3;
-  document.getElementById('h4').textContent = t.h4;
-  document.getElementById('p4').innerHTML = t.p4;
-  document.getElementById('h5').textContent = t.h5;
-  document.getElementById('p5').innerHTML = t.p5;
-  document.getElementById('h6').textContent = t.h6;
-  document.getElementById('p6').innerHTML = t.p6;
-  document.getElementById('rights').textContent = t.rights;
-  document.getElementById('gh').textContent = t.gh;
+  document.getElementById('hCollection').textContent = t.hCollection;
+  document.getElementById('pCollection').innerHTML = t.pCollection;
+  document.getElementById('listCollection').innerHTML = t.listCollection.map(i => '<li>' + i + '</li>').join('');
+  document.getElementById('hStorage').textContent = t.hStorage;
+  document.getElementById('pStorage').innerHTML = t.pStorage;
+  document.getElementById('listStorage').innerHTML = t.listStorage.map(i => '<li>' + i + '</li>').join('');
+  document.getElementById('pStorageNote').textContent = t.pStorageNote;
+  document.getElementById('hPermissions').textContent = t.hPermissions;
+  document.getElementById('listPermissions').innerHTML = t.listPermissions.map(i => '<li>' + i + '</li>').join('');
+  document.getElementById('pPermissions').innerHTML = t.pPermissions;
+  document.getElementById('hThirdParty').textContent = t.hThirdParty;
+  document.getElementById('pThirdParty').innerHTML = t.pThirdParty;
+  document.getElementById('hChanges').textContent = t.hChanges;
+  document.getElementById('pChanges').textContent = t.pChanges;
+  document.getElementById('hContact').textContent = t.hContact;
+  document.getElementById('pContact').innerHTML = t.pContact;
+  document.getElementById('footer').innerHTML = t.footer;
   document.documentElement.lang = detectLang();
 }
 

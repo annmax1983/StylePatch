@@ -1,39 +1,48 @@
-# FontFixer
-
+# StylePatch
 [English](../README.md) | [中文](README_zh.md) | [Español](README_es.md) | [Deutsch](README_de.md) | [日本語](README_ja.md) | Français
 
-Une extension légère qui optimise les polices web pour une lecture confortable. Changez police, taille et couleurs en un clic.
+Une extension légère pour personnaliser instantanément la couleur de fond, la couleur du texte et la taille de police de toute page web.
 
-> Chromium-based · Manifest V3 · Minimal Permissions · Fully Local
-
----
-
-## Pourquoi FontFixer ?
-## Aperçu
-
-<p align="center">
-  <img src="../icons/icon128.png" alt="FontFixer Icon" width="80">
-</p>
-
-
-De nombreux sites web utilisent des petites polices, floues ou difficiles à lire. FontFixer vous permet de remplacer les polices par votre typographie préférée.
+> Basé sur Chromium · Manifest V3 · Aucun suivi · Paramètres par site
 
 ---
 
-## ライセンス
+## Fonctionnalités
+
+| Fonctionnalité | Description |
+|----------------|-------------|
+| 🎨 **Couleur de fond et texte** | Sélecteur de couleur natif ou saisie directe du code HEX |
+| 🔠 **Taille de police** | Réglage de 80% à 150% avec curseur |
+| 👁️ **Thèmes prédéfinis** | Clair, Chaud, Vert, Sombre — un clic pour appliquer |
+| 🔄 **Interrupteur global** | Activer/désactiver globalement sans perdre les paramètres |
+| 🚫 **Liste noire par site** | Exclure des sites spécifiques |
+| 💾 **Paramètres par site** | Sauvegarder différents styles, restauration automatique |
+| ⚡ **Aperçu en temps réel** | Modifications instantanées sans rechargement |
+
+---
+
+## Installation
+
+1. Ouvrir `chrome://extensions/`
+2. Activer le **Mode développeur**
+3. Cliquer sur **Charger l'extension non empaquetée**
+4. Cliquer sur l'icône StylePatch
+
+---
+
+## Confidentialité
+
+- Aucun suivi, aucune analytique, aucune transmission de données
+- Toutes les données restent locales dans le navigateur
+
+---
 
 ## Licence
 
-Copyright © 2026 FontFixer. Tous droits réservés.
+Copyright © 2026 StylePatch. Tous droits réservés.
 
 ---
 
-## ❤️ Soutien
+## ❤️ Soutenir
 
-Si FontFixer vous est utile, envisagez de soutenir le projet !
-
-**[👉 Soutenir FontFixer](https://annmax1983.github.io/FontFixer/)**
-
----
-
-> **Note :** Ce dépôt est uniquement destiné à la **présentation du projet**. Le code source complet ne sera **pas** publié ici.
+**[👉 Soutenir ici](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**

@@ -1,39 +1,49 @@
-# FontFixer
-
+# StylePatch
 [English](../README.md) | [中文](README_zh.md) | Español | [Deutsch](README_de.md) | [日本語](README_ja.md) | [Français](README_fr.md)
 
-Una extensión ligera del navegador que optimiza las fuentes web para una lectura cómoda. Cambia fuente, tamaño y colores con un clic.
+Una extensión ligera para personalizar al instante el color de fondo, color de texto y tamaño de fuente de cualquier página web.
 
-> Chromium-based · Manifest V3 · Minimal Permissions · Fully Local
-
----
-
-## ¿Por qué FontFixer?
-## Vista previa
-
-<p align="center">
-  <img src="../icons/icon128.png" alt="FontFixer Icon" width="80">
-</p>
-
-
-Muchos sitios web usan fuentes pequeñas, borrosas o difíciles de leer. FontFixer te permite sobrescribir las fuentes con tu tipografía preferida.
+> Basado en Chromium · Manifest V3 · Sin rastreo · Configuración por sitio
 
 ---
 
-## ライセンス
+## Características
+
+| Característica | Descripción |
+|----------------|-------------|
+| 🎨 **Color de fondo y texto** | Selector de color nativo o entrada directa de código HEX |
+| 🔠 **Escala de tamaño** | Ajuste del 80% al 150% con deslizador |
+| 👁️ **Temas predefinidos** | Claro, Cálido, Verde, Oscuro — un clic para aplicar |
+| 🔄 **Interruptor global** | Activar/desactivar globalmente sin perder configuración |
+| 🚫 **Lista negra por sitio** | Excluir sitios específicos del estilizado |
+| 💾 **Configuración por sitio** | Guardar estilos diferentes, restaurar automáticamente |
+| ⚡ **Vista previa en tiempo real** | Cambios instantáneos sin recargar |
+| 🔒 **Permisos mínimos** | Solo `storage` + `host_permissions` |
+
+---
+
+## Instalación
+
+1. Abrir `chrome://extensions/`
+2. Activar **Modo desarrollador**
+3. Clic en **Cargar extensión desempaquetada**
+4. Clic en el icono de StylePatch
+
+---
+
+## Privacidad
+
+- Sin rastreo, sin analíticas, sin transmisión de datos externos
+- Todos los datos se guardan localmente en el navegador
+
+---
 
 ## Licencia
 
-Copyright © 2026 FontFixer. Todos los derechos reservados.
+Copyright © 2026 StylePatch. Todos los derechos reservados.
 
 ---
 
-## ❤️ Apoyo
+## ❤️ Apoyar
 
-¡Si FontFixer te resulta útil, considera apoyar el proyecto!
-
-**[👉 Apoyar FontFixer](https://annmax1983.github.io/FontFixer/)**
-
----
-
-> **Nota:** Este repositorio es solo para **demostración del proyecto**. El código fuente completo **no** se publicará aquí.
+**[👉 Apoyar aquí](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
