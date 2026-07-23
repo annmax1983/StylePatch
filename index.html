@@ -131,6 +131,13 @@
       color: #888;
       margin-bottom: 16px;
     }
+    .cta .disclaimer {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 12px;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
 
     .kofi-btn {
       display: inline-flex;
@@ -163,8 +170,8 @@
       justify-content: center;
     }
     .kofi-btn .btn-icon img {
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 26px;
     }
 
     /* ── Footer ── */
@@ -224,10 +231,11 @@
       <p data-i18n="ctaHint"></p>
       <a class="kofi-btn" href="https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch" target="_blank" rel="noopener">
         <span class="btn-icon" id="kofiIcon">
-          <img src="./assets/coffee.png" alt="Ko-fi" width="28" height="28">
+          <img src="./assets/coffee.png" alt="Ko-fi" width="32" height="23">
         </span>
         <span data-i18n="btnText"></span>
       </a>
+      <p class="disclaimer" data-i18n="disclaimer"></p>
     </div>
 
     <!-- Footer -->
@@ -262,7 +270,8 @@
           '当然，如果你愿意请我喝一杯咖啡 <span class="heart">☕</span>，我会非常开心——这会让我更有动力继续打磨它。'
         ],
         ctaHint: '点击下方按钮，跳转到 Ko-fi 支持页面',
-        btnText: 'Buy Me a Coffee'
+        btnText: 'Buy Me a Coffee',
+        disclaimer: 'Ko-fi 仅为自愿赞助，不会影响任何功能使用。赞助与扩展功能无任何绑定，仅为用户自发支持。'
       },
       en: {
         tagline: 'Custom styles · Dark mode · Better readability · Lightweight & private',
@@ -282,7 +291,8 @@
           'Of course, if you\'d like to <span class="heart">☕</span> buy me a coffee, it would truly make my day — and keep me motivated to make StylePatch even better.'
         ],
         ctaHint: 'Click the button below to visit the Ko-fi support page',
-        btnText: 'Buy Me a Coffee'
+        btnText: 'Buy Me a Coffee',
+        disclaimer: 'Ko-fi donations are purely voluntary and do not affect any features. Sponsorship is not tied to functionality — it is simply a way to show your support.'
       },
       ja: {
         tagline: 'ウォームトーン · ダークモード · Webスタイルのカスタマイズ · 軽量＆プライベート',
@@ -302,7 +312,8 @@
           'もしよろしければ、コーヒーを <span class="heart">☕</span> 一杯おごっていただけると、とても嬉しいです。より良いツールを作る励みになります。'
         ],
         ctaHint: '下のボタンをクリックすると Ko-fi サポートページに移動します',
-        btnText: 'Buy Me a Coffee'
+        btnText: 'Buy Me a Coffee',
+        disclaimer: 'Ko-fi は完全に任意の寄付であり、機能には一切影響しません。支援は機能と結びついておらず、ユーザーの自主的なサポートです。'
       },
       de: {
         tagline: 'Warmton · Dunkelmodus · Individuelle Webstile · Leicht & privat',
@@ -322,7 +333,8 @@
           'Wenn Sie mir gerne einen <span class="heart">☕</span> Kaffee ausgeben möchten, würde mich das sehr freuen — und mich motivieren, StylePatch noch besser zu machen.'
         ],
         ctaHint: 'Klicken Sie auf die Schaltfläche unten, um zur Ko-fi-Support-Seite zu gelangen',
-        btnText: 'Buy Me a Coffee'
+        btnText: 'Buy Me a Coffee',
+        disclaimer: 'Ko-fi-Spenden sind rein freiwillig und beeinflussen keine Funktionen. Die Unterstützung ist nicht an Funktionen gebunden — es ist einfach eine Möglichkeit, Ihre Wertschätzung zu zeigen.'
       },
       es: {
         tagline: 'Tono Cálido · Modo oscuro · Estilos web personalizados · Ligero y privado',
@@ -342,7 +354,8 @@
           'Por supuesto, si quieres invitarme a un <span class="heart">☕</span> café, me haría muy feliz — y me motivaría a seguir mejorando StylePatch.'
         ],
         ctaHint: 'Haz clic en el botón de abajo para visitar la página de soporte de Ko-fi',
-        btnText: 'Buy Me a Coffee'
+        btnText: 'Buy Me a Coffee',
+        disclaimer: 'Las donaciones en Ko-fi son completamente voluntarias y no afectan a ninguna función. El patrocinio no está vinculado a funcionalidades — es simplemente una forma de mostrar tu apoyo.'
       },
       fr: {
         tagline: 'Ton Chaud · Mode sombre · Styles web personnalisés · Léger et privé',
@@ -362,7 +375,8 @@
           'Bien sûr, si vous souhaitez m\'offrir un <span class="heart">☕</span> café, cela me ferait très plaisir — et me motiverait à améliorer StylePatch encore davantage.'
         ],
         ctaHint: 'Cliquez sur le bouton ci-dessous pour accéder à la page de soutien Ko-fi',
-        btnText: 'Buy Me a Coffee'
+        btnText: 'Buy Me a Coffee',
+        disclaimer: 'Les dons Ko-fi sont purement volontaires et n\'affectent aucune fonctionnalité. Le parrainage n\'est pas lié aux fonctionnalités — c\'est simplement une façon de montrer votre soutien.'
       }
     };
 
