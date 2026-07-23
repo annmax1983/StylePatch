@@ -4,7 +4,7 @@
 
 A lightweight browser extension that lets you customize any webpage's background color, text color, and font size instantly.
 
-> Chromium-based · Manifest V3 · Zero tracking · Per-site settings
+> Chromium-based · Manifest V3 · No tracking · Per-site settings
 
 ---
 
