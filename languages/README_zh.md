@@ -19,7 +19,7 @@
 | 💾 **按站点保存** | 不同网站保存不同样式，再次访问自动恢复 |
 | ⚡ **实时预览** | 所有修改即时生效，无需刷新页面 |
 | 🔒 **最小权限** | 仅需 `storage` + `host_permissions` |
-| 🏗️ **Manifest V3** | 使用 `chrome.scripting.insertCSS`，零内容脚本开销 |
+| 🏗️ **Manifest V3** | 基于 Manifest V3 Service Worker 架构 |
 
 ---
 

@@ -19,7 +19,7 @@ Eine leichtgewichtige Browser-Erweiterung zur sofortigen Anpassung von Hintergru
 | 💾 **Einstellungen pro Website** | Verschiedene Styles speichern, beim Besuch automatisch wiederherstellen |
 | ⚡ **Echtzeit-Vorschau** | Alle Änderungen sofort sichtbar, kein Neuladen nötig |
 | 🔒 **Minimale Berechtigungen** | Nur `storage` + `host_permissions` |
-| 🏗️ **Manifest V3** | Verwendet `chrome.scripting.insertCSS` |
+| 🏗️ **Manifest V3** | Aufgebaut auf Manifest V3 Service Worker-Architektur |
 
 ---
 

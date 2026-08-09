@@ -19,7 +19,7 @@
 | 💾 **サイトごと設定** | サイトごとに異なるスタイルを保存、再訪問時に自動復元 |
 | ⚡ **リアルタイムプレビュー** | すべての変更が即座に適用、ページリロード不要 |
 | 🔒 **最小権限** | `storage` + `host_permissions` のみ |
-| 🏗️ **Manifest V3** | `chrome.scripting.insertCSS`使用、コンテンツスクリプトゼロ |
+| 🏗️ **Manifest V3** | Manifest V3 Service Worker アーキテクチャ |
 
 ---
 
