@@ -12,6 +12,8 @@ A lightweight browser extension that lets you customize any webpage's background
 
 ## Feature List
 
+### 🆓 Free Features
+
 | Feature | Description |
 |---------|-------------|
 | 🎨 **Background, Text & Link Color** | Pick any color via native color picker or type hex code directly; link color auto-adjusts for readability |
@@ -19,12 +21,24 @@ A lightweight browser extension that lets you customize any webpage's background
 | 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark — one click to apply |
 | 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
 | 🚫 **Site Blacklist** | Exclude specific websites from styling |
-| 💾 **Per-Site Settings** | Save different styles for different websites, auto-restore on revisit |
+| 💾 **Per-Site Settings** | Save different styles for different websites, auto-restore on revisit (up to 5 sites free) |
 | ⚡ **Real-Time Preview** | All changes apply instantly as you drag, no page reload needed |
 | 🌍 **Multi-Language UI** | Supports English, Chinese, Spanish, German, Japanese, French |
 | 🔒 **Minimal Permissions** | Only `storage` + `host_permissions` — no unnecessary access |
 | 🏗️ **Manifest V3** | Built on Manifest V3 service worker architecture |
-| ⭐ **Import & Export Configurations** | Full backup of all site styles, cross-device migration. Available via Config Manager inside the extension. |
+| 🔄 **One-Click Reset** | Restore any site's original appearance instantly |
+
+### ⭐ Premium Features (License Required)
+
+| Feature | Description |
+|---------|-------------|
+| ♾️ **Unlimited Configs** | Save styles for unlimited websites (free tier: 5 sites max) |
+| 📤 **Export All Configurations** | One-click download of all your site styles as a structured JSON backup file |
+| 📥 **Import Configurations** | Restore all styles from a backup file instantly — perfect for cross-device migration |
+| 💾 **Backup & Restore Workflow** | Export before system reinstall, import on a new device — all settings preserved |
+| 🔄 **Device Migration** | Set up StylePatch on a new computer in seconds, every site's custom look restored |
+
+> See [VKT Pricing](https://annmax1983.com/pricing.html) for license options. Single tool license from $2.99/mo or $9.99 lifetime.
 
 ---
 

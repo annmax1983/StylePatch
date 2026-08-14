@@ -9,6 +9,8 @@ Une extension légère pour personnaliser instantanément la couleur de fond, la
 
 ## Fonctionnalités
 
+### 🆓 Fonctions gratuites
+
 | Fonctionnalité | Description |
 |----------------|-------------|
 | 🎨 **Couleur de fond et texte** | Sélecteur de couleur natif ou saisie directe du code HEX |
@@ -18,6 +20,21 @@ Une extension légère pour personnaliser instantanément la couleur de fond, la
 | 🚫 **Liste noire par site** | Exclure des sites spécifiques |
 | 💾 **Paramètres par site** | Sauvegarder différents styles, restauration automatique |
 | ⚡ **Aperçu en temps réel** | Modifications instantanées sans rechargement |
+| 🌍 **Interface multilingue** | Anglais, chinois, espagnol, allemand, japonais, français |
+| 🔒 **Permissions minimales** | Seulement `storage` + `host_permissions` |
+| 🏗️ **Manifest V3** | Architecture Service Worker de Manifest V3 |
+| 🔄 **Réinitialisation en un clic** | Restaurer l'apparence originale de tout site |
+
+### ⭐ Fonctions premium (licence requise)
+
+| Fonctionnalité | Description |
+|----------------|-------------|
+| 📤 **Exporter toutes les configurations** | Téléchargement de tous les styles comme fichier JSON de sauvegarde |
+| 📥 **Importer les configurations** | Restaurer tous les styles depuis un fichier de sauvegarde |
+| 💾 **Sauvegarde et restauration** | Exporter avant réinstallation, importer sur un nouvel appareil |
+| 🔄 **Migration d'appareil** | Configurer StylePatch sur un nouvel ordinateur en secondes |
+
+> Voir [VKT Tarifs](https://annmax1983.com/pricing.html) pour les options de licence.
 
 ---
 

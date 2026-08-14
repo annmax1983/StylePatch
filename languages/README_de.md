@@ -9,6 +9,8 @@ Eine leichtgewichtige Browser-Erweiterung zur sofortigen Anpassung von Hintergru
 
 ## Funktionen
 
+### 🆓 Kostenlose Funktionen
+
 | Funktion | Beschreibung |
 |----------|-------------|
 | 🎨 **Hintergrund- & Textfarbe** | Farbauswahl per Native Picker oder HEX-Code Eingabe |
@@ -18,8 +20,21 @@ Eine leichtgewichtige Browser-Erweiterung zur sofortigen Anpassung von Hintergru
 | 🚫 **Website-Blacklist** | Bestimmte Websites vom Styling ausschließen |
 | 💾 **Einstellungen pro Website** | Verschiedene Styles speichern, beim Besuch automatisch wiederherstellen |
 | ⚡ **Echtzeit-Vorschau** | Alle Änderungen sofort sichtbar, kein Neuladen nötig |
+| 🌍 **Mehrsprachige Oberfläche** | Englisch, Chinesisch, Spanisch, Deutsch, Japanisch, Französisch |
 | 🔒 **Minimale Berechtigungen** | Nur `storage` + `host_permissions` |
 | 🏗️ **Manifest V3** | Aufgebaut auf Manifest V3 Service Worker-Architektur |
+| 🔄 **Ein-Klick-Reset** | Ursprüngliches Aussehen jeder Website sofort wiederherstellen |
+
+### ⭐ Premium-Funktionen (Lizenz erforderlich)
+
+| Funktion | Beschreibung |
+|----------|-------------|
+| 📤 **Alle Konfigurationen exportieren** | Ein-Klick-Download aller Website-Styles als JSON-Backup |
+| 📥 **Konfigurationen importieren** | Alle Styles aus einer Backup-Datei sofort wiederherstellen |
+| 💾 **Backup & Restore** | Vor Systemneuinstallation exportieren, auf neuem Gerät importieren |
+| 🔄 **Gerätemigration** | StylePatch auf neuem Computer in Sekunden einrichten |
+
+> Siehe [VKT Preise](https://annmax1983.com/pricing.html) für Lizenzoptionen.
 
 ---
 

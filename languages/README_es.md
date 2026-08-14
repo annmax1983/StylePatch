@@ -9,6 +9,8 @@ Una extensión ligera para personalizar al instante el color de fondo, color de 
 
 ## Características
 
+### 🆓 Funciones gratuitas
+
 | Característica | Descripción |
 |----------------|-------------|
 | 🎨 **Color de fondo y texto** | Selector de color nativo o entrada directa de código HEX |
@@ -18,7 +20,21 @@ Una extensión ligera para personalizar al instante el color de fondo, color de 
 | 🚫 **Lista negra por sitio** | Excluir sitios específicos del estilizado |
 | 💾 **Configuración por sitio** | Guardar estilos diferentes, restaurar automáticamente |
 | ⚡ **Vista previa en tiempo real** | Cambios instantáneos sin recargar |
+| 🌍 **Interfaz multilingüe** | Inglés, chino, español, alemán, japonés, francés |
 | 🔒 **Permisos mínimos** | Solo `storage` + `host_permissions` |
+| 🏗️ **Manifest V3** | Arquitectura Service Worker de Manifest V3 |
+| 🔄 **Restablecer con un clic** | Restaurar el aspecto original de cualquier sitio |
+
+### ⭐ Funciones premium (se requiere licencia)
+
+| Característica | Descripción |
+|----------------|-------------|
+| 📤 **Exportar todas las configuraciones** | Descarga de todos los estilos como archivo JSON de respaldo |
+| 📥 **Importar configuraciones** | Restaurar todos los estilos desde un archivo de respaldo |
+| 💾 **Copia de seguridad y restauración** | Exportar antes de reinstalar, importar en un nuevo dispositivo |
+| 🔄 **Migración de dispositivo** | Configurar StylePatch en un nuevo ordenador en segundos |
+
+> Consulta [VKT Precios](https://annmax1983.com/pricing.html) para opciones de licencia.
 
 ---
 
