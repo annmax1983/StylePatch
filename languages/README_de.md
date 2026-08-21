@@ -77,6 +77,13 @@ Eine leichtgewichtige Browser-Erweiterung zur sofortigen Anpassung von Hintergru
 
 ---
 
+---
+
+## Hinweis zum Quellcode
+
+> ⚠️ **Dieses Repository veröffentlicht keinen Quellcode.** Es enthält nur Nutzerdokumentation, Versionshinweise und Support-Ressourcen. Die Erweiterung wird ausschließlich über den Chrome Web Store vertrieben. Es werden keine Offline-Installationspakete oder Quellcodes für Endbenutzer bereitgestellt.
+
+
 ## Lizenz
 
 Copyright © 2026 StylePatch. Alle Rechte vorbehalten.
