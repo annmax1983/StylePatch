@@ -80,6 +80,7 @@
 
   <h2 id="hThirdParty"></h2>
   <p id="pThirdParty"></p>
+  <p id="pWebFonts"></p>
 
   <h2 id="hChanges"></h2>
   <p id="pChanges"></p>
@@ -94,8 +95,8 @@
 const I18N = {
   en: {
     title: '🔒 Privacy Policy — StylePatch',
-    updated: 'Last updated: July 2026',
-    highlight: '<strong>StylePatch does not collect, store, transmit, or share any personal data.</strong><br>All operations are performed locally in your browser. No data leaves your device.',
+    updated: 'Last updated: August 2026',
+    highlight: '<strong>StylePatch does not collect, store, transmit, or share any personal data.</strong><br>All style customization is performed locally in your browser. The only network connections are described under <em>Third-Party Services</em> below.',
     hCollection: 'Data Collection',
     pCollection: 'StylePatch does <strong>not</strong> collect any of the following:',
     listCollection: ['Personal identification information', 'Browsing history or URLs visited', 'Usage analytics or telemetry', 'Cookies or tracking identifiers', 'Form data, passwords, or credentials'],
@@ -107,7 +108,8 @@ const I18N = {
     listPermissions: ['<strong>storage</strong> — Required to save your style settings locally', '<strong>scripting</strong> — Required to inject custom CSS styles into web pages', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Required to apply custom CSS styles to any website you visit. StylePatch only injects CSS when you explicitly enable it for a site.'],
     pPermissions: 'StylePatch does <strong>not</strong> use these permissions to read page content, track activity, or transmit data.',
     hThirdParty: 'Third-Party Services',
-    pThirdParty: '<strong>License Verification (Premium Features):</strong> If you activate a premium license, StylePatch connects to a license verification server to validate your key with <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> (payment processor). The request includes: license key, device fingerprint ID, plugin identifier, and browser metadata (version, language, timezone). Creem processes this data per <a href="https://creem.io/privacy" target="_blank" rel="noopener">their privacy policy</a>. StylePatch does <strong>not</strong> connect to any other third-party servers, analytics, or tracking services.',
+    pThirdParty: '<strong>License Verification (Premium Features):</strong> If you activate a premium license, StylePatch sends a verification request to the author\'s license server at <code>api.annmax1983.com</code>. The request includes: license key, device fingerprint ID, plugin identifier, and browser metadata (version, language, timezone). That server processes payments and licensing through <a href="https://creem.io" target="_blank" rel="noopener">Creem</a>; your browser does not connect to Creem or any other third party directly.',
+    pWebFonts: '<strong>Optional Web Fonts:</strong> If you choose a Google Font in the popup, StylePatch downloads the font file itself from <code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>. These downloads contain no information about you or the pages you visit, and happen only while a web font is selected.',
     hChanges: 'Changes to This Policy',
     pChanges: 'Any changes to this privacy policy will be reflected on this page with an updated date.',
     hContact: 'Contact',
@@ -116,8 +118,8 @@ const I18N = {
   },
   zh: {
     title: '🔒 隐私条款 — StylePatch',
-    updated: '最后更新：2026 年 7 月',
-    highlight: '<strong>StylePatch 不收集、存储、传输或共享任何个人数据。</strong><br>所有操作均在您的浏览器本地完成，数据不会离开您的设备。',
+    updated: '最后更新：2026 年 8 月',
+    highlight: '<strong>StylePatch 不收集、存储、传输或共享任何个人数据。</strong><br>所有样式定制均在您的浏览器本地完成。唯一的网络连接已在下方「第三方服务」中说明。',
     hCollection: '数据收集',
     pCollection: 'StylePatch <strong>不会</strong>收集以下任何信息：',
     listCollection: ['个人身份信息', '浏览历史或访问的网址', '使用分析或遥测数据', 'Cookie 或跟踪标识符', '表单数据、密码或凭据'],
@@ -129,7 +131,8 @@ const I18N = {
     listPermissions: ['<strong>storage</strong> — 用于在本地保存您的样式设置', '<strong>scripting</strong> — 用于向网页注入自定义 CSS 样式', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — 用于向您访问的任意网站应用 CSS 样式。StylePatch 仅在您主动启用时才注入 CSS。'],
     pPermissions: 'StylePatch <strong>不会</strong>使用这些权限读取页面内容、追踪活动或传输数据。',
     hThirdParty: '第三方服务',
-    pThirdParty: '<strong>许可证验证（高级功能）：</strong>如果您激活了高级版许可证，StylePatch 将连接到许可证验证服务器，通过 <a href="https://creem.io" target="_blank" rel="noopener">Creem</a>（支付处理商）验证您的密钥。请求包含：许可证密钥、设备指纹 ID、插件标识和浏览器元数据（版本、语言、时区）。Creem 按照<a href="https://creem.io/privacy" target="_blank" rel="noopener">其隐私政策</a>处理这些数据。StylePatch <strong>不会</strong>连接任何其他第三方服务器、分析或追踪服务。',
+    pThirdParty: '<strong>许可证验证（高级功能）：</strong>如果您激活了高级版许可证，StylePatch 会向作者的许可服务器 <code>api.annmax1983.com</code> 发送验证请求。请求包含：许可证密钥、设备指纹 ID、插件标识和浏览器元数据（版本、语言、时区）。该服务器通过 <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> 处理支付与授权；您的浏览器不会直连 Creem 或其他任何第三方。',
+    pWebFonts: '<strong>可选在线字体：</strong>当您在弹窗中选择 Google 字体时，StylePatch 会从 <code>fonts.googleapis.com</code> 与 <code>fonts.gstatic.com</code> 下载字体文件本身。这些下载不包含关于您或您所访问网页的任何信息，且仅在选择了在线字体时发生。',
     hChanges: '条款变更',
     pChanges: '本隐私条款的任何变更将在本页面上更新并注明日期。',
     hContact: '联系方式',
@@ -138,8 +141,8 @@ const I18N = {
   },
   ja: {
     title: '🔒 プライバシーポリシー — StylePatch',
-    updated: '最終更新：2026年7月',
-    highlight: '<strong>StylePatch は個人データを収集、保存、送信、共有しません。</strong><br>すべての操作はブラウザ内でローカルに実行されます。データがデバイスから外に出ることはありません。',
+    updated: '最終更新：2026年8月',
+    highlight: '<strong>StylePatch は個人データを収集、保存、送信、共有しません。</strong><br>スタイルのカスタマイズはすべてブラウザ内でローカルに実行されます。ネットワーク接続は下記「サードパーティサービス」に記載のものだけです。',
     hCollection: 'データの収集',
     pCollection: 'StylePatch は以下のデータを<strong>収集しません</strong>：',
     listCollection: ['個人識別情報', '閲覧履歴またはアクセスしたURL', '使用分析またはテレメトリ', 'Cookieまたは追跡識別子', 'フォームデータ、パスワード、認証情報'],
@@ -151,7 +154,8 @@ const I18N = {
     listPermissions: ['<strong>storage</strong> — スタイル設定をローカルに保存するために必要', '<strong>scripting</strong> — ウェブページにカスタムCSSスタイルを注入するために必要', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — ユーザーが訪問する任意のウェブサイトにCSSスタイルを適用するために必要。StylePatch はユーザーが明示的に有効にしたサイトにのみCSSを注入します。'],
     pPermissions: 'StylePatch はこれらの権限を使用してページコンテンツの読み取り、活動の追跡、データの送信は<strong>行いません</strong>。',
     hThirdParty: 'サードパーティサービス',
-    pThirdParty: '<strong>ライセンス検証（プレミアム機能）：</strong>プレミアムライセンスを有効化すると、StylePatch はライセンス検証サーバーに接続し、<a href="https://creem.io" target="_blank" rel="noopener">Creem</a>（決済処理業者）を通じてキーを検証します。リクエストには：ライセンスキー、デバイスフィンガープリントID、プラグイン識別子、ブラウザメタデータ（バージョン、言語、タイムゾーン）が含まれます。Creem は<a href="https://creem.io/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に従いデータを処理します。StylePatch は他のサードパーティサーバー、分析、追跡サービスには<strong>接続しません</strong>。',
+    pThirdParty: '<strong>ライセンス検証（プレミアム機能）：</strong>プレミアムライセンスを有効化すると、StylePatch は作者のライセンスサーバー <code>api.annmax1983.com</code> へ検証リクエストを送信します。リクエストには：ライセンスキー、デバイスフィンガープリントID、プラグイン識別子、ブラウザメタデータ（バージョン、言語、タイムゾーン）が含まれます。同サーバーは <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> を通じて決済・ライセンス処理を行います。ブラウザが Creem やその他の第三者に直接接続することはありません。',
+    pWebFonts: '<strong>オプションの Web フォント：</strong>ポップアップで Google フォントを選択すると、StylePatch はフォントファイルそのものを <code>fonts.googleapis.com</code> と <code>fonts.gstatic.com</code> からダウンロードします。これらのダウンロードにはあなたや閲覧ページに関する情報は含まれず、Web フォント選択時のみ発生します。',
     hChanges: 'ポリシーの変更',
     pChanges: '本プライバシーポリシーの変更は、このページに更新日付とともに反映されます。',
     hContact: 'お問い合わせ',
@@ -160,8 +164,8 @@ const I18N = {
   },
   de: {
     title: '🔒 Datenschutzrichtlinie — StylePatch',
-    updated: 'Letzte Aktualisierung: Juli 2026',
-    highlight: '<strong>StylePatch erfasst, speichert, übermittelt oder teilt keine personenbezogenen Daten.</strong><br>Alle Vorgänge werden lokal in Ihrem Browser durchgeführt. Keine Daten verlassen Ihr Gerät.',
+    updated: 'Letzte Aktualisierung: August 2026',
+    highlight: '<strong>StylePatch erfasst, speichert, übermittelt oder teilt keine personenbezogenen Daten.</strong><br>Die gesamte Stil-Anpassung läuft lokal in Ihrem Browser. Die einzigen Netzwerkverbindungen sind unter <em>Dienste von Drittanbietern</em> beschrieben.',
     hCollection: 'Datenerfassung',
     pCollection: 'StylePatch erfasst <strong>keine</strong> der folgenden Daten:',
     listCollection: ['Persönliche Identifikationsinformationen', 'Browserverlauf oder besuchte URLs', 'Nutzungsanalysen oder Telemetrie', 'Cookies oder Tracking-Kennungen', 'Formulardaten, Passwörter oder Anmeldedaten'],
@@ -173,7 +177,8 @@ const I18N = {
     listPermissions: ['<strong>storage</strong> — Erforderlich, um Ihre Stileinstellungen lokal zu speichern', '<strong>scripting</strong> — Erforderlich, um benutzerdefinierte CSS-Styles in Webseiten einzufügen', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Erforderlich, um CSS-Styles auf jeder besuchten Website anzuwenden. StylePatch fügt nur CSS ein, wenn Sie es für eine Seite explizit aktivieren.'],
     pPermissions: 'StylePatch verwendet diese Berechtigungen <strong>nicht</strong>, um Seiteninhalte zu lesen, Aktivitäten zu verfolgen oder Daten zu übermitteln.',
     hThirdParty: 'Dienste von Drittanbietern',
-    pThirdParty: '<strong>Lizenzverifizierung (Premium-Funktionen):</strong> Wenn Sie eine Premium-Lizenz aktivieren, verbindet sich StylePatch mit einem Lizenzverifizierungsserver, um Ihren Schlüssel über <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> (Zahlungsabwickler) zu validieren. Die Anfrage enthält: Lizenzschlüssel, Geräte-Fingerprint-ID, Plugin-Kennung und Browser-Metadaten (Version, Sprache, Zeitzone). Creem verarbeitet diese Daten gemäß <a href="https://creem.io/privacy" target="_blank" rel="noopener">ihrer Datenschutzrichtlinie</a>. StylePatch verbindet sich <strong>nicht</strong> mit anderen Servern, Analysediensten oder Tracking-Diensten Dritter.',
+    pThirdParty: '<strong>Lizenzverifizierung (Premium-Funktionen):</strong> Wenn Sie eine Premium-Lizenz aktivieren, sendet StylePatch eine Verifizierungsanfrage an den Lizenzserver des Autors unter <code>api.annmax1983.com</code>. Die Anfrage enthält: Lizenzschlüssel, Geräte-Fingerprint-ID, Plugin-Kennung und Browser-Metadaten (Version, Sprache, Zeitzone). Dieser Server wickelt Zahlungen und Lizenzen über <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> ab; Ihr Browser verbindet sich nicht direkt mit Creem oder einem anderen Drittanbieter.',
+    pWebFonts: '<strong>Optionale Web-Schriftarten:</strong> Wenn Sie im Popup eine Google-Schriftart wählen, lädt StylePatch die Schriftdatei selbst von <code>fonts.googleapis.com</code> und <code>fonts.gstatic.com</code>. Diese Downloads enthalten keine Informationen über Sie oder die besuchten Seiten und erfolgen nur bei Auswahl einer Web-Schriftart.',
     hChanges: 'Änderungen dieser Richtlinie',
     pChanges: 'Änderungen dieser Datenschutzrichtlinie werden auf dieser Seite mit aktualisiertem Datum angezeigt.',
     hContact: 'Kontakt',
@@ -182,8 +187,8 @@ const I18N = {
   },
   es: {
     title: '🔒 Política de Privacidad — StylePatch',
-    updated: 'Última actualización: julio de 2026',
-    highlight: '<strong>StylePatch no recopila, almacena, transmite ni comparte datos personales.</strong><br>Todas las operaciones se realizan localmente en su navegador. Ningún dato sale de su dispositivo.',
+    updated: 'Última actualización: agosto de 2026',
+    highlight: '<strong>StylePatch no recopila, almacena, transmite ni comparte datos personales.</strong><br>Toda la personalización de estilos se realiza localmente en su navegador. Las únicas conexiones de red se describen en <em>Servicios de Terceros</em> más abajo.',
     hCollection: 'Recopilación de Datos',
     pCollection: 'StylePatch <strong>no</strong> recopila ninguna de las siguientes informaciones:',
     listCollection: ['Información de identificación personal', 'Historial de navegación o URLs visitadas', 'Analíticas de uso o telemetría', 'Cookies o identificadores de seguimiento', 'Datos de formularios, contraseñas o credenciales'],
@@ -195,7 +200,8 @@ const I18N = {
     listPermissions: ['<strong>storage</strong> — Requerido para guardar su configuración de estilo localmente', '<strong>scripting</strong> — Requerido para inyectar estilos CSS personalizados en páginas web', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Requerido para aplicar estilos CSS en cualquier sitio web que visite. StylePatch solo inyecta CSS cuando lo habilita explícitamente para un sitio.'],
     pPermissions: 'StylePatch <strong>no</strong> usa estos permisos para leer contenido de páginas, rastrear actividad ni transmitir datos.',
     hThirdParty: 'Servicios de Terceros',
-    pThirdParty: '<strong>Verificación de licencia (Funciones Premium):</strong> Si activa una licencia premium, StylePatch se conecta a un servidor de verificación de licencias para validar su clave con <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> (procesador de pagos). La solicitud incluye: clave de licencia, ID de huella digital del dispositivo, identificador del plugin y metadatos del navegador (versión, idioma, zona horaria). Creem procesa estos datos según <a href="https://creem.io/privacy" target="_blank" rel="noopener">su política de privacidad</a>. StylePatch <strong>no</strong> se conecta a otros servidores de terceros, servicios de análisis o seguimiento.',
+    pThirdParty: '<strong>Verificación de licencia (Funciones Premium):</strong> Si activa una licencia premium, StylePatch envía una solicitud de verificación al servidor de licencias del autor en <code>api.annmax1983.com</code>. La solicitud incluye: clave de licencia, ID de huella digital del dispositivo, identificador del plugin y metadatos del navegador (versión, idioma, zona horaria). Ese servidor procesa pagos y licencias a través de <a href="https://creem.io" target="_blank" rel="noopener">Creem</a>; su navegador no se conecta directamente con Creem ni con ningún otro tercero.',
+    pWebFonts: '<strong>Fuentes web opcionales:</strong> Si elige una fuente de Google en la ventana emergente, StylePatch descarga el archivo de la fuente desde <code>fonts.googleapis.com</code> y <code>fonts.gstatic.com</code>. Estas descargas no contienen información sobre usted ni sobre las páginas que visita, y solo ocurren cuando selecciona una fuente web.',
     hChanges: 'Cambios en Esta Política',
     pChanges: 'Cualquier cambio en esta política de privacidad se reflejará en esta página con la fecha actualizada.',
     hContact: 'Contacto',
@@ -204,8 +210,8 @@ const I18N = {
   },
   fr: {
     title: '🔒 Politique de Confidentialité — StylePatch',
-    updated: 'Dernière mise à jour : juillet 2026',
-    highlight: '<strong>StylePatch ne collecte, ne stocke, ne transmet ni ne partage de données personnelles.</strong><br>Toutes les opérations sont effectuées localement dans votre navigateur. Aucune donnée ne quitte votre appareil.',
+    updated: 'Dernière mise à jour : août 2026',
+    highlight: '<strong>StylePatch ne collecte, ne stocke, ne transmet ni ne partage de données personnelles.</strong><br>Toute la personnalisation des styles s\'effectue localement dans votre navigateur. Les seules connexions réseau sont décrites dans <em>Services Tiers</em> ci-dessous.',
     hCollection: 'Collecte de Données',
     pCollection: 'StylePatch ne collecte <strong>aucune</strong> des données suivantes :',
     listCollection: ['Informations d\'identification personnelle', 'Historique de navigation ou URLs visitées', 'Analyses d\'utilisation ou télémétrie', 'Cookies ou identifiants de suivi', 'Données de formulaire, mots de passe ou identifiants'],
@@ -217,7 +223,8 @@ const I18N = {
     listPermissions: ['<strong>storage</strong> — Requis pour enregistrer vos paramètres de style localement', '<strong>scripting</strong> — Requis pour injecter des styles CSS personnalisés dans les pages web', '<strong>host_permissions (&lt;all_urls&gt;)</strong> — Requis pour appliquer des styles CSS sur tout site web que vous visitez. StylePatch n\'injecte du CSS que lorsque vous l\'activez explicitement pour un site.'],
     pPermissions: 'StylePatch n\'utilise <strong>pas</strong> ces permissions pour lire le contenu des pages, suivre les activités ou transmettre des données.',
     hThirdParty: 'Services Tiers',
-    pThirdParty: '<strong>Vérification de licence (Fonctions Premium) :</strong> Si vous activez une licence premium, StylePatch se connecte à un serveur de vérification de licences pour valider votre clé via <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> (processeur de paiements). La requête comprend : clé de licence, ID d\'empreinte d\'appareil, identifiant du plugin et métadonnées du navigateur (version, langue, fuseau horaire). Creem traite ces données selon <a href="https://creem.io/privacy" target="_blank" rel="noopener">leur politique de confidentialité</a>. StylePatch ne se connecte <strong>pas</strong> à d\'autres serveurs tiers, services d\'analyse ou de suivi.',
+    pThirdParty: '<strong>Vérification de licence (Fonctions Premium) :</strong> Si vous activez une licence premium, StylePatch envoie une requête de vérification au serveur de licences de l\'auteur à l\'adresse <code>api.annmax1983.com</code>. La requête comprend : clé de licence, ID d\'empreinte d\'appareil, identifiant du plugin et métadonnées du navigateur (version, langue, fuseau horaire). Ce serveur traite les paiements et les licences via <a href="https://creem.io" target="_blank" rel="noopener">Creem</a> ; votre navigateur ne se connecte directement ni à Creem ni à aucun autre tiers.',
+    pWebFonts: '<strong>Polices web optionnelles :</strong> Si vous choisissez une police Google dans le popup, StylePatch télécharge le fichier de police lui-même depuis <code>fonts.googleapis.com</code> et <code>fonts.gstatic.com</code>. Ces téléchargements ne contiennent aucune information vous concernant ni sur les pages visitées, et n\'ont lieu que lorsqu\'une police web est sélectionnée.',
     hChanges: 'Modifications de Cette Politique',
     pChanges: 'Toute modification de cette politique de confidentialité sera reflétée sur cette page avec une date mise à jour.',
     hContact: 'Contact',
@@ -248,6 +255,7 @@ function apply(t) {
   document.getElementById('pPermissions').innerHTML = t.pPermissions;
   document.getElementById('hThirdParty').textContent = t.hThirdParty;
   document.getElementById('pThirdParty').innerHTML = t.pThirdParty;
+  document.getElementById('pWebFonts').innerHTML = t.pWebFonts || '';
   document.getElementById('hChanges').textContent = t.hChanges;
   document.getElementById('pChanges').textContent = t.pChanges;
   document.getElementById('hContact').textContent = t.hContact;

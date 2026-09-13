@@ -4,7 +4,7 @@ Official User Manual · Multi-language: [English](README.md) | [中文](language
 
 > This document is the official user manual for StylePatch, accessible via the "User Manual" button inside the extension panel.
 
-A lightweight browser extension that lets you customize any webpage's background color, text color, link color, and font size instantly for a more comfortable reading experience.
+A lightweight browser extension that lets you customize any webpage's background color, text color, link color, font, filter effect, and font size instantly for a more comfortable reading experience.
 
 ✅ Officially released on Chrome & Edge Web Store · ✅ Zero tracking, all data stored locally · ✅ Per-site independent settings
 
@@ -18,6 +18,8 @@ A lightweight browser extension that lets you customize any webpage's background
 |---------|-------------|
 | 🎨 **Background, Text & Link Color** | Pick any color via native color picker or type hex code directly; link color auto-adjusts for readability |
 | 🔠 **Font Size Scaling** | Adjust from 80% to 150% using CSS zoom |
+| 🔤 **Font Family** | Switch the page font — system fonts, or Google Fonts loaded from the web (Roboto, Open Sans, Noto Sans SC…) |
+| 🌗 **Color Filters** | Grayscale mode and a warm sepia tint for easier reading |
 | 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark — one click to apply |
 | 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
 | 🚫 **Site Blacklist** | Exclude specific websites from styling |
@@ -54,8 +56,8 @@ A lightweight browser extension that lets you customize any webpage's background
 
 | Browser | Status | Minimum Version |
 |---------|--------|-----------------|
-| Google Chrome | ✅ Fully supported | Chrome 88+ |
-| Microsoft Edge | ✅ Fully supported | Edge 88+ |
+| Google Chrome | ✅ Fully supported | Chrome 95+ |
+| Microsoft Edge | ✅ Fully supported | Edge 95+ |
 | Other Chromium-based browsers | ✅ Basic compatible | Install via official extension store only |
 
 ---
@@ -79,10 +81,12 @@ For your safety, only install StylePatch through official browser extension stor
 2. **Pick colors** — Use the native color picker or type a hex code
 3. **Choose a preset** — Light, Warm Tone, Green, or Dark
 4. **Adjust font size** — Drag the slider from 80% to 150%
-5. **Save** — Click **Apply & Save** to persist settings for this site
-6. **Reset** — Click ↺ to restore the site's default appearance
-7. **Exclude** — Click "Exclude this site" to blacklist a domain
-8. **Toggle** — Use the ON/OFF switch to disable without losing settings
+5. **Choose a font** — Pick a system font, or load a Google Font from the web
+6. **Apply a filter** — Optional grayscale or warm eye-care tint
+7. **Save** — Click **Apply & Save** to persist settings for this site
+8. **Reset** — Click ↺ to restore the site's default appearance
+9. **Exclude** — Click "Exclude this site" to blacklist a domain
+10. **Toggle** — Use the ON/OFF switch to disable without losing settings
 
 ### Config Manager
 
@@ -106,7 +110,10 @@ Click **⚙ Config Manager** at the bottom of the popup to open the configuratio
 3. **How do I transfer my settings to a new device?**
    Open Config Manager (⚙), click Export to download a backup file, then Import it on the new device.
 
-4. **Can't find StylePatch on the extension store?**
+4. **Why do `www.example.com` and `example.com` share the same settings?**
+   That's intentional — domains are matched regardless of the leading `www.`, so your style applies consistently on both addresses.
+
+5. **Can't find StylePatch on the extension store?**
    Check your network region. You can find the official store link at [www.annmax1983.com](https://www.annmax1983.com).
 
 ---
@@ -121,7 +128,7 @@ StylePatch follows privacy-by-design principles and collects zero user data:
 
 2. **No tracking** — No browsing history access, no embedded third-party trackers, no automatic external data transmission.
 
-3. **Data stays local** — All configuration data exists only on your device. Data leaves your browser only when you manually export a backup file.
+3. **Data stays local** — All configuration data exists only on your device. Data leaves your browser only when you manually export a backup file, or when you pick a Google Font (in which case the font file is downloaded from fonts.googleapis.com).
 
 - [Full Privacy Policy](https://annmax1983.github.io/StylePatch/privacy-policy.html)
 - [Supplementary Privacy Details](https://www.annmax1983.com)
