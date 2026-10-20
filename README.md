@@ -6,7 +6,7 @@ Official User Manual · Multi-language: [English](README.md) | [中文](language
 
 A lightweight browser extension that lets you customize any webpage's background color, text color, link color, font, filter effect, and font size instantly for a more comfortable reading experience.
 
-✅ Officially released on Chrome & Edge Web Store · ✅ Zero tracking, all data stored locally · ✅ Per-site independent settings
+✅ Officially released on Chrome & Edge Web Store · ✅ Zero tracking, data stored locally (cloud sync is optional and Pro) · ✅ Per-site independent settings
 
 ---
 
@@ -20,25 +20,26 @@ A lightweight browser extension that lets you customize any webpage's background
 | 🔠 **Font Size Scaling** | Adjust from 80% to 150% using CSS zoom |
 | 🔤 **Font Family** | Switch the page font — system fonts, or Google Fonts loaded from the web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Color Filters** | Grayscale mode and a warm sepia tint for easier reading |
-| 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark — one click to apply |
+| 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark, Sepia, Night Blue, High Contrast — one click to apply |
+| 🧭 **Contrast Hint** | Warns when text or link color falls below WCAG contrast thresholds |
 | 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
 | 🚫 **Site Blacklist** | Exclude specific websites from styling |
 | 💾 **Per-Site Settings** | Save different styles for different websites, auto-restore on revisit (up to 5 sites free) |
+| 📤 **Local Backup** | Export all configurations to JSON and restore them later (free import is capped at 5 sites) |
 | ⚡ **Real-Time Preview** | All changes apply instantly as you drag, no page reload needed |
 | 🌍 **Multi-Language UI** | Supports English, Chinese, Spanish, German, Japanese, French |
-| 🔒 **Minimal Permissions** | Only `storage` + `host_permissions` — no unnecessary access |
+| 🔒 **Minimal Permissions** | Only `storage`, `scripting` + `host_permissions` — no unnecessary access |
 | 🏗️ **Manifest V3** | Built on Manifest V3 service worker architecture |
-| 🔄 **One-Click Reset** | Restore any site's original appearance instantly |
+| 🔄 **One-Click Reset** | Drop the site's own config; falls back to your default theme when one exists |
 
 ### ⭐ Premium Features (License Required)
 
 | Feature | Description |
 |---------|-------------|
 | ♾️ **Unlimited Configs** | Save styles for unlimited websites (free tier: 5 sites max) |
-| 📤 **Export All Configurations** | One-click download of all your site styles as a structured JSON backup file |
-| 📥 **Import Configurations** | Restore all styles from a backup file instantly — perfect for cross-device migration |
-| 💾 **Backup & Restore Workflow** | Export before system reinstall, import on a new device — all settings preserved |
-| 🔄 **Device Migration** | Set up StylePatch on a new computer in seconds, every site's custom look restored |
+| ☁️ **Cloud Sync** | Keep site configs, the blacklist, the on/off toggle and your default theme in sync across Chrome/Edge profiles signed in to the same browser account (no backend, uses `chrome.storage.sync`) |
+| 🎨 **Default Theme** | Apply one global theme to every site without its own config; reset falls back to it |
+| 📥 **Full Restore** | Import backups larger than 5 sites, including your default theme |
 
 > See [VKT Pricing](https://annmax1983.com/pricing.html) for license options. Single tool license from $2.99/mo or $9.99 lifetime.
 
@@ -79,23 +80,25 @@ For your safety, only install StylePatch through official browser extension stor
 
 1. Click the **StylePatch icon** in your browser toolbar
 2. **Pick colors** — Use the native color picker or type a hex code
-3. **Choose a preset** — Light, Warm Tone, Green, or Dark
+3. **Choose a preset** — Light, Warm Tone, Green, Dark, Sepia, Night Blue, or High Contrast
 4. **Adjust font size** — Drag the slider from 80% to 150%
 5. **Choose a font** — Pick a system font, or load a Google Font from the web
 6. **Apply a filter** — Optional grayscale or warm eye-care tint
 7. **Save** — Click **Apply & Save** to persist settings for this site
-8. **Reset** — Click ↺ to restore the site's default appearance
-9. **Exclude** — Click "Exclude this site" to blacklist a domain
-10. **Toggle** — Use the ON/OFF switch to disable without losing settings
+8. **Reset** — Click ↺ to remove the site's own config; with a default theme saved, the site falls back to it
+9. **Set as default** — Pro users can save the current colors as the default theme for every site (sites with their own config keep it)
+10. **Exclude** — Click "Exclude this site" to blacklist a domain
+11. **Toggle** — Use the ON/OFF switch to disable without losing settings
 
 ### Config Manager
 
 Click **⚙ Config Manager** at the bottom of the popup to open the configuration page:
 
-- **View** all configured sites with their color and font settings
-- **Export** all configurations as a JSON backup file
-- **Import** a backup file to restore settings on another device or after reinstalling
-- **Delete** individual site configurations
+- **View**, search and **delete** configured sites with their color and font settings
+- **Export** all configurations as a JSON backup file (free)
+- **Import** a backup file to restore settings on another device or after reinstalling (free imports are capped at 5 sites)
+- **Cloud Sync** (Pro) — mirror configs across Chrome/Edge profiles signed in to the same browser account
+- **Default Theme** (Pro) — review or remove the theme applied to sites without their own config
 
 ---
 
@@ -108,7 +111,7 @@ Click **⚙ Config Manager** at the bottom of the popup to open the configuratio
    Make sure you clicked "Apply & Save". If using incognito mode, enable StylePatch permission for private windows.
 
 3. **How do I transfer my settings to a new device?**
-   Open Config Manager (⚙), click Export to download a backup file, then Import it on the new device.
+   Open Config Manager (⚙), click Export to download a backup file, then Import it on the new device. Free imports restore up to 5 sites; Pro restores everything. Within the same Chrome/Edge account, Pro users can also enable Cloud Sync and skip the file entirely.
 
 4. **Why do `www.example.com` and `example.com` share the same settings?**
    That's intentional — domains are matched regardless of the leading `www.`, so your style applies consistently on both addresses.
@@ -122,13 +125,18 @@ Click **⚙ Config Manager** at the bottom of the popup to open the configuratio
 
 StylePatch follows privacy-by-design principles and collects zero user data:
 
-1. **Permissions requested** — only two:
-   - `storage`: Saves your custom colors, font size, site blacklist and theme preferences locally. No webpage content is stored.
+1. **Permissions requested** — only three:
+   - `storage`: Saves your custom colors, font size, site blacklist and theme preferences. Local data uses `chrome.storage.local`; the optional Pro Cloud Sync uses `chrome.storage.sync`.
+   - `scripting`: Used only to inject the generated CSS into the current tab (in the extension's isolated world). It does not read page content or execute remote code.
    - `host_permissions`: Only used to inject custom CSS styles to adjust page appearance. Does not read DOM text, images, cookies, login credentials or form data.
 
-2. **No tracking** — No browsing history access, no embedded third-party trackers, no automatic external data transmission.
+2. **No tracking** — No browsing history access, no embedded third-party trackers, no analytics.
 
-3. **Data stays local** — All configuration data exists only on your device. Data leaves your browser only when you manually export a backup file, or when you pick a Google Font (in which case the font file is downloaded from fonts.googleapis.com).
+3. **Data stays local unless you opt in** — Configuration data exists on your device by default. Data leaves your browser only when you:
+   - manually export a backup file;
+   - enable Cloud Sync (Pro), which stores only site configs, the blacklist, the on/off toggle and the default theme in your browser account via `chrome.storage.sync` — never license keys or browsing data;
+   - pick a Google Font (the font file is downloaded from fonts.googleapis.com);
+   - activate or validate a license (the license key, a random install ID and basic browser metadata are sent to `api.annmax1983.com`).
 
 - [Full Privacy Policy](https://annmax1983.github.io/StylePatch/privacy-policy.html)
 - [Supplementary Privacy Details](https://www.annmax1983.com)

@@ -6,7 +6,7 @@ Manuel officiel · Multilangue : [English](../README.md) | [中文](README_zh.md
 
 Une extension légère qui vous permet de personnaliser instantanément la couleur de fond, la couleur du texte, la couleur des liens, la police, les filtres et la taille de police de n'importe quelle page web — pour une lecture plus confortable.
 
-✅ Disponible sur le Chrome & Edge Web Store · ✅ Zéro suivi, toutes les données stockées localement · ✅ Paramètres indépendants par site
+✅ Disponible sur le Chrome & Edge Web Store · ✅ Zéro suivi, données stockées localement (la synchronisation cloud est optionnelle et Premium) · ✅ Paramètres indépendants par site
 
 ---
 
@@ -20,25 +20,26 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | 🔠 **Taille de police** | Ajustement de 80 % à 150 % via CSS zoom |
 | 🔤 **Famille de police** | Changez la police de la page — polices système ou Google Fonts chargées depuis le web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Filtres de couleur** | Mode niveaux de gris et teinte sépia chaude pour une lecture plus agréable |
-| 👁️ **Thèmes prédéfinis** | Clair, Ton chaud, Vert, Sombre — application en un clic |
+| 👁️ **Thèmes prédéfinis** | Clair, Ton chaud, Vert, Sombre, Sépia, Nuit bleue, Contraste élevé — application en un clic |
+| 🧭 **Indicateur de contraste** | Signale lorsque la couleur du texte ou des liens passe sous les seuils de contraste WCAG |
 | 🔄 **Activation globale** | Activez/désactivez l'extension globalement sans perdre vos réglages |
 | 🚫 **Liste noire par site** | Excluez des sites spécifiques de la personnalisation |
 | 💾 **Paramètres par site** | Enregistrez des styles différents pour différents sites, restaurés automatiquement lors des visites (5 sites max en gratuit) |
+| 📤 **Sauvegarde locale** | Exportez toutes les configurations en JSON et restaurez-les plus tard (l'import gratuit est limité à 5 sites) |
 | ⚡ **Prévisualisation en temps réel** | Toutes les modifications s'appliquent instantanément pendant que vous ajustez, sans rechargement de la page |
 | 🌍 **Interface multilingue** | Prend en charge l'anglais, le chinois, l'espagnol, l'allemand, le japonais et le français |
-| 🔒 **Permissions minimales** | Uniquement `storage` + `host_permissions` — aucun accès superflu |
+| 🔒 **Permissions minimales** | Uniquement `storage`, `scripting` + `host_permissions` — aucun accès superflu |
 | 🏗️ **Manifest V3** | Construit sur l'architecture service worker du Manifest V3 |
-| 🔄 **Réinitialisation en un clic** | Restaurez l'apparence originale de n'importe quel site instantanément |
+| 🔄 **Réinitialisation en un clic** | Supprime la configuration du site ; avec un thème par défaut, le site y revient |
 
 ### ⭐ Fonctionnalités Premium (licence requise)
 
 | Fonctionnalité | Description |
 |---------|-------------|
 | ♾️ **Configurations illimitées** | Enregistrez des styles pour un nombre illimité de sites (gratuit : 5 sites max) |
-| 📤 **Exporter toutes les configurations** | Téléchargement en un clic de tous vos styles de sites sous forme de fichier JSON structuré |
-| 📥 **Importer des configurations** | Restaurez instantanément tous les styles depuis un fichier de sauvegarde — idéal pour la migration entre appareils |
-| 💾 **Sauvegarde et restauration** | Exportez avant une réinstallation système, importez sur un nouvel appareil — tous les réglages préservés |
-| 🔄 **Migration entre appareils** | Configurez StylePatch sur un nouvel ordinateur en quelques secondes, chaque apparence personnalisée est restaurée |
+| ☁️ **Synchronisation cloud** | Synchronisez configurations de sites, liste noire, activation et thème par défaut entre profils Chrome/Edge connectés au même compte de navigateur (sans backend, via `chrome.storage.sync`) |
+| 🎨 **Thème par défaut** | Appliquez un thème global à tous les sites sans configuration propre ; la réinitialisation y revient |
+| 📥 **Restauration complète** | Importez des sauvegardes de plus de 5 sites, thème par défaut inclus |
 
 > Voir les [tarifs VKT](https://annmax1983.com/pricing.html) pour les options de licence. Licence individuelle à partir de 2,99 $/mois ou 9,99 $ à vie.
 
@@ -79,23 +80,25 @@ Pour votre sécurité, n'installez StylePatch que via les boutiques officielles 
 
 1. Cliquez sur l'**icône StylePatch** dans la barre d'outils de votre navigateur
 2. **Choisissez les couleurs** — Utilisez le sélecteur natif ou saisissez un code hexadécimal
-3. **Sélectionnez un préréglage** — Clair, Ton chaud, Vert ou Sombre
+3. **Sélectionnez un préréglage** — Clair, Ton chaud, Vert, Sombre, Sépia, Nuit bleue ou Contraste élevé
 4. **Ajustez la taille de police** — Glissez le curseur de 80 % à 150 %
 5. **Choisissez une police** — Sélectionnez une police système ou chargez une Google Font depuis le web
 6. **Appliquez un filtre** — Niveaux de gris ou teinte protectrice optionnels
 7. **Enregistrez** — Cliquez sur **Appliquer et enregistrer** pour sauvegarder les paramètres pour ce site
-8. **Réinitialisez** — Cliquez sur ↺ pour restaurer l'apparence par défaut du site
-9. **Exclure** — Cliquez sur « Exclure ce site » pour ajouter un domaine à la liste noire
-10. **Activer/Désactiver** — Utilisez le commutateur ON/OFF pour désactiver sans perdre les réglages
+8. **Réinitialisez** — Cliquez sur ↺ pour supprimer la configuration propre du site ; si un thème par défaut existe, le site y revient
+9. **Définir par défaut** — Les utilisateurs Premium peuvent enregistrer les couleurs actuelles comme thème par défaut pour tous les sites (les sites ayant leur propre configuration la conservent)
+10. **Exclure** — Cliquez sur « Exclure ce site » pour ajouter un domaine à la liste noire
+11. **Activer/Désactiver** — Utilisez le commutateur ON/OFF pour désactiver sans perdre les réglages
 
 ### Gestionnaire de configurations
 
 Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir la page de configuration :
 
-- **Consultez** tous les sites configurés avec leurs paramètres de couleur et de police
-- **Exportez** toutes les configurations en fichier JSON de sauvegarde
-- **Importez** un fichier de sauvegarde pour restaurer les réglages sur un autre appareil ou après une réinstallation
-- **Supprimez** des configurations de sites individuelles
+- **Consultez**, recherchez et **supprimez** les sites configurés avec leurs paramètres de couleur et de police
+- **Exportez** toutes les configurations en fichier JSON de sauvegarde (gratuit)
+- **Importez** un fichier de sauvegarde pour restaurer les réglages sur un autre appareil ou après une réinstallation (l'import gratuit est limité à 5 sites)
+- **Synchronisation cloud** (Premium) — répliquez la configuration entre profils Chrome/Edge connectés au même compte de navigateur
+- **Thème par défaut** (Premium) — consultez ou supprimez le thème appliqué aux sites sans configuration propre
 
 ---
 
@@ -108,7 +111,7 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
    Assurez-vous d'avoir cliqué sur « Appliquer et enregistrer ». En mode navigation privée, activez l'autorisation de StylePatch pour les fenêtres privées.
 
 3. **Comment transférer mes paramètres sur un nouvel appareil ?**
-   Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil.
+   Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil. L'import gratuit restaure jusqu'à 5 sites ; Premium restaure tout. Avec le même compte Chrome/Edge, les utilisateurs Premium peuvent aussi activer la Synchronisation cloud et se passer du fichier.
 
 4. **Pourquoi `www.example.com` et `example.com` partagent les mêmes paramètres ?**
    C'est volontaire — les domaines sont matchés sans tenir compte du `www.` initial, pour que votre style s'applique de manière cohérente sur les deux adresses.
@@ -122,13 +125,18 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 
 StylePatch respecte les principes de confidentialité dès la conception et ne collecte aucune donnée utilisateur :
 
-1. **Permissions demandées** — seulement deux :
-   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local. Aucun contenu de page web n'est stocké.
+1. **Permissions demandées** — seulement trois :
+   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Premium) utilise `chrome.storage.sync`. Aucun contenu de page web n'est stocké.
+   - `scripting` : Utilisé uniquement pour injecter le CSS généré dans l'onglet courant (monde isolé de l'extension). Ne lit pas le contenu des pages et n'exécute aucun code distant.
    - `host_permissions` : Utilisé uniquement pour injecter des styles CSS personnalisés afin de modifier l'apparence des pages. Ne lit pas le texte du DOM, les images, les cookies, les identifiants ou les données de formulaire.
 
-2. **Pas de suivi** — Aucun accès à l'historique de navigation, aucun traqueur tiers intégré, aucune transmission automatique de données externes.
+2. **Pas de suivi** — Aucun accès à l'historique de navigation, aucun traqueur tiers intégré, aucune analytique.
 
-3. **Les données restent locales** — Toutes les données de configuration n'existent que sur votre appareil. Les données ne quittent votre navigateur que lorsque vous exportez manuellement un fichier de sauvegarde, ou quand vous choisissez une Google Font (dans ce cas, le fichier de police est téléchargé depuis fonts.googleapis.com).
+3. **Les données restent locales sauf si vous les partagez** — Les données de configuration résident sur votre appareil par défaut. Elles ne quittent votre navigateur que lorsque :
+   - vous exportez manuellement un fichier de sauvegarde ;
+   - vous activez la Synchronisation cloud (Premium), qui stocke uniquement les configurations de sites, la liste noire, l'activation et le thème par défaut dans votre compte de navigateur via `chrome.storage.sync` — jamais les clés de licence ni les données de navigation ;
+   - vous choisissez une Google Font (le fichier de police est téléchargé depuis fonts.googleapis.com) ;
+   - vous activez ou validez une licence (la clé de licence, un ID d'installation aléatoire et des métadonnées de navigateur de base sont envoyés à api.annmax1983.com).
 
 - [Politique de confidentialité complète](https://annmax1983.github.io/StylePatch/privacy-policy.html)
 - [Détails complémentaires sur la confidentialité](https://www.annmax1983.com)

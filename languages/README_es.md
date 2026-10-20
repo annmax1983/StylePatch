@@ -6,7 +6,7 @@ Manual de usuario oficial · Multi-idioma: [English](../README.md) | [中文](RE
 
 Una extensión ligera para el navegador que te permite personalizar al instante el color de fondo, el color del texto, el color de los enlaces, la fuente, el efecto de filtro y el tamaño de fuente de cualquier página web para una experiencia de lectura más cómoda.
 
-✅ Publicada oficialmente en Chrome y Edge Web Store · ✅ Cero rastreo, todos los datos almacenados localmente · ✅ Configuración independiente por sitio
+✅ Publicada oficialmente en Chrome y Edge Web Store · ✅ Cero rastreo, datos almacenados localmente (la sincronización en la nube es opcional y Premium) · ✅ Configuración independiente por sitio
 
 ---
 
@@ -20,25 +20,26 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 | 🔠 **Escala de tamaño de fuente** | Ajusta del 80% al 150% usando CSS zoom |
 | 🔤 **Familia tipográfica** | Cambia la fuente de la página — fuentes del sistema o Google Fonts cargados desde la web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Filtros de color** | Modo escala de grises y tinte sepia cálido para una lectura más cómoda |
-| 👁️ **Temas predefinidos** | Claro, Tono cálido, Verde, Oscuro — un clic para aplicar |
+| 👁️ **Temas predefinidos** | Claro, Tono cálido, Verde, Oscuro, Sepia, Noche azul, Alto contraste — un clic para aplicar |
+| 🧭 **Aviso de contraste** | Avisa cuando el color del texto o de los enlaces no alcanza los umbrales de contraste WCAG |
 | 🔄 **Interruptor global** | Activa/desactiva la extensión globalmente sin perder la configuración |
 | 🚫 **Lista negra de sitios** | Excluye sitios web específicos del estilizado |
 | 💾 **Configuración por sitio** | Guarda estilos diferentes para distintos sitios web, se restauran automáticamente al volver a visitar (hasta 5 sitios gratis) |
+| 📤 **Respaldo local** | Exporta todas las configuraciones a JSON y restáuralas después (la importación gratuita se limita a 5 sitios) |
 | ⚡ **Vista previa en tiempo real** | Todos los cambios se aplican al instante mientras ajustas, sin recargar la página |
 | 🌍 **Interfaz multi-idioma** | Soporta inglés, chino, español, alemán, japonés y francés |
-| 🔒 **Permisos mínimos** | Solo `storage` + `host_permissions` — sin accesos innecesarios |
+| 🔒 **Permisos mínimos** | Solo `storage`, `scripting` + `host_permissions` — sin accesos innecesarios |
 | 🏗️ **Manifest V3** | Construida sobre la arquitectura service worker de Manifest V3 |
-| 🔄 **Restablecimiento con un clic** | Restaura la apariencia original de cualquier sitio al instante |
+| 🔄 **Restablecimiento con un clic** | Elimina la configuración del sitio; si existe un tema predeterminado, vuelve a él |
 
 ### ⭐ Funcionalidades Premium (requieren licencia)
 
 | Funcionalidad | Descripción |
 |---------|-------------|
 | ♾️ **Configuraciones ilimitadas** | Guarda estilos para sitios web ilimitados (nivel gratuito: 5 sitios como máximo) |
-| 📤 **Exportar todas las configuraciones** | Descarga con un clic todos tus estilos de sitio como archivo de respaldo JSON estructurado |
-| 📥 **Importar configuraciones** | Restaura todos los estilos desde un archivo de respaldo al instante — ideal para migración entre dispositivos |
-| 💾 **Flujo de respaldo y restauración** | Exporta antes de reinstalar el sistema, importa en un nuevo dispositivo — toda la configuración se preserva |
-| 🔄 **Migración entre dispositivos** | Configura StylePatch en un nuevo ordenador en segundos, la apariencia personalizada de cada sitio se restaura |
+| ☁️ **Sincronización en la nube** | Mantén sincronizados la configuración de sitios, la lista negra, el interruptor y el tema predeterminado entre perfiles de Chrome/Edge con la misma cuenta de navegador (sin backend, usa `chrome.storage.sync`) |
+| 🎨 **Tema predeterminado** | Aplica un tema global a todos los sitios sin configuración propia; el restablecimiento vuelve a él |
+| 📥 **Restauración completa** | Importa respaldos de más de 5 sitios, incluido tu tema predeterminado |
 
 > Consulta [VKT Pricing](https://annmax1983.com/pricing.html) para opciones de licencia. Licencia de herramienta individual desde $2.99/mes o $9.99 de por vida.
 
@@ -79,23 +80,25 @@ Por tu seguridad, instala StylePatch solo a través de las tiendas oficiales de 
 
 1. Haz clic en el **icono de StylePatch** en la barra de herramientas de tu navegador
 2. **Elige colores** — Usa el selector nativo de color o escribe un código hex
-3. **Selecciona un predefinido** — Claro, Tono cálido, Verde u Oscuro
+3. **Selecciona un predefinido** — Claro, Tono cálido, Verde, Oscuro, Sepia, Noche azul o Alto contraste
 4. **Ajusta el tamaño de fuente** — Arrastra el control deslizante del 80% al 150%
 5. **Elige una fuente** — Selecciona una fuente del sistema o carga un Google Font desde la web
 6. **Aplica un filtro** — Opcionalmente escala de grises o tinte cálido para el cuidado visual
 7. **Guardar** — Haz clic en **Aplicar y guardar** para conservar la configuración de este sitio
-8. **Restablecer** — Haz clic en ↺ para restaurar la apariencia por defecto del sitio
-9. **Excluir** — Haz clic en "Excluir este sitio" para añadir un dominio a la lista negra
-10. **Interruptor** — Usa el interruptor ON/OFF para desactivar sin perder la configuración
+8. **Restablecer** — Haz clic en ↺ para eliminar la configuración propia del sitio; si hay un tema predeterminado, el sitio vuelve a él
+9. **Establecer como predeterminado** — Los usuarios Premium pueden guardar los colores actuales como tema predeterminado para todos los sitios (los sitios con configuración propia la mantienen)
+10. **Excluir** — Haz clic en "Excluir este sitio" para añadir un dominio a la lista negra
+11. **Interruptor** — Usa el interruptor ON/OFF para desactivar sin perder la configuración
 
 ### Gestor de configuraciones
 
 Haz clic en **⚙ Gestor de configuraciones** en la parte inferior del popup para abrir la página de configuración:
 
-- **Ver** todos los sitios configurados con sus ajustes de color y fuente
-- **Exportar** todas las configuraciones como archivo de respaldo JSON
-- **Importar** un archivo de respaldo para restaurar la configuración en otro dispositivo o después de reinstalar
-- **Eliminar** configuraciones de sitios individuales
+- **Ver**, buscar y **eliminar** sitios configurados con sus ajustes de color y fuente
+- **Exportar** todas las configuraciones como archivo de respaldo JSON (gratis)
+- **Importar** un archivo de respaldo para restaurar la configuración en otro dispositivo o después de reinstalar (la importación gratuita se limita a 5 sitios)
+- **Sincronización en la nube** (Premium) — replica la configuración entre perfiles de Chrome/Edge con la misma cuenta de navegador
+- **Tema predeterminado** (Premium) — revisa o elimina el tema aplicado a los sitios sin configuración propia
 
 ---
 
@@ -108,7 +111,7 @@ Haz clic en **⚙ Gestor de configuraciones** en la parte inferior del popup par
    Asegúrate de haber hecho clic en "Aplicar y guardar". Si usas el modo incógnito, activa el permiso de StylePatch para ventanas privadas.
 
 3. **¿Cómo transfiero mi configuración a un nuevo dispositivo?**
-   Abre el Gestor de configuraciones (⚙), haz clic en Exportar para descargar un archivo de respaldo e impórtalo en el nuevo dispositivo.
+   Abre el Gestor de configuraciones (⚙), haz clic en Exportar para descargar un archivo de respaldo e impórtalo en el nuevo dispositivo. La importación gratuita restaura hasta 5 sitios; Premium restaura todo. Dentro de la misma cuenta de Chrome/Edge, los usuarios Premium también pueden activar la Sincronización en la nube y prescindir del archivo.
 
 4. **¿Por qué `www.example.com` y `example.com` comparten la misma configuración?**
    Es intencional — los dominios se comparan sin tener en cuenta el `www.` inicial, así que tu estilo se aplica de forma consistente en ambas direcciones.
@@ -122,13 +125,18 @@ Haz clic en **⚙ Gestor de configuraciones** en la parte inferior del popup par
 
 StylePatch sigue principios de privacidad desde el diseño y no recopila ningún dato del usuario:
 
-1. **Permisos solicitados** — solo dos:
-   - `storage`: Guarda tus colores personalizados, tamaño de fuente, lista negra de sitios y preferencias de tema localmente. No se almacena contenido de páginas web.
+1. **Permisos solicitados** — solo tres:
+   - `storage`: Guarda tus colores personalizados, tamaño de fuente, lista negra de sitios y preferencias de tema localmente; la Sincronización en la nube opcional (Premium) usa `chrome.storage.sync`. No se almacena contenido de páginas web.
+   - `scripting`: Solo se usa para inyectar el CSS generado en la pestaña actual (en el mundo aislado de la extensión). No lee el contenido de la página ni ejecuta código remoto.
    - `host_permissions`: Solo se usa para inyectar estilos CSS personalizados que ajustan la apariencia de la página. No lee texto del DOM, imágenes, cookies, credenciales de inicio de sesión ni datos de formularios.
 
-2. **Sin rastreo** — Sin acceso al historial de navegación, sin rastreadores de terceros integrados, sin transmisión automática de datos externos.
+2. **Sin rastreo** — Sin acceso al historial de navegación, sin rastreadores de terceros integrados, sin analítica.
 
-3. **Los datos se quedan locales** — Todos los datos de configuración existen solo en tu dispositivo. Los datos salen de tu navegador solo cuando exportas manualmente un archivo de respaldo, o cuando eliges un Google Font (en cuyo caso el archivo de fuente se descarga desde fonts.googleapis.com).
+3. **Los datos permanecen locales salvo que los compartas** — Los datos de configuración existen en tu dispositivo de forma predeterminada. Solo salen de tu navegador cuando:
+   - exportas manualmente un archivo de respaldo;
+   - activas la Sincronización en la nube (Premium), que guarda únicamente la configuración de sitios, la lista negra, el interruptor y el tema predeterminado en tu cuenta de navegador mediante `chrome.storage.sync` — nunca claves de licencia ni datos de navegación;
+   - eliges un Google Font (el archivo de fuente se descarga desde fonts.googleapis.com);
+   - activas o validas una licencia (la clave de licencia, un ID de instalación aleatorio y metadatos básicos del navegador se envían a api.annmax1983.com).
 
 - [Política de privacidad completa](https://annmax1983.github.io/StylePatch/privacy-policy.html)
 - [Detalles complementarios de privacidad](https://www.annmax1983.com)
