@@ -41,7 +41,7 @@ A lightweight browser extension that lets you customize any webpage's background
 | 🎨 **Default Theme** | Apply one global theme to every site without its own config; reset falls back to it |
 | 📥 **Full Restore** | Import backups larger than 5 sites, including your default theme |
 
-> See [VKT Pricing](https://annmax1983.com/pricing.html) for license options. Single tool license from $2.99/mo or $9.99 lifetime.
+> See [VKT Pricing](https://annmax1983.com/pricing.html) for license options.
 
 ---
 

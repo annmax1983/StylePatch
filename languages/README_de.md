@@ -41,7 +41,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 | 🎨 **Standard-Theme** | Ein globales Theme auf alle Seiten ohne eigene Konfiguration anwenden; der Reset fällt darauf zurück |
 | 📥 **Vollständige Wiederherstellung** | Backups mit mehr als 5 Seiten inklusive Standard-Theme importieren |
 
-> Siehe [VKT Preise](https://annmax1983.com/pricing.html) für Lizenzoptionen. Einzellizenz ab $2.99/Monat oder $9.99 lebenslang.
+> Siehe [VKT Preise](https://annmax1983.com/pricing.html) für Lizenzoptionen.
 
 ---
 

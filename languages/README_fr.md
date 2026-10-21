@@ -41,7 +41,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | 🎨 **Thème par défaut** | Appliquez un thème global à tous les sites sans configuration propre ; la réinitialisation y revient |
 | 📥 **Restauration complète** | Importez des sauvegardes de plus de 5 sites, thème par défaut inclus |
 
-> Voir les [tarifs VKT](https://annmax1983.com/pricing.html) pour les options de licence. Licence individuelle à partir de 2,99 $/mois ou 9,99 $ à vie.
+> Voir les [tarifs VKT](https://annmax1983.com/pricing.html) pour les options de licence.
 
 ---
 

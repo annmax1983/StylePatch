@@ -41,7 +41,7 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 | 🎨 **Tema predeterminado** | Aplica un tema global a todos los sitios sin configuración propia; el restablecimiento vuelve a él |
 | 📥 **Restauración completa** | Importa respaldos de más de 5 sitios, incluido tu tema predeterminado |
 
-> Consulta [VKT Pricing](https://annmax1983.com/pricing.html) para opciones de licencia. Licencia de herramienta individual desde $2.99/mes o $9.99 de por vida.
+> Consulta [VKT Pricing](https://annmax1983.com/pricing.html) para opciones de licencia.
 
 ---
 
