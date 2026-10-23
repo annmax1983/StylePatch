@@ -48,7 +48,7 @@ A lightweight browser extension that lets you customize any webpage's background
 ## Preview
 
 <p align="center">
-  <img src="screenshot/en.png" alt="StylePatch Preview" width="640">
+  <img src="screenshots/en.png" alt="StylePatch Preview" width="640">
 </p>
 
 ---
@@ -65,14 +65,12 @@ A lightweight browser extension that lets you customize any webpage's background
 
 ## Installation
 
-For your safety, only install StylePatch through official browser extension stores:
+| Store | Link |
+|---|---|
+| Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
+| Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
 
-1. Open **Chrome Web Store** or **Microsoft Edge Add-ons**
-2. Search: `StylePatch`
-3. Click **"Add to Chrome"** / **"Add to Edge"**
-4. Click the StylePatch icon in your toolbar to start
-
-> ⚠️ Do not install from third-party websites. Unauthorized versions may compromise your data security.
+> Install only from the official stores above — avoid third-party download sites.
 
 ---
 

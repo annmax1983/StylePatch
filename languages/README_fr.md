@@ -48,7 +48,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 ## Aperçu
 
 <p align="center">
-  <img src="screenshot/en.png" alt="Aperçu StylePatch" width="640">
+  <img src="../screenshots/en.png" alt="Aperçu StylePatch" width="640">
 </p>
 
 ---
@@ -65,14 +65,12 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 
 ## Installation
 
-Pour votre sécurité, n'installez StylePatch que via les boutiques officielles d'extensions :
+| Store | Lien |
+|---|---|
+| Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
+| Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
 
-1. Ouvrez le **Chrome Web Store** ou **Microsoft Edge Add-ons**
-2. Recherchez : `StylePatch`
-3. Cliquez sur **« Ajouter à Chrome »** / **« Ajouter à Edge »**
-4. Cliquez sur l'icône StylePatch dans votre barre d'outils pour commencer
-
-> ⚠️ N'installez pas depuis des sites tiers. Les versions non autorisées peuvent compromettre la sécurité de vos données.
+> Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
 ---
 

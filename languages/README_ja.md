@@ -48,7 +48,7 @@
 ## プレビュー
 
 <p align="center">
-  <img src="screenshot/en.png" alt="StylePatch Preview" width="640">
+  <img src="../screenshots/en.png" alt="StylePatch Preview" width="640">
 </p>
 
 ---
@@ -65,14 +65,12 @@
 
 ## インストール
 
-安全性のため、公式ブラウザ拡張機能ストアを通じてのみStylePatchをインストールしてください：
+| ストア | リンク |
+|---|---|
+| Chrome ウェブストア | [Chrome に追加](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
+| Microsoft Edge アドオン | [Edge に追加](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
 
-1. **Chrome Web Store**または**Microsoft Edge Add-ons**を開きます
-2. 検索：`StylePatch`
-3. **「Chromeに追加」** / **「Edgeに追加」**をクリックします
-4. ツールバーのStylePatchアイコンをクリックして開始します
-
-> ⚠️ サードパーティWebサイトからのインストールは避けてください。非承認版はデータセキュリティを損なう可能性があります。
+> 上記の公式ストアからのみインストールしてください。第三者サイトの利用は避けてください。
 
 ---
 

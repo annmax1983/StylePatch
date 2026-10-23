@@ -45,7 +45,7 @@
 ## 预览
 
 <p align="center">
-  <img src="screenshot/en.png" alt="StylePatch 预览" width="640">
+  <img src="../screenshots/en.png" alt="StylePatch 预览" width="640">
 </p>
 
 ---
@@ -62,12 +62,12 @@
 
 ## 安装
 
-1. 打开浏览器扩展页面：
-   - **Chrome**：`chrome://extensions/`
-   - **Edge**：`edge://extensions/`
-2. 开启**开发者模式**（右上角开关）
-3. 点击**加载已解压的扩展程序**，选择项目文件夹
-4. 点击工具栏中的 StylePatch 图标即可开始
+| 商店 | 链接 |
+|---|---|
+| Chrome 应用商店 | [在 Chrome 中安装](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
+| Microsoft Edge 加载项 | [在 Edge 中安装](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
+
+> 请只通过上方官方商店安装，避免使用第三方下载站。
 
 ---
 

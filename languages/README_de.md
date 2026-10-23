@@ -48,7 +48,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 ## Vorschau
 
 <p align="center">
-  <img src="screenshot/en.png" alt="StylePatch Vorschau" width="640">
+  <img src="../screenshots/en.png" alt="StylePatch Vorschau" width="640">
 </p>
 
 ---
@@ -65,14 +65,12 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 
 ## Installation
 
-Zu deiner Sicherheit: Installiere StylePatch ausschließlich über offizielle Browser-Erweiterungsstores:
+| Store | Link |
+|---|---|
+| Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
+| Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
 
-1. Öffne den **Chrome Web Store** oder **Microsoft Edge Add-ons**
-2. Suche: `StylePatch`
-3. Klicke auf **„Zu Chrome hinzufügen"** / **„Zu Edge hinzufügen"**
-4. Klicke auf das StylePatch-Symbol in deiner Toolbar zum Starten
-
-> ⚠️ Nicht von Drittanbieter-Websites installieren. Nicht autorisierte Versionen können deine Datensicherheit gefährden.
+> Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
 ---
 

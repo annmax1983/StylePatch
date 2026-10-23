@@ -48,7 +48,7 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 ## Vista previa
 
 <p align="center">
-  <img src="screenshot/en.png" alt="Vista previa de StylePatch" width="640">
+  <img src="../screenshots/en.png" alt="Vista previa de StylePatch" width="640">
 </p>
 
 ---
@@ -65,14 +65,12 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 
 ## Instalación
 
-Por tu seguridad, instala StylePatch solo a través de las tiendas oficiales de extensiones del navegador:
+| Tienda | Enlace |
+|---|---|
+| Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
+| Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
 
-1. Abre **Chrome Web Store** o **Microsoft Edge Add-ons**
-2. Busca: `StylePatch`
-3. Haz clic en **"Añadir a Chrome"** / **"Añadir a Edge"**
-4. Haz clic en el icono de StylePatch en tu barra de herramientas para empezar
-
-> ⚠️ No instales desde sitios web de terceros. Las versiones no autorizadas pueden comprometer la seguridad de tus datos.
+> Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 
 ---
 
