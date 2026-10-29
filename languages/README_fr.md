@@ -37,7 +37,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | Fonctionnalité | Description |
 |---------|-------------|
 | ♾️ **Configurations illimitées** | Enregistrez des styles pour un nombre illimité de sites (gratuit : 5 sites max) |
-| ☁️ **Synchronisation cloud** | Synchronisez configurations de sites, liste noire, activation et thème par défaut entre profils Chrome/Edge connectés au même compte de navigateur (sans backend, via `chrome.storage.sync`) |
+| ☁️ **Synchronisation cloud** | Synchronisez configurations de sites, liste noire, activation et thème par défaut entre profils Chrome/Edge/Firefox connectés au même compte de navigateur (sans backend, via `storage.sync`) |
 | 🎨 **Thème par défaut** | Appliquez un thème global à tous les sites sans configuration propre ; la réinitialisation y revient |
 | 📥 **Restauration complète** | Importez des sauvegardes de plus de 5 sites, thème par défaut inclus |
 
@@ -59,7 +59,10 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 |---------|--------|-----------------|
 | Google Chrome | ✅ Entièrement pris en charge | Chrome 95+ |
 | Microsoft Edge | ✅ Entièrement pris en charge | Edge 95+ |
+| Mozilla Firefox | ✅ Entièrement pris en charge | Firefox 140+ (bureau) |
 | Autres navigateurs basés sur Chromium | ✅ Compatibilité de base | Installer uniquement via la boutique officielle d'extensions |
+
+> **Note Firefox :** Les extensions Firefox n’ont pas de service worker : elles s’exécutent en page d’événements. La synchronisation entre appareils passe par Firefox Sync (compte Mozilla). Le reste des fonctions se comporte comme sous Chrome / Edge.
 
 ---
 
@@ -69,6 +72,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 |---|---|
 | Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
+| Modules complémentaires Firefox (AMO) | 🔜 En cours d’examen — le lien sera ajouté après publication |
 
 > Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
@@ -95,7 +99,7 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 - **Consultez**, recherchez et **supprimez** les sites configurés avec leurs paramètres de couleur et de police
 - **Exportez** toutes les configurations en fichier JSON de sauvegarde (gratuit)
 - **Importez** un fichier de sauvegarde pour restaurer les réglages sur un autre appareil ou après une réinstallation (l'import gratuit est limité à 5 sites)
-- **Synchronisation cloud** (Premium) — répliquez la configuration entre profils Chrome/Edge connectés au même compte de navigateur
+- **Synchronisation cloud** (Premium) — répliquez la configuration entre profils Chrome/Edge/Firefox connectés au même compte de navigateur
 - **Thème par défaut** (Premium) — consultez ou supprimez le thème appliqué aux sites sans configuration propre
 
 ---
@@ -109,7 +113,7 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
    Assurez-vous d'avoir cliqué sur « Appliquer et enregistrer ». En mode navigation privée, activez l'autorisation de StylePatch pour les fenêtres privées.
 
 3. **Comment transférer mes paramètres sur un nouvel appareil ?**
-   Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil. L'import gratuit restaure jusqu'à 5 sites ; Premium restaure tout. Avec le même compte Chrome/Edge, les utilisateurs Premium peuvent aussi activer la Synchronisation cloud et se passer du fichier.
+   Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil. L'import gratuit restaure jusqu'à 5 sites ; Premium restaure tout. Avec le même compte Chrome/Edge/Firefox, les utilisateurs Premium peuvent aussi activer la Synchronisation cloud et se passer du fichier.
 
 4. **Pourquoi `www.example.com` et `example.com` partagent les mêmes paramètres ?**
    C'est volontaire — les domaines sont matchés sans tenir compte du `www.` initial, pour que votre style s'applique de manière cohérente sur les deux adresses.
@@ -124,7 +128,7 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 StylePatch respecte les principes de confidentialité dès la conception et ne collecte aucune donnée utilisateur :
 
 1. **Permissions demandées** — seulement trois :
-   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Premium) utilise `chrome.storage.sync`. Aucun contenu de page web n'est stocké.
+   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Premium) utilise `storage.sync`. Aucun contenu de page web n'est stocké.
    - `scripting` : Utilisé uniquement pour injecter le CSS généré dans l'onglet courant (monde isolé de l'extension). Ne lit pas le contenu des pages et n'exécute aucun code distant.
    - `host_permissions` : Utilisé uniquement pour injecter des styles CSS personnalisés afin de modifier l'apparence des pages. Ne lit pas le texte du DOM, les images, les cookies, les identifiants ou les données de formulaire.
 
@@ -132,7 +136,7 @@ StylePatch respecte les principes de confidentialité dès la conception et ne c
 
 3. **Les données restent locales sauf si vous les partagez** — Les données de configuration résident sur votre appareil par défaut. Elles ne quittent votre navigateur que lorsque :
    - vous exportez manuellement un fichier de sauvegarde ;
-   - vous activez la Synchronisation cloud (Premium), qui stocke uniquement les configurations de sites, la liste noire, l'activation et le thème par défaut dans votre compte de navigateur via `chrome.storage.sync` — jamais les clés de licence ni les données de navigation ;
+   - vous activez la Synchronisation cloud (Premium), qui stocke uniquement les configurations de sites, la liste noire, l'activation et le thème par défaut dans votre compte de navigateur via `storage.sync` — jamais les clés de licence ni les données de navigation ;
    - vous choisissez une Google Font (le fichier de police est téléchargé depuis fonts.googleapis.com) ;
    - vous activez ou validez une licence (la clé de licence, un ID d'installation aléatoire et des métadonnées de navigateur de base sont envoyés à api.annmax1983.com).
 
@@ -151,7 +155,7 @@ StylePatch respecte les principes de confidentialité dès la conception et ne c
 
 ## Avis sur le code source
 
-> ⚠️ **Ce dépôt ne publie pas le code source.** Il contient uniquement la documentation d'utilisation, les notes de version et les ressources d'assistance. L'extension est distribuée exclusivement via le Chrome Web Store. Aucun package d'installation hors ligne ni code source destiné aux utilisateurs finaux n'est fourni.
+> ⚠️ **Ce dépôt ne publie pas le code source.** Il contient uniquement la documentation d'utilisation, les notes de version et les ressources d'assistance. L'extension est distribuée exclusivement via le Chrome Web Store, Microsoft Edge Add-ons et Firefox Add-ons (AMO). Aucun package d'installation hors ligne ni code source destiné aux utilisateurs finaux n'est fourni.
 
 ---
 

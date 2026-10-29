@@ -6,7 +6,7 @@ Official User Manual · Multi-language: [English](README.md) | [中文](language
 
 A lightweight browser extension that lets you customize any webpage's background color, text color, link color, font, filter effect, and font size instantly for a more comfortable reading experience.
 
-✅ Officially released on Chrome & Edge Web Store · ✅ Zero tracking, data stored locally (cloud sync is optional and Pro) · ✅ Per-site independent settings
+✅ Officially released on the Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons · ✅ Zero tracking, data stored locally (cloud sync is optional and Pro) · ✅ Per-site independent settings
 
 ---
 
@@ -29,7 +29,7 @@ A lightweight browser extension that lets you customize any webpage's background
 | ⚡ **Real-Time Preview** | All changes apply instantly as you drag, no page reload needed |
 | 🌍 **Multi-Language UI** | Supports English, Chinese, Spanish, German, Japanese, French |
 | 🔒 **Minimal Permissions** | Only `storage`, `scripting` + `host_permissions` — no unnecessary access |
-| 🏗️ **Manifest V3** | Built on Manifest V3 service worker architecture |
+| 🏗️ **Manifest V3** | Built on Manifest V3 — service worker on Chrome / Edge, non-persistent background page on Firefox |
 | 🔄 **One-Click Reset** | Drop the site's own config; falls back to your default theme when one exists |
 
 ### ⭐ Premium Features (License Required)
@@ -37,7 +37,7 @@ A lightweight browser extension that lets you customize any webpage's background
 | Feature | Description |
 |---------|-------------|
 | ♾️ **Unlimited Configs** | Save styles for unlimited websites (free tier: 5 sites max) |
-| ☁️ **Cloud Sync** | Keep site configs, the blacklist, the on/off toggle and your default theme in sync across Chrome/Edge profiles signed in to the same browser account (no backend, uses `chrome.storage.sync`) |
+| ☁️ **Cloud Sync** | Keep site configs, the blacklist, the on/off toggle and your default theme in sync across profiles signed in to the same browser account — Chrome, Edge or Firefox (no backend, uses the browser's own `storage.sync`) |
 | 🎨 **Default Theme** | Apply one global theme to every site without its own config; reset falls back to it |
 | 📥 **Full Restore** | Import backups larger than 5 sites, including your default theme |
 
@@ -59,7 +59,10 @@ A lightweight browser extension that lets you customize any webpage's background
 |---------|--------|-----------------|
 | Google Chrome | ✅ Fully supported | Chrome 95+ |
 | Microsoft Edge | ✅ Fully supported | Edge 95+ |
+| Mozilla Firefox | ✅ Fully supported | Firefox 140+ (desktop) |
 | Other Chromium-based browsers | ✅ Basic compatible | Install via official extension store only |
+
+> **Firefox note:** colours, font size, font family, filters, presets, contrast hints, blacklist, per-site configs, backups and the default theme all work the same way. Two platform details: Firefox has no service worker for extensions, so StylePatch runs on an event page there, and Pro Cloud Sync uses **Firefox Sync** instead of Chrome / Edge Sync (sign in to your Mozilla account to use it).
 
 ---
 
@@ -69,6 +72,7 @@ A lightweight browser extension that lets you customize any webpage's background
 |---|---|
 | Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
+| Firefox Add-ons (AMO) | 🔜 Under review — link will be added once the listing is live |
 
 > Install only from the official stores above — avoid third-party download sites.
 
@@ -95,7 +99,7 @@ Click **⚙ Config Manager** at the bottom of the popup to open the configuratio
 - **View**, search and **delete** configured sites with their color and font settings
 - **Export** all configurations as a JSON backup file (free)
 - **Import** a backup file to restore settings on another device or after reinstalling (free imports are capped at 5 sites)
-- **Cloud Sync** (Pro) — mirror configs across Chrome/Edge profiles signed in to the same browser account
+- **Cloud Sync** (Pro) — mirror configs across profiles signed in to the same browser account (Chrome / Edge / Firefox)
 - **Default Theme** (Pro) — review or remove the theme applied to sites without their own config
 
 ---
@@ -106,10 +110,10 @@ Click **⚙ Config Manager** at the bottom of the popup to open the configuratio
    Close other similar extensions (dark mode / eye-care) that may conflict, then refresh the page.
 
 2. **Saved settings disappear after reopening the browser?**
-   Make sure you clicked "Apply & Save". If using incognito mode, enable StylePatch permission for private windows.
+   Make sure you clicked "Apply & Save". If using incognito / private windows, allow StylePatch to run there — Chrome / Edge: *Extension details → Allow in incognito*; Firefox: *about:addons → StylePatch → Run in Private Windows → Allow*.
 
 3. **How do I transfer my settings to a new device?**
-   Open Config Manager (⚙), click Export to download a backup file, then Import it on the new device. Free imports restore up to 5 sites; Pro restores everything. Within the same Chrome/Edge account, Pro users can also enable Cloud Sync and skip the file entirely.
+   Open Config Manager (⚙), click Export to download a backup file, then Import it on the new device. Free imports restore up to 5 sites; Pro restores everything. Within the same browser account (Chrome / Edge / Firefox), Pro users can also enable Cloud Sync and skip the file entirely.
 
 4. **Why do `www.example.com` and `example.com` share the same settings?**
    That's intentional — domains are matched regardless of the leading `www.`, so your style applies consistently on both addresses.
@@ -124,7 +128,7 @@ Click **⚙ Config Manager** at the bottom of the popup to open the configuratio
 StylePatch follows privacy-by-design principles and collects zero user data:
 
 1. **Permissions requested** — only three:
-   - `storage`: Saves your custom colors, font size, site blacklist and theme preferences. Local data uses `chrome.storage.local`; the optional Pro Cloud Sync uses `chrome.storage.sync`.
+   - `storage`: Saves your custom colors, font size, site blacklist and theme preferences. Local data uses the extension's local storage (`storage.local`); the optional Pro Cloud Sync uses the browser's sync storage (`storage.sync`) — the same permission on every supported browser.
    - `scripting`: Used only to inject the generated CSS into the current tab (in the extension's isolated world). It does not read page content or execute remote code.
    - `host_permissions`: Only used to inject custom CSS styles to adjust page appearance. Does not read DOM text, images, cookies, login credentials or form data.
 
@@ -132,7 +136,7 @@ StylePatch follows privacy-by-design principles and collects zero user data:
 
 3. **Data stays local unless you opt in** — Configuration data exists on your device by default. Data leaves your browser only when you:
    - manually export a backup file;
-   - enable Cloud Sync (Pro), which stores only site configs, the blacklist, the on/off toggle and the default theme in your browser account via `chrome.storage.sync` — never license keys or browsing data;
+   - enable Cloud Sync (Pro), which stores only site configs, the blacklist, the on/off toggle and the default theme in your browser account via the browser's `storage.sync` — never license keys or browsing data;
    - pick a Google Font (the font file is downloaded from fonts.googleapis.com);
    - activate or validate a license (the license key, a random install ID and basic browser metadata are sent to `api.annmax1983.com`).
 
@@ -151,7 +155,7 @@ StylePatch follows privacy-by-design principles and collects zero user data:
 
 ## Source Code Notice
 
-> ⚠️ **This repository does not publish source code.** It contains only usage documentation, release notes, and support resources. The extension is distributed exclusively through the Chrome Web Store. No offline installation packages or end-user source code are provided.
+> ⚠️ **This repository does not publish source code.** It contains only usage documentation, release notes, and support resources. The extension is distributed exclusively through the Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (AMO). No offline installation packages or end-user source code are provided.
 
 ---
 

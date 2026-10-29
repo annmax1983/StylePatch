@@ -37,7 +37,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 | Funktion | Beschreibung |
 |----------|--------------|
 | ♾️ **Unbegrenzte Konfigurationen** | Styles für unbegrenzt viele Websites speichern (kostenlos: max. 5 Seiten) |
-| ☁️ **Cloud-Sync** | Website-Konfigurationen, Blacklist, EIN/AUS-Status und Standard-Theme zwischen Chrome/Edge-Profilen mit demselben Browserkonto synchron halten (kein Backend, nutzt `chrome.storage.sync`) |
+| ☁️ **Cloud-Sync** | Website-Konfigurationen, Blacklist, EIN/AUS-Status und Standard-Theme zwischen Chrome/Edge/Firefox-Profilen mit demselben Browserkonto synchron halten (kein Backend, nutzt `storage.sync`) |
 | 🎨 **Standard-Theme** | Ein globales Theme auf alle Seiten ohne eigene Konfiguration anwenden; der Reset fällt darauf zurück |
 | 📥 **Vollständige Wiederherstellung** | Backups mit mehr als 5 Seiten inklusive Standard-Theme importieren |
 
@@ -59,7 +59,10 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 |---------|--------|----------------|
 | Google Chrome | ✅ Vollständig unterstützt | Chrome 95+ |
 | Microsoft Edge | ✅ Vollständig unterstützt | Edge 95+ |
+| Mozilla Firefox | ✅ Vollständig unterstützt | Firefox 140+ (Desktop) |
 | Andere Chromium-basierte Browser | ✅ Grundlegend kompatibel | Nur über offiziellen Erweiterungsstore installieren |
+
+> **Firefox-Hinweis:** Firefox kennt keinen Service Worker für Erweiterungen und nutzt stattdessen eine Event-Page. Die geräteübergreifende Synchronisierung läuft über Firefox Sync (Mozilla-Konto). Die übrigen Funktionen verhalten sich wie unter Chrome / Edge.
 
 ---
 
@@ -69,6 +72,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 |---|---|
 | Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
+| Firefox-Add-ons (AMO) | 🔜 In Prüfung – Link folgt nach der Freigabe |
 
 > Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
@@ -95,7 +99,7 @@ Klicke unten im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsse
 - Konfigurierte Seiten mit Farb- und Schrifteinstellungen **anzeigen**, durchsuchen und **löschen**
 - Alle Konfigurationen als JSON-Backup-Datei **exportieren** (kostenlos)
 - Eine Backup-Datei **importieren**, um Einstellungen auf einem anderen Gerät oder nach Neuinstallation wiederherzustellen (kostenloser Import auf 5 Seiten begrenzt)
-- **Cloud-Sync** (Premium) — Konfigurationen zwischen Chrome/Edge-Profilen mit demselben Browserkonto spiegeln
+- **Cloud-Sync** (Premium) — Konfigurationen zwischen Chrome/Edge/Firefox-Profilen mit demselben Browserkonto spiegeln
 - **Standard-Theme** (Premium) — das Theme für Seiten ohne eigene Konfiguration prüfen oder entfernen
 
 ---
@@ -109,7 +113,7 @@ Klicke unten im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsse
    Stelle sicher, dass du auf „Anwenden & Speichern" geklickt hast. Im Inkognito-Modus: Aktiviere die StylePatch-Berechtigung für private Fenster.
 
 3. **Wie übertrage ich meine Einstellungen auf ein neues Gerät?**
-   Öffne den Konfigurationsmanager (⚙), klicke auf Exportieren, um eine Backup-Datei herunterzuladen, und importiere sie auf dem neuen Gerät. Der kostenlose Import stellt bis zu 5 Seiten wieder her; Premium stellt alles wieder her. Im selben Chrome/Edge-Konto können Premium-Nutzer außerdem Cloud-Sync aktivieren und ganz auf die Datei verzichten.
+   Öffne den Konfigurationsmanager (⚙), klicke auf Exportieren, um eine Backup-Datei herunterzuladen, und importiere sie auf dem neuen Gerät. Der kostenlose Import stellt bis zu 5 Seiten wieder her; Premium stellt alles wieder her. Im selben Chrome/Edge/Firefox-Konto können Premium-Nutzer außerdem Cloud-Sync aktivieren und ganz auf die Datei verzichten.
 
 4. **Warum teilen sich `www.example.com` und `example.com` dieselben Einstellungen?**
    Das ist beabsichtigt — Domains werden unabhängig vom führenden `www.` gematcht, damit dein Style auf beiden Adressen konsistent greift.
@@ -124,7 +128,7 @@ Klicke unten im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsse
 StylePatch folgt den Prinzipien von Privacy-by-Design und erhebt keinerlei Nutzerdaten:
 
 1. **Angeforderte Berechtigungen** — nur drei:
-   - `storage`: Speichert deine benutzerdefinierten Farben, Schriftgröße, Seiten-Blacklist und Theme-Einstellungen lokal; der optionale Premium-Cloud-Sync nutzt `chrome.storage.sync`. Es werden keine Webseiteninhalte gespeichert.
+   - `storage`: Speichert deine benutzerdefinierten Farben, Schriftgröße, Seiten-Blacklist und Theme-Einstellungen lokal; der optionale Premium-Cloud-Sync nutzt `storage.sync`. Es werden keine Webseiteninhalte gespeichert.
    - `scripting`: Wird nur verwendet, um das erzeugte CSS in den aktuellen Tab zu injizieren (isolierte Welt der Erweiterung). Liest keine Seiteninhalte und führt keinen fremden Code aus.
    - `host_permissions`: Wird nur verwendet, um benutzerdefinierte CSS-Styles zur Anpassung des Seitenaussehens zu injizieren. Liest keinen DOM-Text, Bilder, Cookies, Anmeldedaten oder Formulardaten.
 
@@ -132,7 +136,7 @@ StylePatch folgt den Prinzipien von Privacy-by-Design und erhebt keinerlei Nutze
 
 3. **Daten bleiben lokal, sofern du nicht zustimmst** — Konfigurationsdaten liegen standardmäßig auf deinem Gerät. Sie verlassen deinen Browser nur, wenn du:
    - manuell eine Backup-Datei exportierst;
-   - Cloud-Sync (Premium) aktivierst: Dabei werden nur Website-Konfigurationen, Blacklist, EIN/AUS-Status und Standard-Theme über `chrome.storage.sync` in deinem Browserkonto gespeichert — niemals Lizenzschlüssel oder Browserdaten;
+   - Cloud-Sync (Premium) aktivierst: Dabei werden nur Website-Konfigurationen, Blacklist, EIN/AUS-Status und Standard-Theme über `storage.sync` in deinem Browserkonto gespeichert — niemals Lizenzschlüssel oder Browserdaten;
    - eine Google Font wählst (die Schriftdatei wird von fonts.googleapis.com heruntergeladen);
    - eine Lizenz aktivierst oder validierst (Lizenzschlüssel, eine zufällige Installations-ID und grundlegende Browser-Metadaten werden an api.annmax1983.com gesendet).
 
@@ -151,7 +155,7 @@ StylePatch folgt den Prinzipien von Privacy-by-Design und erhebt keinerlei Nutze
 
 ## Quellcode-Hinweis
 
-> ⚠️ **Dieses Repository veröffentlicht keinen Quellcode.** Es enthält nur Nutzerdokumentation, Versionshinweise und Support-Ressourcen. Die Erweiterung wird ausschließlich über den Chrome Web Store vertrieben. Es werden keine Offline-Installationspakete oder Endbenutzer-Quellcodes bereitgestellt.
+> ⚠️ **Dieses Repository veröffentlicht keinen Quellcode.** Es enthält nur Nutzerdokumentation, Versionshinweise und Support-Ressourcen. Die Erweiterung wird ausschließlich über den Chrome Web Store, Microsoft Edge Add-ons und Firefox-Add-ons (AMO) vertrieben. Es werden keine Offline-Installationspakete oder Endbenutzer-Quellcodes bereitgestellt.
 
 ---
 

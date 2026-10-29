@@ -3,7 +3,7 @@
 
 一款轻量级浏览器扩展，可即时自定义任何网页的背景色、文字色、字体、滤镜效果和字号。
 
-> 基于 Chromium · Manifest V3 · 无追踪 · 按站点保存设置（云同步可选，属于高级功能）
+> Chrome / Edge / Firefox · Manifest V3 · 无追踪 · 按站点保存设置（云同步可选，属于高级功能）
 
 ---
 
@@ -34,7 +34,7 @@
 | 功能 | 说明 |
 |------|------|
 | ♾️ **无限配置** | 保存不限数量的站点样式（免费版最多 5 个站点） |
-| ☁️ **云端同步** | 在同一浏览器账号登录的 Chrome/Edge 配置间同步站点配置、黑名单、开关状态和默认主题（无后端，使用 `chrome.storage.sync`） |
+| ☁️ **云端同步** | 在同一浏览器账号登录的 Chrome / Edge / Firefox 配置间同步站点配置、黑名单、开关状态和默认主题（无后端，使用 `storage.sync`） |
 | 🎨 **默认主题** | 为所有未单独配置的网站应用统一主题；重置时回退到该主题 |
 | 📥 **完整恢复** | 导入超过 5 个站点的备份，并包含默认主题 |
 
@@ -56,7 +56,10 @@
 |--------|------|
 | Google Chrome | ✅ 完全支持 |
 | Microsoft Edge | ✅ 完全支持 |
+| Mozilla Firefox | ✅ 完全支持 |
 | 其他 Chromium 内核浏览器 | ✅ 应可使用 |
+
+> **Firefox 说明：** Firefox 的扩展没有 service worker，改为事件页运行。跨设备同步使用 Firefox Sync（Mozilla 账号）。其余功能与 Chrome / Edge 一致。
 
 ---
 
@@ -66,6 +69,7 @@
 |---|---|
 | Chrome 应用商店 | [在 Chrome 中安装](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge 加载项 | [在 Edge 中安装](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
+| Firefox 附加组件（AMO） | 🔜 审核中，上架后补充链接 |
 
 > 请只通过上方官方商店安装，避免使用第三方下载站。
 
@@ -94,7 +98,7 @@
 - **查看**、搜索和**删除**已配置的站点及其颜色与字体设置
 - **导出**全部配置为 JSON 备份文件（免费）
 - **导入**备份文件，在新设备或重装后恢复设置（免费版最多恢复 5 个站点）
-- **云端同步**（高级）— 在同一浏览器账号登录的 Chrome/Edge 配置间同步配置
+- **云端同步**（高级）— 在同一浏览器账号登录的 Chrome / Edge / Firefox 配置间同步配置
 - **默认主题**（高级）— 查看或移除应用于未单独配置网站的主题
 
 ---
@@ -102,7 +106,7 @@
 ## 隐私
 
 - 仅需 `storage`、`scripting` + `host_permissions` 权限
-- `storage`：在本地保存自定义颜色、字号、字体、滤镜、站点黑名单和主题偏好，不存储网页内容；可选的高级云端同步使用 `chrome.storage.sync`
+- `storage`：在本地保存自定义颜色、字号、字体、滤镜、站点黑名单和主题偏好，不存储网页内容；可选的高级云端同步使用 `storage.sync`
 - `scripting`：仅用于向当前标签页注入生成的 CSS 样式（扩展的隔离环境），不读取页面内容，也不执行远程代码
 - `host_permissions`：仅用于注入自定义 CSS 样式，不读取 DOM 文本、图片、表单数据或 Cookie
 - 不访问浏览历史，不追踪用户，不内置第三方分析
@@ -123,7 +127,7 @@
 
 ## 源码说明
 
-> ⚠️ **此处不发布源码。** 本仓库仅提供使用说明、更新日志和留言支持服务。扩展程序仅通过 Chrome Web Store 分发，不提供离线安装包或终端用户源代码。
+> ⚠️ **此处不发布源码。** 本仓库仅提供使用说明、更新日志和留言支持服务。扩展程序仅通过 Chrome Web Store、Microsoft Edge Add-ons 与 Firefox 附加组件（AMO） 分发，不提供离线安装包或终端用户源代码。
 
 ---
 
