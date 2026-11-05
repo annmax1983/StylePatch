@@ -21,6 +21,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | 🔤 **Famille de police** | Changez la police de la page — polices système ou Google Fonts chargées depuis le web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Filtres de couleur** | Mode niveaux de gris et teinte sépia chaude pour une lecture plus agréable |
 | 👁️ **Thèmes prédéfinis** | Clair, Ton chaud, Vert, Sombre, Sépia, Nuit bleue, Contraste élevé — application en un clic |
+| 🎛️ **Fond uniforme (option)** | Désactivé par défaut. Une fois activé, seul le fond des conteneurs de mise en page sans classe (div / section / nav…) est effacé ; les alertes, les cartes et les blocs de code gardent leurs couleurs |
 | 🧭 **Indicateur de contraste** | Signale lorsque la couleur du texte ou des liens passe sous les seuils de contraste WCAG |
 | 🔄 **Activation globale** | Activez/désactivez l'extension globalement sans perdre vos réglages |
 | 🚫 **Liste noire par site** | Excluez des sites spécifiques de la personnalisation |
@@ -72,7 +73,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 |---|---|
 | Chrome Web Store | [Installer dans Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge Add-ons | [Installer dans Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
-| Modules complémentaires Firefox (AMO) | 🔜 En cours d’examen — le lien sera ajouté après publication |
+| Modules complémentaires Firefox (AMO) | [Installer pour Firefox](https://addons.mozilla.org/firefox/addon/stylepatch/) |
 
 > Installez uniquement depuis les boutiques officielles ci-dessus — évitez les sites de téléchargement tiers.
 
@@ -177,3 +178,12 @@ Les contrevenants s'exposent à des poursuites judiciaires.
 Si StylePatch vous est utile, offrez un café au développeur !
 
 **[👉 Cliquez ici pour soutenir](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+
+---
+
+## Liens
+
+- **Site officiel:** https://annmax1983.com/
+- **Cette extension:** https://annmax1983.com/extensions/stylepatch
+- **Confidentialité:** https://annmax1983.com/privacy
+- **Contact:** support@annmax1983.com

@@ -21,6 +21,7 @@
 | 🔤 **フォントファミリー** | ページのフォントを切り替え — システムフォント、またはWebから読み込むGoogle Fonts（Roboto、Open Sans、Noto Sans SCなど） |
 | 🌗 **カラーフィルター** | グレースケールモードと暖色セピア調の護眼モード |
 | 👁️ **プリセットテーマ** | ライト、暖色、グリーン、ダーク、セピア、ブルーナイト、ハイコントラスト — ワンクリックで適用 |
+| 🎛️ **背景の統一（任意）** | 既定ではオフ。オンにするとクラスを持たないレイアウト用コンテナ（div / section / nav など）の背景だけを消去し、注意喚起・カード・コードブロックの配色はそのまま残します |
 | 🧭 **コントラスト警告** | テキストやリンクの色がWCAGのコントラスト基準を下回ると通知します |
 | 🔄 **グローバルトグル** | 設定を失うことなく、拡張機能をグローバルにON/OFF |
 | 🚫 **サイトブラックリスト** | 特定のWebサイトをスタイリングから除外 |
@@ -72,7 +73,7 @@
 |---|---|
 | Chrome ウェブストア | [Chrome に追加](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge アドオン | [Edge に追加](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
-| Firefox アドオン（AMO） | 🔜 審査中 — 公開後にリンクを追加します |
+| Firefox アドオン（AMO） | [Firefox 版をインストール](https://addons.mozilla.org/firefox/addon/stylepatch/) |
 
 > 上記の公式ストアからのみインストールしてください。第三者サイトの利用は避けてください。
 
@@ -177,3 +178,12 @@ Copyright © 2026 StylePatch. All rights reserved.
 StylePatchが役に立った場合は、開発者にコーヒーをおごってあげてください！
 
 **[👉 こちらから支援する](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+
+---
+
+## リンク
+
+- **公式サイト:** https://annmax1983.com/
+- **この拡張機能:** https://annmax1983.com/extensions/stylepatch
+- **プライバシーポリシー:** https://annmax1983.com/privacy
+- **お問い合わせ:** support@annmax1983.com

@@ -21,6 +21,7 @@ A lightweight browser extension that lets you customize any webpage's background
 | 🔤 **Font Family** | Switch the page font — system fonts, or Google Fonts loaded from the web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Color Filters** | Grayscale mode and a warm sepia tint for easier reading |
 | 👁️ **Preset Themes** | Light, Warm Tone, Green, Dark, Sepia, Night Blue, High Contrast — one click to apply |
+| 🎛️ **Uniform Background (opt-in)** | Off by default. When enabled it clears the background of plain layout containers (div / section / nav without a class) so the page matches your colour, while alerts, cards and code blocks keep their own colours |
 | 🧭 **Contrast Hint** | Warns when text or link color falls below WCAG contrast thresholds |
 | 🔄 **Global Toggle** | Enable/disable the extension globally without losing settings |
 | 🚫 **Site Blacklist** | Exclude specific websites from styling |
@@ -72,7 +73,7 @@ A lightweight browser extension that lets you customize any webpage's background
 |---|---|
 | Chrome Web Store | [Install for Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge Add-ons | [Install for Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
-| Firefox Add-ons (AMO) | 🔜 Under review — link will be added once the listing is live |
+| Firefox Add-ons (AMO) | [Install for Firefox](https://addons.mozilla.org/firefox/addon/stylepatch/) |
 
 > Install only from the official stores above — avoid third-party download sites.
 
@@ -177,3 +178,13 @@ Violators will bear corresponding legal liabilities.
 If you find StylePatch helpful, consider buying the developer a coffee!
 
 **[👉 Click here to support](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+
+---
+
+## Links
+
+- **Official website:** https://annmax1983.com/
+- **This extension:** https://annmax1983.com/extensions/stylepatch
+- **Privacy policy:** https://annmax1983.com/privacy
+- **Contact:** support@annmax1983.com
+- **☕ Support this project (Ko-fi):** https://ko-fi.com/annmax?ref=stylepatch

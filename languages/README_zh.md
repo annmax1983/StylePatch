@@ -18,6 +18,7 @@
 | 🔤 **字体更换** | 系统字体任选，也可在线加载 Google Fonts 字体（Roboto、思源黑体等） |
 | 🌗 **护眼滤镜** | 灰度模式与暖色护眼滤镜 |
 | 👁️ **预设主题** | 亮色、暖色、绿色、暗色、护眼褐色、蓝夜、高对比度 — 一键切换 |
+| 🎛️ **统一底色（可选）** | 默认关闭。开启后只清除无 class 的布局容器（div / section / nav 等）背景，让页面贴合你的配色；提示条、卡片、代码块保留原有底色 |
 | 🧭 **对比度提示** | 文字或链接颜色低于 WCAG 对比度阈值时给出提醒 |
 | 🔄 **全局开关** | 全局启用/禁用扩展，设置不丢失 |
 | 🚫 **站点黑名单** | 排除特定网站不应用样式 |
@@ -69,7 +70,7 @@
 |---|---|
 | Chrome 应用商店 | [在 Chrome 中安装](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge 加载项 | [在 Edge 中安装](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
-| Firefox 附加组件（AMO） | 🔜 审核中，上架后补充链接 |
+| Firefox 附加组件（AMO） | [安装 Firefox 版](https://addons.mozilla.org/firefox/addon/stylepatch/) |
 
 > 请只通过上方官方商店安装，避免使用第三方下载站。
 
@@ -142,3 +143,12 @@ Copyright © 2026 StylePatch. 保留所有权利。
 如果 StylePatch 对你有帮助，请我喝杯咖啡！
 
 **[👉 点击支持](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+
+---
+
+## 链接
+
+- **官方网站:** https://annmax1983.com/
+- **本插件:** https://annmax1983.com/extensions/stylepatch
+- **隐私政策:** https://annmax1983.com/privacy
+- **联系:** support@annmax1983.com

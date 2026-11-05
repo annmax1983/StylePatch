@@ -21,6 +21,7 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 | 🔤 **Familia tipográfica** | Cambia la fuente de la página — fuentes del sistema o Google Fonts cargados desde la web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Filtros de color** | Modo escala de grises y tinte sepia cálido para una lectura más cómoda |
 | 👁️ **Temas predefinidos** | Claro, Tono cálido, Verde, Oscuro, Sepia, Noche azul, Alto contraste — un clic para aplicar |
+| 🎛️ **Fondo uniforme (opcional)** | Desactivado por defecto. Al activarlo solo se limpia el fondo de los contenedores de maquetación sin clase (div / section / nav…); los avisos, las tarjetas y los bloques de código conservan sus colores |
 | 🧭 **Aviso de contraste** | Avisa cuando el color del texto o de los enlaces no alcanza los umbrales de contraste WCAG |
 | 🔄 **Interruptor global** | Activa/desactiva la extensión globalmente sin perder la configuración |
 | 🚫 **Lista negra de sitios** | Excluye sitios web específicos del estilizado |
@@ -72,7 +73,7 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 |---|---|
 | Chrome Web Store | [Instalar en Chrome](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Complementos de Microsoft Edge | [Instalar en Edge](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
-| Complementos de Firefox (AMO) | 🔜 En revisión: el enlace se añadirá al publicarse |
+| Complementos de Firefox (AMO) | [Instalar para Firefox](https://addons.mozilla.org/firefox/addon/stylepatch/) |
 
 > Instale solo desde las tiendas oficiales de arriba; evite sitios de descarga de terceros.
 
@@ -177,3 +178,12 @@ Los infractores asumirán las responsabilidades legales correspondientes.
 Si te resulta útil StylePatch, ¡considera invitar al desarrollador a un café!
 
 **[👉 Haz clic aquí para apoyar](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+
+---
+
+## Enlaces
+
+- **Sitio oficial:** https://annmax1983.com/
+- **Esta extensión:** https://annmax1983.com/extensions/stylepatch
+- **Privacidad:** https://annmax1983.com/privacy
+- **Contacto:** support@annmax1983.com

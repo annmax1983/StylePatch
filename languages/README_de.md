@@ -21,6 +21,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 | 🔤 **Schriftart** | Seiten-Schriftart wechseln — Systemschriften oder Google Fonts aus dem Web (Roboto, Open Sans, Noto Sans SC…) |
 | 🌗 **Farbfilter** | Graustufenmodus und warmer Sepia-Ton für angenehmeres Lesen |
 | 👁️ **Vorgefertigte Themes** | Hell, Warmton, Grün, Dunkel, Sepia, Blaue Nacht, Hoher Kontrast — ein Klick zum Anwenden |
+| 🎛️ **Einheitlicher Hintergrund (optional)** | Standardmäßig aus. Wenn aktiv, wird nur der Hintergrund von Layout-Containern ohne Klasse (div / section / nav …) entfernt; Hinweise, Karten und Codeblöcke behalten ihre Farben |
 | 🧭 **Kontrast-Hinweis** | Warnt, wenn Text- oder Linkfarbe die WCAG-Kontrastwerte unterschreitet |
 | 🔄 **Globaler Schalter** | Erweiterung global aktivieren/deaktivieren ohne Einstellungen zu verlieren |
 | 🚫 **Seiten-Blacklist** | Bestimmte Websites vom Styling ausschließen |
@@ -72,7 +73,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 |---|---|
 | Chrome Web Store | [In Chrome installieren](https://chromewebstore.google.com/detail/hlmnodnjlhdecfcaiahnngpldkialkca) |
 | Microsoft Edge Add-ons | [In Edge installieren](https://microsoftedge.microsoft.com/addons/detail/lkhpdpimlelcldbnkhggfdoejcimcfgo) |
-| Firefox-Add-ons (AMO) | 🔜 In Prüfung – Link folgt nach der Freigabe |
+| Firefox-Add-ons (AMO) | [Für Firefox installieren](https://addons.mozilla.org/firefox/addon/stylepatch/) |
 
 > Installieren Sie nur über die offiziellen Stores oben – meiden Sie Download-Seiten Dritter.
 
@@ -177,3 +178,12 @@ Verstoßende tragen die entsprechenden rechtlichen Konsequenzen.
 Wenn dir StylePatch hilft, kannst du dem Entwickler gerne einen Kaffee ausgeben!
 
 **[👉 Hier unterstützen](https://ko-fi.com/annmax?buyACoffee=true&ref=stylepatch)**
+
+---
+
+## Links
+
+- **Offizielle Website:** https://annmax1983.com/
+- **Diese Erweiterung:** https://annmax1983.com/extensions/stylepatch
+- **Datenschutz:** https://annmax1983.com/privacy
+- **Kontakt:** support@annmax1983.com
