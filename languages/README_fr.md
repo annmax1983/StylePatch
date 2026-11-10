@@ -6,7 +6,7 @@ Manuel officiel · Multilangue : [English](../README.md) | [中文](README_zh.md
 
 Une extension légère qui vous permet de personnaliser instantanément la couleur de fond, la couleur du texte, la couleur des liens, la police, les filtres et la taille de police de n'importe quelle page web — pour une lecture plus confortable.
 
-✅ Disponible sur le Chrome & Edge Web Store · ✅ Zéro suivi, données stockées localement (la synchronisation cloud est optionnelle et Premium) · ✅ Paramètres indépendants par site
+✅ Disponible sur le Chrome & Edge Web Store · ✅ Zéro suivi, données stockées localement (la synchronisation cloud est optionnelle et Pro) · ✅ Paramètres indépendants par site
 
 ---
 
@@ -33,7 +33,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | 🏗️ **Manifest V3** | Construit sur l'architecture service worker du Manifest V3 |
 | 🔄 **Réinitialisation en un clic** | Supprime la configuration du site ; avec un thème par défaut, le site y revient |
 
-### ⭐ Fonctionnalités Premium (licence requise)
+### ⭐ Fonctionnalités Pro (licence requise)
 
 | Fonctionnalité | Description |
 |---------|-------------|
@@ -89,7 +89,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 6. **Appliquez un filtre** — Niveaux de gris ou teinte protectrice optionnels
 7. **Enregistrez** — Cliquez sur **Appliquer et enregistrer** pour sauvegarder les paramètres pour ce site
 8. **Réinitialisez** — Cliquez sur ↺ pour supprimer la configuration propre du site ; si un thème par défaut existe, le site y revient
-9. **Définir par défaut** — Les utilisateurs Premium peuvent enregistrer les couleurs actuelles comme thème par défaut pour tous les sites (les sites ayant leur propre configuration la conservent)
+9. **Définir par défaut** — Les utilisateurs Pro peuvent enregistrer les couleurs actuelles comme thème par défaut pour tous les sites (les sites ayant leur propre configuration la conservent)
 10. **Exclure** — Cliquez sur « Exclure ce site » pour ajouter un domaine à la liste noire
 11. **Activer/Désactiver** — Utilisez le commutateur ON/OFF pour désactiver sans perdre les réglages
 
@@ -100,8 +100,8 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 - **Consultez**, recherchez et **supprimez** les sites configurés avec leurs paramètres de couleur et de police
 - **Exportez** toutes les configurations en fichier JSON de sauvegarde (gratuit)
 - **Importez** un fichier de sauvegarde pour restaurer les réglages sur un autre appareil ou après une réinstallation (l'import gratuit est limité à 5 sites)
-- **Synchronisation cloud** (Premium) — répliquez la configuration entre profils Chrome/Edge/Firefox connectés au même compte de navigateur
-- **Thème par défaut** (Premium) — consultez ou supprimez le thème appliqué aux sites sans configuration propre
+- **Synchronisation cloud** (Pro) — répliquez la configuration entre profils Chrome/Edge/Firefox connectés au même compte de navigateur
+- **Thème par défaut** (Pro) — consultez ou supprimez le thème appliqué aux sites sans configuration propre
 
 ---
 
@@ -114,7 +114,7 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
    Assurez-vous d'avoir cliqué sur « Appliquer et enregistrer ». En mode navigation privée, activez l'autorisation de StylePatch pour les fenêtres privées.
 
 3. **Comment transférer mes paramètres sur un nouvel appareil ?**
-   Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil. L'import gratuit restaure jusqu'à 5 sites ; Premium restaure tout. Avec le même compte Chrome/Edge/Firefox, les utilisateurs Premium peuvent aussi activer la Synchronisation cloud et se passer du fichier.
+   Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil. L'import gratuit restaure jusqu'à 5 sites ; Pro restaure tout. Avec le même compte Chrome/Edge/Firefox, les utilisateurs Pro peuvent aussi activer la Synchronisation cloud et se passer du fichier.
 
 4. **Pourquoi `www.example.com` et `example.com` partagent les mêmes paramètres ?**
    C'est volontaire — les domaines sont matchés sans tenir compte du `www.` initial, pour que votre style s'applique de manière cohérente sur les deux adresses.
@@ -129,7 +129,7 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 StylePatch respecte les principes de confidentialité dès la conception et ne collecte aucune donnée utilisateur :
 
 1. **Permissions demandées** — seulement trois :
-   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Premium) utilise `storage.sync`. Aucun contenu de page web n'est stocké.
+   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Pro) utilise `storage.sync`. Aucun contenu de page web n'est stocké.
    - `scripting` : Utilisé uniquement pour injecter le CSS généré dans l'onglet courant (monde isolé de l'extension). Ne lit pas le contenu des pages et n'exécute aucun code distant.
    - `host_permissions` : Utilisé uniquement pour injecter des styles CSS personnalisés afin de modifier l'apparence des pages. Ne lit pas le texte du DOM, les images, les cookies, les identifiants ou les données de formulaire.
 
@@ -137,7 +137,7 @@ StylePatch respecte les principes de confidentialité dès la conception et ne c
 
 3. **Les données restent locales sauf si vous les partagez** — Les données de configuration résident sur votre appareil par défaut. Elles ne quittent votre navigateur que lorsque :
    - vous exportez manuellement un fichier de sauvegarde ;
-   - vous activez la Synchronisation cloud (Premium), qui stocke uniquement les configurations de sites, la liste noire, l'activation et le thème par défaut dans votre compte de navigateur via `storage.sync` — jamais les clés de licence ni les données de navigation ;
+   - vous activez la Synchronisation cloud (Pro), qui stocke uniquement les configurations de sites, la liste noire, l'activation et le thème par défaut dans votre compte de navigateur via `storage.sync` — jamais les clés de licence ni les données de navigation ;
    - vous choisissez une Google Font (le fichier de police est téléchargé depuis fonts.googleapis.com) ;
    - vous activez ou validez une licence (la clé de licence, un ID d'installation aléatoire et des métadonnées de navigateur de base sont envoyés à api.annmax1983.com).
 

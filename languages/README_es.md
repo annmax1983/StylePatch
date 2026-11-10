@@ -6,7 +6,7 @@ Manual de usuario oficial · Multi-idioma: [English](../README.md) | [中文](RE
 
 Una extensión ligera para el navegador que te permite personalizar al instante el color de fondo, el color del texto, el color de los enlaces, la fuente, el efecto de filtro y el tamaño de fuente de cualquier página web para una experiencia de lectura más cómoda.
 
-✅ Publicada oficialmente en Chrome y Edge Web Store · ✅ Cero rastreo, datos almacenados localmente (la sincronización en la nube es opcional y Premium) · ✅ Configuración independiente por sitio
+✅ Publicada oficialmente en Chrome y Edge Web Store · ✅ Cero rastreo, datos almacenados localmente (la sincronización en la nube es opcional y Pro) · ✅ Configuración independiente por sitio
 
 ---
 
@@ -33,7 +33,7 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 | 🏗️ **Manifest V3** | Construida sobre la arquitectura service worker de Manifest V3 |
 | 🔄 **Restablecimiento con un clic** | Elimina la configuración del sitio; si existe un tema predeterminado, vuelve a él |
 
-### ⭐ Funcionalidades Premium (requieren licencia)
+### ⭐ Funcionalidades Pro (requieren licencia)
 
 | Funcionalidad | Descripción |
 |---------|-------------|
@@ -89,7 +89,7 @@ Una extensión ligera para el navegador que te permite personalizar al instante 
 6. **Aplica un filtro** — Opcionalmente escala de grises o tinte cálido para el cuidado visual
 7. **Guardar** — Haz clic en **Aplicar y guardar** para conservar la configuración de este sitio
 8. **Restablecer** — Haz clic en ↺ para eliminar la configuración propia del sitio; si hay un tema predeterminado, el sitio vuelve a él
-9. **Establecer como predeterminado** — Los usuarios Premium pueden guardar los colores actuales como tema predeterminado para todos los sitios (los sitios con configuración propia la mantienen)
+9. **Establecer como predeterminado** — Los usuarios Pro pueden guardar los colores actuales como tema predeterminado para todos los sitios (los sitios con configuración propia la mantienen)
 10. **Excluir** — Haz clic en "Excluir este sitio" para añadir un dominio a la lista negra
 11. **Interruptor** — Usa el interruptor ON/OFF para desactivar sin perder la configuración
 
@@ -100,8 +100,8 @@ Haz clic en **⚙ Gestor de configuraciones** en la parte inferior del popup par
 - **Ver**, buscar y **eliminar** sitios configurados con sus ajustes de color y fuente
 - **Exportar** todas las configuraciones como archivo de respaldo JSON (gratis)
 - **Importar** un archivo de respaldo para restaurar la configuración en otro dispositivo o después de reinstalar (la importación gratuita se limita a 5 sitios)
-- **Sincronización en la nube** (Premium) — replica la configuración entre perfiles de Chrome/Edge/Firefox con la misma cuenta de navegador
-- **Tema predeterminado** (Premium) — revisa o elimina el tema aplicado a los sitios sin configuración propia
+- **Sincronización en la nube** (Pro) — replica la configuración entre perfiles de Chrome/Edge/Firefox con la misma cuenta de navegador
+- **Tema predeterminado** (Pro) — revisa o elimina el tema aplicado a los sitios sin configuración propia
 
 ---
 
@@ -114,7 +114,7 @@ Haz clic en **⚙ Gestor de configuraciones** en la parte inferior del popup par
    Asegúrate de haber hecho clic en "Aplicar y guardar". Si usas el modo incógnito, activa el permiso de StylePatch para ventanas privadas.
 
 3. **¿Cómo transfiero mi configuración a un nuevo dispositivo?**
-   Abre el Gestor de configuraciones (⚙), haz clic en Exportar para descargar un archivo de respaldo e impórtalo en el nuevo dispositivo. La importación gratuita restaura hasta 5 sitios; Premium restaura todo. Dentro de la misma cuenta de Chrome/Edge/Firefox, los usuarios Premium también pueden activar la Sincronización en la nube y prescindir del archivo.
+   Abre el Gestor de configuraciones (⚙), haz clic en Exportar para descargar un archivo de respaldo e impórtalo en el nuevo dispositivo. La importación gratuita restaura hasta 5 sitios; Pro restaura todo. Dentro de la misma cuenta de Chrome/Edge/Firefox, los usuarios Pro también pueden activar la Sincronización en la nube y prescindir del archivo.
 
 4. **¿Por qué `www.example.com` y `example.com` comparten la misma configuración?**
    Es intencional — los dominios se comparan sin tener en cuenta el `www.` inicial, así que tu estilo se aplica de forma consistente en ambas direcciones.
@@ -129,7 +129,7 @@ Haz clic en **⚙ Gestor de configuraciones** en la parte inferior del popup par
 StylePatch sigue principios de privacidad desde el diseño y no recopila ningún dato del usuario:
 
 1. **Permisos solicitados** — solo tres:
-   - `storage`: Guarda tus colores personalizados, tamaño de fuente, lista negra de sitios y preferencias de tema localmente; la Sincronización en la nube opcional (Premium) usa `storage.sync`. No se almacena contenido de páginas web.
+   - `storage`: Guarda tus colores personalizados, tamaño de fuente, lista negra de sitios y preferencias de tema localmente; la Sincronización en la nube opcional (Pro) usa `storage.sync`. No se almacena contenido de páginas web.
    - `scripting`: Solo se usa para inyectar el CSS generado en la pestaña actual (en el mundo aislado de la extensión). No lee el contenido de la página ni ejecuta código remoto.
    - `host_permissions`: Solo se usa para inyectar estilos CSS personalizados que ajustan la apariencia de la página. No lee texto del DOM, imágenes, cookies, credenciales de inicio de sesión ni datos de formularios.
 
@@ -137,7 +137,7 @@ StylePatch sigue principios de privacidad desde el diseño y no recopila ningún
 
 3. **Los datos permanecen locales salvo que los compartas** — Los datos de configuración existen en tu dispositivo de forma predeterminada. Solo salen de tu navegador cuando:
    - exportas manualmente un archivo de respaldo;
-   - activas la Sincronización en la nube (Premium), que guarda únicamente la configuración de sitios, la lista negra, el interruptor y el tema predeterminado en tu cuenta de navegador mediante `storage.sync` — nunca claves de licencia ni datos de navegación;
+   - activas la Sincronización en la nube (Pro), que guarda únicamente la configuración de sitios, la lista negra, el interruptor y el tema predeterminado en tu cuenta de navegador mediante `storage.sync` — nunca claves de licencia ni datos de navegación;
    - eliges un Google Font (el archivo de fuente se descarga desde fonts.googleapis.com);
    - activas o validas una licencia (la clave de licencia, un ID de instalación aleatorio y metadatos básicos del navegador se envían a api.annmax1983.com).
 

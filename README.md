@@ -33,7 +33,7 @@ A lightweight browser extension that lets you customize any webpage's background
 | 🏗️ **Manifest V3** | Built on Manifest V3 — service worker on Chrome / Edge, non-persistent background page on Firefox |
 | 🔄 **One-Click Reset** | Drop the site's own config; falls back to your default theme when one exists |
 
-### ⭐ Premium Features (License Required)
+### ⭐ Pro Features (License Required)
 
 | Feature | Description |
 |---------|-------------|
