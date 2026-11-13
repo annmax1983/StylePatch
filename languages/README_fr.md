@@ -4,7 +4,7 @@ Manuel officiel · Multilangue : [English](../README.md) | [中文](README_zh.md
 
 > Ce document est le manuel officiel de StylePatch, accessible via le bouton « Manuel d'utilisation » dans le panneau de l'extension.
 
-Une extension légère qui vous permet de personnaliser instantanément la couleur de fond, la couleur du texte, la couleur des liens, la police, les filtres et la taille de police de n'importe quelle page web — pour une lecture plus confortable.
+Une extension légère qui vous permet de personnaliser instantanément la couleur de fond, la couleur du texte, la couleur des liens, la police, le zoom de page et les thèmes prédéfinis de n'importe quelle page web — pour une lecture plus confortable.
 
 ✅ Disponible sur le Chrome & Edge Web Store · ✅ Zéro suivi, données stockées localement (la synchronisation cloud est optionnelle et Pro) · ✅ Paramètres indépendants par site
 
@@ -17,11 +17,9 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | Fonctionnalité | Description |
 |---------|-------------|
 | 🎨 **Couleur de fond, du texte et des liens** | Choisissez n'importe quelle couleur via le sélecteur natif ou saisissez directement un code hexadécimal ; la couleur des liens s'ajuste automatiquement pour la lisibilité |
-| 🔠 **Taille de police** | Ajustement de 80 % à 150 % via CSS zoom |
+| 🔠 **Zoom de page** | Agrandit ou réduit toute la page de 80 % à 150 % |
 | 🔤 **Famille de police** | Changez la police de la page — polices système ou Google Fonts chargées depuis le web (Roboto, Open Sans, Noto Sans SC…) |
-| 🌗 **Filtres de couleur** | Mode niveaux de gris et teinte sépia chaude pour une lecture plus agréable |
-| 👁️ **Thèmes prédéfinis** | Clair, Ton chaud, Vert, Sombre, Sépia, Nuit bleue, Contraste élevé — application en un clic |
-| 🎛️ **Fond uniforme (option)** | Désactivé par défaut. Une fois activé, seul le fond des conteneurs de mise en page sans classe (div / section / nav…) est effacé ; les alertes, les cartes et les blocs de code gardent leurs couleurs |
+| 👁️ **Thèmes prédéfinis** | Clair, Ton chaud, Vert, Ivoire, Sombre, Sépia, Nuit bleue, Contraste élevé — application en un clic |
 | 🧭 **Indicateur de contraste** | Signale lorsque la couleur du texte ou des liens passe sous les seuils de contraste WCAG |
 | 🔄 **Activation globale** | Activez/désactivez l'extension globalement sans perdre vos réglages |
 | 🚫 **Liste noire par site** | Excluez des sites spécifiques de la personnalisation |
@@ -29,7 +27,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | 📤 **Sauvegarde locale** | Exportez toutes les configurations en JSON et restaurez-les plus tard (l'import gratuit est limité à 5 sites) |
 | ⚡ **Prévisualisation en temps réel** | Toutes les modifications s'appliquent instantanément pendant que vous ajustez, sans rechargement de la page |
 | 🌍 **Interface multilingue** | Prend en charge l'anglais, le chinois, l'espagnol, l'allemand, le japonais et le français |
-| 🔒 **Permissions minimales** | Uniquement `storage`, `scripting` + `host_permissions` — aucun accès superflu |
+| 🔒 **Permissions minimales** | Uniquement `storage`, `scripting`, `alarms` + `host_permissions` — aucun accès superflu |
 | 🏗️ **Manifest V3** | Construit sur l'architecture service worker du Manifest V3 |
 | 🔄 **Réinitialisation en un clic** | Supprime la configuration du site ; avec un thème par défaut, le site y revient |
 
@@ -41,6 +39,7 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 | ☁️ **Synchronisation cloud** | Synchronisez configurations de sites, liste noire, activation et thème par défaut entre profils Chrome/Edge/Firefox connectés au même compte de navigateur (sans backend, via `storage.sync`) |
 | 🎨 **Thème par défaut** | Appliquez un thème global à tous les sites sans configuration propre ; la réinitialisation y revient |
 | 📥 **Restauration complète** | Importez des sauvegardes de plus de 5 sites, thème par défaut inclus |
+| 🌙 **Bascule programmée** | Applique automatiquement le thème sombre intégré à tous les sites entre deux horaires choisis (ex. 19:00–07:00) |
 
 > Voir les [tarifs VKT](https://annmax1983.com/pricing.html) pour les options de licence.
 
@@ -83,25 +82,26 @@ Une extension légère qui vous permet de personnaliser instantanément la coule
 
 1. Cliquez sur l'**icône StylePatch** dans la barre d'outils de votre navigateur
 2. **Choisissez les couleurs** — Utilisez le sélecteur natif ou saisissez un code hexadécimal
-3. **Sélectionnez un préréglage** — Clair, Ton chaud, Vert, Sombre, Sépia, Nuit bleue ou Contraste élevé
-4. **Ajustez la taille de police** — Glissez le curseur de 80 % à 150 %
+3. **Sélectionnez un préréglage** — Clair, Ton chaud, Vert, Ivoire, Sombre, Sépia, Nuit bleue ou Contraste élevé
+4. **Ajustez le zoom de page** — Glissez le curseur de 80 % à 150 % (met toute la page à l’échelle)
 5. **Choisissez une police** — Sélectionnez une police système ou chargez une Google Font depuis le web
-6. **Appliquez un filtre** — Niveaux de gris ou teinte protectrice optionnels
-7. **Enregistrez** — Cliquez sur **Appliquer et enregistrer** pour sauvegarder les paramètres pour ce site
-8. **Réinitialisez** — Cliquez sur ↺ pour supprimer la configuration propre du site ; si un thème par défaut existe, le site y revient
-9. **Définir par défaut** — Les utilisateurs Pro peuvent enregistrer les couleurs actuelles comme thème par défaut pour tous les sites (les sites ayant leur propre configuration la conservent)
-10. **Exclure** — Cliquez sur « Exclure ce site » pour ajouter un domaine à la liste noire
-11. **Activer/Désactiver** — Utilisez le commutateur ON/OFF pour désactiver sans perdre les réglages
+6. **Enregistrez** — Cliquez sur **Appliquer et enregistrer** pour sauvegarder les paramètres pour ce site
+7. **Réinitialisez** — Cliquez sur ↺ pour supprimer la configuration propre du site ; si un thème par défaut existe, le site y revient
+8. **Définir par défaut** — Les utilisateurs Pro peuvent enregistrer les couleurs actuelles comme thème par défaut pour tous les sites (les sites ayant leur propre configuration la conservent)
+9. **Exclure** — Cliquez sur « Exclure ce site » pour ajouter un domaine à la liste noire
+10. **Activer/Désactiver** — Utilisez le commutateur ON/OFF pour désactiver sans perdre les réglages
 
 ### Gestionnaire de configurations
 
-Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir la page de configuration :
+Cliquez sur **⚙ Gestionnaire de configurations** en haut à droite du popup pour ouvrir la page de configuration :
 
 - **Consultez**, recherchez et **supprimez** les sites configurés avec leurs paramètres de couleur et de police
+- **Gérez les exclusions** — ajoutez un domaine à la main ou retirez-le sans revenir sur le site
 - **Exportez** toutes les configurations en fichier JSON de sauvegarde (gratuit)
 - **Importez** un fichier de sauvegarde pour restaurer les réglages sur un autre appareil ou après une réinstallation (l'import gratuit est limité à 5 sites)
 - **Synchronisation cloud** (Pro) — répliquez la configuration entre profils Chrome/Edge/Firefox connectés au même compte de navigateur
 - **Thème par défaut** (Pro) — consultez ou supprimez le thème appliqué aux sites sans configuration propre
+- **Bascule programmée** (Pro) — définissez la plage du thème sombre et activez-la ou désactivez-la
 
 ---
 
@@ -110,16 +110,16 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 1. **Les styles ne s'appliquent pas après modification ?**
    Fermez les autres extensions similaires (mode sombre / protection des yeux) qui pourraient être en conflit, puis rafraîchissez la page.
 
-2. **Les paramètres sauvegardés disparaissent après la réouverture du navigateur ?**
+1. **Les paramètres sauvegardés disparaissent après la réouverture du navigateur ?**
    Assurez-vous d'avoir cliqué sur « Appliquer et enregistrer ». En mode navigation privée, activez l'autorisation de StylePatch pour les fenêtres privées.
 
-3. **Comment transférer mes paramètres sur un nouvel appareil ?**
+1. **Comment transférer mes paramètres sur un nouvel appareil ?**
    Ouvrez le gestionnaire de configurations (⚙), cliquez sur Exporter pour télécharger un fichier de sauvegarde, puis importez-le sur le nouvel appareil. L'import gratuit restaure jusqu'à 5 sites ; Pro restaure tout. Avec le même compte Chrome/Edge/Firefox, les utilisateurs Pro peuvent aussi activer la Synchronisation cloud et se passer du fichier.
 
-4. **Pourquoi `www.example.com` et `example.com` partagent les mêmes paramètres ?**
+1. **Pourquoi `www.example.com` et `example.com` partagent les mêmes paramètres ?**
    C'est volontaire — les domaines sont matchés sans tenir compte du `www.` initial, pour que votre style s'applique de manière cohérente sur les deux adresses.
 
-5. **Je ne trouve pas StylePatch sur la boutique d'extensions ?**
+1. **Je ne trouve pas StylePatch sur la boutique d'extensions ?**
    Vérifiez votre région réseau. Le lien vers la boutique officiel est disponible sur [www.annmax1983.com](https://www.annmax1983.com).
 
 ---
@@ -129,13 +129,14 @@ Cliquez sur **⚙ Gestionnaire de configurations** en bas du popup pour ouvrir l
 StylePatch respecte les principes de confidentialité dès la conception et ne collecte aucune donnée utilisateur :
 
 1. **Permissions demandées** — seulement trois :
-   - `storage` : Sauvegarde vos couleurs personnalisées, la taille de police, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Pro) utilise `storage.sync`. Aucun contenu de page web n'est stocké.
+   - `storage` : Sauvegarde vos couleurs personnalisées, le zoom de page, la liste noire de sites et les préférences de thème en local ; la Synchronisation cloud optionnelle (Pro) utilise `storage.sync`. Aucun contenu de page web n'est stocké.
    - `scripting` : Utilisé uniquement pour injecter le CSS généré dans l'onglet courant (monde isolé de l'extension). Ne lit pas le contenu des pages et n'exécute aucun code distant.
+   - `alarms` : Utilisé uniquement pour réveiller le service worker au début et à la fin de la plage programmée. Aucune donnée, aucune interrogation en arrière-plan.
    - `host_permissions` : Utilisé uniquement pour injecter des styles CSS personnalisés afin de modifier l'apparence des pages. Ne lit pas le texte du DOM, les images, les cookies, les identifiants ou les données de formulaire.
 
-2. **Pas de suivi** — Aucun accès à l'historique de navigation, aucun traqueur tiers intégré, aucune analytique.
+1. **Pas de suivi** — Aucun accès à l'historique de navigation, aucun traqueur tiers intégré, aucune analytique.
 
-3. **Les données restent locales sauf si vous les partagez** — Les données de configuration résident sur votre appareil par défaut. Elles ne quittent votre navigateur que lorsque :
+1. **Les données restent locales sauf si vous les partagez** — Les données de configuration résident sur votre appareil par défaut. Elles ne quittent votre navigateur que lorsque :
    - vous exportez manuellement un fichier de sauvegarde ;
    - vous activez la Synchronisation cloud (Pro), qui stocke uniquement les configurations de sites, la liste noire, l'activation et le thème par défaut dans votre compte de navigateur via `storage.sync` — jamais les clés de licence ni les données de navigation ;
    - vous choisissez une Google Font (le fichier de police est téléchargé depuis fonts.googleapis.com) ;

@@ -4,7 +4,7 @@ Offizielles Benutzerhandbuch · Mehrsprachig: [English](../README.md) | [中文]
 
 > Dieses Dokument ist das offizielle Benutzerhandbuch von StylePatch, erreichbar über den Button „Benutzerhandbuch" im Erweiterungspanel.
 
-Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkfarbe, Schriftart, Filtereffekte und Schriftgröße jeder Webseite sofort anpassen kannst — für ein komfortableres Leseerlebnis.
+Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkfarbe, Schriftart, Seitenzoom und Theme-Presets jeder Webseite sofort anpassen kannst — für ein komfortableres Leseerlebnis.
 
 ✅ Offiziell im Chrome & Edge Web Store veröffentlicht · ✅ Kein Tracking, Daten lokal gespeichert (Cloud-Sync optional und Pro) · ✅ Unabhängige Einstellungen pro Seite
 
@@ -17,11 +17,9 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 | Funktion | Beschreibung |
 |----------|--------------|
 | 🎨 **Hintergrund-, Text- & Linkfarbe** | Wähle eine beliebige Farbe über den nativen Farbwähler oder gib den Hex-Code direkt ein; Linkfarbe passt sich automatisch für bessere Lesbarkeit an |
-| 🔠 **Schriftgröße skalieren** | Von 80% bis 150% über CSS zoom einstellen |
+| 🔠 **Seitenzoom** | Die ganze Seite von 80% bis 150% skalieren |
 | 🔤 **Schriftart** | Seiten-Schriftart wechseln — Systemschriften oder Google Fonts aus dem Web (Roboto, Open Sans, Noto Sans SC…) |
-| 🌗 **Farbfilter** | Graustufenmodus und warmer Sepia-Ton für angenehmeres Lesen |
-| 👁️ **Vorgefertigte Themes** | Hell, Warmton, Grün, Dunkel, Sepia, Blaue Nacht, Hoher Kontrast — ein Klick zum Anwenden |
-| 🎛️ **Einheitlicher Hintergrund (optional)** | Standardmäßig aus. Wenn aktiv, wird nur der Hintergrund von Layout-Containern ohne Klasse (div / section / nav …) entfernt; Hinweise, Karten und Codeblöcke behalten ihre Farben |
+| 👁️ **Vorgefertigte Themes** | Hell, Warmton, Grün, Elfenbein, Dunkel, Sepia, Blaue Nacht, Hoher Kontrast — ein Klick zum Anwenden |
 | 🧭 **Kontrast-Hinweis** | Warnt, wenn Text- oder Linkfarbe die WCAG-Kontrastwerte unterschreitet |
 | 🔄 **Globaler Schalter** | Erweiterung global aktivieren/deaktivieren ohne Einstellungen zu verlieren |
 | 🚫 **Seiten-Blacklist** | Bestimmte Websites vom Styling ausschließen |
@@ -29,7 +27,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 | 📤 **Lokales Backup** | Alle Konfigurationen als JSON exportieren und später wiederherstellen (kostenloser Import auf 5 Seiten begrenzt) |
 | ⚡ **Echtzeit-Vorschau** | Alle Änderungen werden sofort beim Ziehen angewendet, kein Neuladen nötig |
 | 🌍 **Mehrsprachige UI** | Unterstützt Englisch, Chinesisch, Spanisch, Deutsch, Japanisch, Französisch |
-| 🔒 **Minimale Berechtigungen** | Nur `storage`, `scripting` + `host_permissions` — kein unnötiger Zugriff |
+| 🔒 **Minimale Berechtigungen** | Nur `storage`, `scripting`, `alarms` + `host_permissions` — kein unnötiger Zugriff |
 | 🏗️ **Manifest V3** | Aufgebaut auf Manifest V3 Service Worker Architektur |
 | 🔄 **Ein-Klick-Reset** | Entfernt die eigene Konfiguration der Seite; mit Standard-Theme fällt sie darauf zurück |
 
@@ -41,6 +39,7 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 | ☁️ **Cloud-Sync** | Website-Konfigurationen, Blacklist, EIN/AUS-Status und Standard-Theme zwischen Chrome/Edge/Firefox-Profilen mit demselben Browserkonto synchron halten (kein Backend, nutzt `storage.sync`) |
 | 🎨 **Standard-Theme** | Ein globales Theme auf alle Seiten ohne eigene Konfiguration anwenden; der Reset fällt darauf zurück |
 | 📥 **Vollständige Wiederherstellung** | Backups mit mehr als 5 Seiten inklusive Standard-Theme importieren |
+| 🌙 **Zeitgesteuerter Wechsel** | Wendet das integrierte dunkle Theme zwischen zwei gewählten Zeiten (z. B. 19:00–07:00) automatisch auf alle Seiten an |
 
 > Siehe [VKT Preise](https://annmax1983.com/pricing.html) für Lizenzoptionen.
 
@@ -83,25 +82,26 @@ Eine schlanke Browser-Erweiterung, mit der du Hintergrundfarbe, Textfarbe, Linkf
 
 1. Klicke auf das **StylePatch-Symbol** in deiner Browser-Toolbar
 2. **Farben wählen** — Verwende den nativen Farbwähler oder gib einen Hex-Code ein
-3. **Vorlage wählen** — Hell, Warmton, Grün, Dunkel, Sepia, Blaue Nacht oder Hoher Kontrast
-4. **Schriftgröße anpassen** — Schieberegler von 80% bis 150% ziehen
+3. **Vorlage wählen** — Hell, Warmton, Grün, Elfenbein, Dunkel, Sepia, Blaue Nacht oder Hoher Kontrast
+4. **Seitenzoom anpassen** — Schieberegler von 80% bis 150% ziehen (skaliert die ganze Seite)
 5. **Schriftart wählen** — Systemschrift wählen oder eine Google Font aus dem Web laden
-6. **Filter anwenden** — Optional Graustufen oder warmen Augenschutz-Ton
-7. **Speichern** — Klicke auf **Anwenden & Speichern**, um die Einstellungen für diese Seite zu übernehmen
-8. **Zurücksetzen** — Klicke ↺, um die eigene Konfiguration der Seite zu entfernen; mit Standard-Theme fällt die Seite darauf zurück
-9. **Als Standard festlegen** — Pro-Nutzer können die aktuellen Farben als Standard-Theme für alle Seiten speichern (Seiten mit eigener Konfiguration behalten sie)
-10. **Ausschließen** — Klicke auf „Diese Seite ausschließen", um eine Domain zu blacklisten
-11. **Umschalten** — Verwende den EIN/AUS-Schalter zum Deaktivieren ohne Einstellungen zu verlieren
+6. **Speichern** — Klicke auf **Anwenden & Speichern**, um die Einstellungen für diese Seite zu übernehmen
+7. **Zurücksetzen** — Klicke ↺, um die eigene Konfiguration der Seite zu entfernen; mit Standard-Theme fällt die Seite darauf zurück
+8. **Als Standard festlegen** — Pro-Nutzer können die aktuellen Farben als Standard-Theme für alle Seiten speichern (Seiten mit eigener Konfiguration behalten sie)
+9. **Ausschließen** — Klicke auf „Diese Seite ausschließen", um eine Domain zu blacklisten
+10. **Umschalten** — Verwende den EIN/AUS-Schalter zum Deaktivieren ohne Einstellungen zu verlieren
 
 ### Konfigurationsmanager
 
-Klicke unten im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsseite zu öffnen:
+Klicke oben rechts im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsseite zu öffnen:
 
 - Konfigurierte Seiten mit Farb- und Schrifteinstellungen **anzeigen**, durchsuchen und **löschen**
+- **Ausschlüsse verwalten** — Domain manuell hinzufügen oder entfernen, ohne die Seite erneut zu besuchen
 - Alle Konfigurationen als JSON-Backup-Datei **exportieren** (kostenlos)
 - Eine Backup-Datei **importieren**, um Einstellungen auf einem anderen Gerät oder nach Neuinstallation wiederherzustellen (kostenloser Import auf 5 Seiten begrenzt)
 - **Cloud-Sync** (Pro) — Konfigurationen zwischen Chrome/Edge/Firefox-Profilen mit demselben Browserkonto spiegeln
 - **Standard-Theme** (Pro) — das Theme für Seiten ohne eigene Konfiguration prüfen oder entfernen
+- **Zeitgesteuerter Wechsel** (Pro) — Zeitfenster für das dunkle Theme festlegen und ein-/ausschalten
 
 ---
 
@@ -110,16 +110,16 @@ Klicke unten im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsse
 1. **Styles greifen nach Anpassung nicht?**
    Schließe andere ähnliche Erweiterungen (Dunkelmodus / Augenschutz), die konflikten könnten, und aktualisiere die Seite.
 
-2. **Gespeicherte Einstellungen verschwinden nach Browserneustart?**
+1. **Gespeicherte Einstellungen verschwinden nach Browserneustart?**
    Stelle sicher, dass du auf „Anwenden & Speichern" geklickt hast. Im Inkognito-Modus: Aktiviere die StylePatch-Berechtigung für private Fenster.
 
-3. **Wie übertrage ich meine Einstellungen auf ein neues Gerät?**
+1. **Wie übertrage ich meine Einstellungen auf ein neues Gerät?**
    Öffne den Konfigurationsmanager (⚙), klicke auf Exportieren, um eine Backup-Datei herunterzuladen, und importiere sie auf dem neuen Gerät. Der kostenlose Import stellt bis zu 5 Seiten wieder her; Pro stellt alles wieder her. Im selben Chrome/Edge/Firefox-Konto können Pro-Nutzer außerdem Cloud-Sync aktivieren und ganz auf die Datei verzichten.
 
-4. **Warum teilen sich `www.example.com` und `example.com` dieselben Einstellungen?**
+1. **Warum teilen sich `www.example.com` und `example.com` dieselben Einstellungen?**
    Das ist beabsichtigt — Domains werden unabhängig vom führenden `www.` gematcht, damit dein Style auf beiden Adressen konsistent greift.
 
-5. **StylePatch nicht im Erweiterungsstore gefunden?**
+1. **StylePatch nicht im Erweiterungsstore gefunden?**
    Überprüfe deine Netzwerkregion. Den offiziellen Store-Link findest du unter [www.annmax1983.com](https://www.annmax1983.com).
 
 ---
@@ -129,13 +129,14 @@ Klicke unten im Popup auf **⚙ Konfigurationsmanager**, um die Konfigurationsse
 StylePatch folgt den Prinzipien von Privacy-by-Design und erhebt keinerlei Nutzerdaten:
 
 1. **Angeforderte Berechtigungen** — nur drei:
-   - `storage`: Speichert deine benutzerdefinierten Farben, Schriftgröße, Seiten-Blacklist und Theme-Einstellungen lokal; der optionale Pro-Cloud-Sync nutzt `storage.sync`. Es werden keine Webseiteninhalte gespeichert.
+   - `storage`: Speichert deine benutzerdefinierten Farben, Seitenzoom, Seiten-Blacklist und Theme-Einstellungen lokal; der optionale Pro-Cloud-Sync nutzt `storage.sync`. Es werden keine Webseiteninhalte gespeichert.
    - `scripting`: Wird nur verwendet, um das erzeugte CSS in den aktuellen Tab zu injizieren (isolierte Welt der Erweiterung). Liest keine Seiteninhalte und führt keinen fremden Code aus.
+   - `alarms`: Wird nur genutzt, um den Service Worker zu Beginn und Ende des geplanten Zeitfensters zu wecken. Keine Daten, kein Hintergrund-Polling.
    - `host_permissions`: Wird nur verwendet, um benutzerdefinierte CSS-Styles zur Anpassung des Seitenaussehens zu injizieren. Liest keinen DOM-Text, Bilder, Cookies, Anmeldedaten oder Formulardaten.
 
-2. **Kein Tracking** — Kein Zugriff auf den Browserverlauf, keine eingebetteten Drittanbieter-Tracker, keine Analytik.
+1. **Kein Tracking** — Kein Zugriff auf den Browserverlauf, keine eingebetteten Drittanbieter-Tracker, keine Analytik.
 
-3. **Daten bleiben lokal, sofern du nicht zustimmst** — Konfigurationsdaten liegen standardmäßig auf deinem Gerät. Sie verlassen deinen Browser nur, wenn du:
+1. **Daten bleiben lokal, sofern du nicht zustimmst** — Konfigurationsdaten liegen standardmäßig auf deinem Gerät. Sie verlassen deinen Browser nur, wenn du:
    - manuell eine Backup-Datei exportierst;
    - Cloud-Sync (Pro) aktivierst: Dabei werden nur Website-Konfigurationen, Blacklist, EIN/AUS-Status und Standard-Theme über `storage.sync` in deinem Browserkonto gespeichert — niemals Lizenzschlüssel oder Browserdaten;
    - eine Google Font wählst (die Schriftdatei wird von fonts.googleapis.com heruntergeladen);
